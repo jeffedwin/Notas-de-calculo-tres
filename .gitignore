@@ -1,0 +1,11 @@
+# Temporal files
+~*
+*~
+\#*
+*\#
+\'*
+*.emergency
+*.tmp
+*.temp
+*.dvi
+*.ps
