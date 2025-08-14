@@ -1,0 +1,675 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Operaciones
+\end_layout
+
+\begin_layout Enumerate
+Propiedades de derivadas parciales
+\end_layout
+
+\begin_layout Enumerate
+Propiedades de gradientes
+\end_layout
+
+\begin_layout Enumerate
+Propiedades de funciones derivables
+\end_layout
+
+\begin_layout Enumerate
+Regla de la cadena (RC)
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Recordatorio de la definición de parciales:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}(x_{0},y_{0})=\lim_{x\to x_{0}}\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial y}(x_{0},y_{0})=\lim_{y\to y_{0}}\frac{f(x_{0},y)-f(x_{0},y_{0})}{y-y_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{(
+\backslash
+roman{enumi})}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ejercicio:
+ Supongamos que 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ tienen derivadas parciales en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+.
+ Calcular,
+ usando la definición:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\partial(f+g)}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\partial(fg)}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\partial(\frac{f}{g})}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+ (Suponiendo 
+\begin_inset Formula $g(x_{0},y_{0})\neq0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\partial(cf)}{\partial x}(x_{0},y_{0}),c\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A manera de ejemplo hacemos (i) y (ii).
+\end_layout
+
+\begin_layout Enumerate
+P.
+ D.
+ 
+\begin_inset Formula $\frac{\partial(f+g)}{\partial x}(x_{0},y_{0})=\frac{\partial f}{\partial x}(x_{0},y_{0})+\frac{\partial g}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Demostración:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial(f+g)}{\partial x}(x_{0},y_{0})= & \lim_{x\to x_{0}}\frac{(f+g)(x,y_{0})-(f+g)(x_{0},y_{0})}{x-x_{0}}\\
+= & \lim_{x\to x_{0}}\frac{f(x,y_{0})+g(x,y_{0})-f(x_{0},y_{0})-g(x,y_{0})}{x-x_{0}}\\
+= & \lim_{x\to x_{0}}\left(\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}+\frac{g(x,y_{0})-g(x,y_{0})}{x-x_{0}}\right)\\
+= & \frac{\partial f}{\partial x}(x_{0},y_{0})+\frac{\partial g}{\partial x}(x_{0},y_{0})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+P.
+ D.
+ 
+\begin_inset Formula $\frac{\partial(fg)}{\partial x}(x_{0},y_{0})=f(x_{0},y_{0})\frac{\partial g}{\partial x}(x_{0},y_{0})+g(x_{0},y_{0})\frac{\partial f}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Demostración:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial(fg)}{\partial x}(x_{0},y_{0})= & \lim_{x\to x_{0}}\frac{(fg)(x,y_{0})-(fg)(x_{0},y_{0})}{x-x_{0}}\\
+= & \lim_{x\to x_{0}}\frac{f(x,y_{0})g(x,y_{0})-f(x_{0},y_{0})g(x,y_{0})}{x-x_{0}}\\
+= & \lim_{x\to x_{0}}\frac{f(x,y_{0})g(x,y_{0})-f(x,y_{0})g(x_{0},y_{0})+f(x,y_{0})g(x_{0},y_{0})-f(x_{0},y_{0})g(x,y_{0})}{x-x_{0}}\\
+= & \lim_{x\to x_{0}}\left(f(x,y_{0})\frac{g(x,y_{0})-g(x_{0},y_{0})}{x-x_{0}}+g(x_{0},y_{0})\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}\right)\\
+= & \lim_{x\to x_{0}}\left(f(x,y_{0})\right)\left(\lim_{x\to x_{0}}\frac{g(x,y_{0})-g(x_{0},y_{0})}{x-x_{0}}\right)+g(x_{0},y_{0})\lim_{x\to x_{0}}\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}\\
+= & f(x_{0},y_{0})\frac{\partial g}{\partial x}(x_{0},y_{0})+g(x_{0},y_{0})\frac{\partial f}{\partial x}(x_{0},y_{0})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\partial\left(\frac{f}{g}\right)}{\partial x}(x_{0},y_{0})=\frac{g(x_{0},y_{0})\frac{\partial f}{\partial x}(x_{0},y_{0})-f(x_{0},y_{0})\frac{\partial g}{\partial x}(x_{0},y_{0})}{\left(g(x_{0},y_{0})\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\partial(cf)}{\partial x}(x_{0},y_{0})=c\frac{\partial f}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Análogamente,
+ se comprueban igualdades semejantes para las parciales respecto a 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Propiedades de 
+\begin_inset Formula $\nabla f$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+tienen derivadas parciales en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+,
+ entonces:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla(f+g)(x_{0},y_{0})=\nabla f(x_{0},y_{0})+\nabla g(x_{0},y_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla(cf)(x_{0},y_{0})=c\nabla f((x_{0},y_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla(fg)(x_{0},y_{0})=f(x_{0},y_{0})\nabla g(x_{0},y_{0})+g(x_{0},y_{0})\nabla f(x_{0},y_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $g\neq0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\nabla\left(\frac{f}{g}\right)(x_{0},y_{0})=\frac{1}{\left(g(x_{0},y_{0})\right)^{2}}\left(g(x_{0},y_{0})\nabla f(x_{0},y_{0})-f(x_{0},y_{0})\nabla g(x_{0},y_{0})\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Demostración de (iii):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\nabla\left(fg\right)(x_{0},y_{0})= & \left(\frac{\partial\left(fg\right)}{\partial x},\frac{\partial\left(fg\right)}{\partial y}\right)\\
+= & \left(f(x_{0},y_{0})\frac{\partial g}{\partial x}(x_{0},y_{0})+g(x_{0},y_{0})\frac{\partial f}{\partial x}(x_{0},y_{0}),f(x_{0},y_{0})\frac{\partial g}{\partial y}(x_{0},y_{0})+g(x_{0},y_{0})\frac{\partial f}{\partial y}(x_{0},y_{0})\right)\\
+= & f(x_{0},y_{0})\left(\frac{\partial g}{\partial x}(x_{0},y_{0}),\frac{\partial g}{\partial g}(x_{0},y_{0})\right)+g(x_{0},y_{0})\left(\frac{\partial f}{\partial x}(x_{0},y_{0}),\frac{\partial f}{\partial g}(x_{0},y_{0})\right)\\
+= & f(x_{0},y_{0})\nabla g(x_{0},y_{0})+g(x_{0},y_{0})\nabla f(x_{0},y_{0})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tarea:
+ demostrar los demás incisos.
+ Nótese que las propiedades de los gradientes se desprenden de las derivadas parciales.
+\end_layout
+
+\begin_layout Section
+Operaciones
+\end_layout
+
+\begin_layout Theorem*
+Sean 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ derivables en 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+ Entonces:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f+g$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ y 
+\begin_inset Formula $D(f+g)\left(\bar{x_{0}}\right)=D_{f}\left(\bar{x_{0}}\right)+D_{g}\left(\bar{x_{0}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $fg$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+y 
+\begin_inset Formula $D(fg)\left(\bar{x_{0}}\right)=f\left(\bar{x_{0}}\right)D_{g}\left(\bar{x_{0}}\right)+g(\bar{x_{0}})D_{f}\left(\bar{x_{0}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $g(\bar{x_{0}})\neq0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\frac{f}{g}$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ y 
+\begin_inset Formula $D\left(\frac{f}{g}\right)\left(x_{0},y_{0}\right)=\frac{1}{\left(g\left(\bar{x_{0}}\right)\right)^{2}}\left(g\left(\bar{x_{0}}\right)D_{f}\left(\bar{x_{0}}\right)-f\left(\bar{x_{0}}\right)D_{g}\left(\bar{x_{0}}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recuerda:
+ que 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ sean derivables en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ significa que los correspondientes planos tangentes existen y que las derivadas están dadas por los gradientes.
+\end_layout
+
+\begin_layout Standard
+Demostración:
+ (Vamos a demostrar (i) y (ii).
+ Les queda (iii) de tarea.)
+\end_layout
+
+\begin_layout Standard
+(Sugerencia para (iii):
+ demostrar primero que 
+\begin_inset Formula $D\left(\frac{1}{g(\left(\bar{x_{0}}\right)}\right)=\frac{1}{\left(g\left(\bar{x_{0}}\right)\right)^{2}}\left(-D_{g}\left(\bar{x_{0}}\right)\right)$
+\end_inset
+
+ y luego escribir 
+\begin_inset Formula $\frac{f}{g}=f\cdot\frac{1}{g}$
+\end_inset
+
+y usar (ii))
+\end_layout
+
+\begin_layout Standard
+Empezamos con la demostración de (i):
+\end_layout
+
+\begin_layout Standard
+Observación:
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ derivable en 
+\begin_inset Formula $\bar{a}=\left(x_{0},y_{0}\right)$
+\end_inset
+
+;
+ el plano tangente en 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+p\left(x,y\right)= & \frac{\partial f}{\partial x}\left(\bar{a}\right)\left(x-x_{0}\right)+\frac{\partial f}{\partial y}\left(\bar{a}\right)\left(y-y_{0}\right)-f\left(\bar{a}\right)\\
+= & f\left(\bar{a}\right)+\left(\frac{\partial f}{\partial x}\left(\bar{a}\right),\frac{\partial f}{\partial y}\left(\bar{a}\right)\right)\cdot\left(\left(x-x_{0}\right),\left(y-y_{0}\right)\right)\\
+= & f\left(\bar{a}\right)+\nabla f\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula 
+\begin{align*}
+\text{i.e. }p\left(\bar{x}\right)= & f\left(\bar{a}\right)+\nabla f\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\\
+\text{tamién: }p\left(\bar{x}\right)= & f\left(\bar{a}\right)+D_{f}\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula 
+\begin{align*}
+\therefore f\text{ es derivable en }\bar{a}=\left(\bar{x_{0}},\bar{y}\right)\Leftrightarrow & \lim_{\bar{x}\to\bar{a}}\frac{\left|f\left(\bar{x}\right)-f\left(\bar{a}\right)-\nabla f\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Demostración del teorema (i) Suponemos 
+\begin_inset Formula $f+g$
+\end_inset
+
+ derivable en 
+\begin_inset Formula $\bar{a}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P.
+ D.
+ 
+\begin_inset Formula $\lim_{\bar{x}\to\bar{a}}\frac{\left|\left(f+g\right)\left(\bar{x}\right)-\left(f+g\right)\left(\bar{a}\right)-\nabla\left(f+g\right)\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+0\leq & \lim_{\bar{x}\to\bar{a}}\frac{\left|f\left(\bar{x}\right)+g\left(\bar{x}\right)-f\left(\bar{a}\right)-g\left(\bar{a}\right)-\left(\nabla f\left(\bar{a}\right)+\nabla g\left(\bar{a}\right)\right)\cdot\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }\\
+= & \lim_{\bar{x}\to\bar{a}}\frac{\left|\left(f\left(\bar{x}\right)-f\left(\bar{a}\right)-\nabla f\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\right)+\left(g\left(\bar{x}\right)-g\left(\bar{a}\right)-\nabla g\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }\\
+\leq & \frac{\left|f\left(\bar{x}\right)-f\left(\bar{a}\right)-\nabla f\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }+\frac{\left|g\left(\bar{x}\right)-g\left(\bar{a}\right)-\nabla g\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ son derivables en 
+\begin_inset Formula $\bar{a},$
+\end_inset
+
+esta suma 
+\begin_inset Formula $\to0$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\bar{x}\to\bar{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore f+g$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y 
+\begin_inset Formula $\therefore$
+\end_inset
+
+
+\begin_inset Formula $D\left(f+g\right)=\nabla\left(f+g\right)=\nabla f\left(\bar{a}\right)+\nabla g\left(\bar{a}\right)=D_{f}\left(\bar{a}\right)+D_{g}(\bar{a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(ii) Para la regla del producto queremos demostrar que
+\end_layout
+
+\end_body
+\end_document
