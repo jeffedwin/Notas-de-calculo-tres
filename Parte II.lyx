@@ -668,7 +668,487 @@ y
 \end_layout
 
 \begin_layout Standard
-(ii) Para la regla del producto queremos demostrar que
+(ii) Para la regla del producto queremos demostrar que 
+\begin_inset Formula 
+\[
+\frac{\left|\left(fg\right)\left(\bar{x}\right)-\left(fg\right)\left(\bar{a}\right)-\nabla\left(fg\right)\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }\underset{\text{\ensuremath{\bar{x}\to\bar{a}}}}{\longrightarrow}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aquí ya no es tan 
+\begin_inset Quotes eld
+\end_inset
+
+directo
+\begin_inset Quotes erd
+\end_inset
+
+ como las demostraciones anteriores pero recurriremos al consabido viejo truco de sumar y restar algo apropiado.
+\end_layout
+
+\begin_layout Standard
+Le sumamos y restamos 
+\begin_inset Formula $f\left(\bar{a}\right)g\left(\bar{a}\right)+\nabla f\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\cdot g\left(\bar{x}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Denotaremos,
+ respectivamente,
+ a los planos tangentes de 
+\begin_inset Formula $f$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ y 
+\begin_inset Formula $fg$
+\end_inset
+
+ en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ por 
+\begin_inset Formula $p_{f}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $p_{g}$
+\end_inset
+
+ y 
+\begin_inset Formula $p_{fg}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Nos concentramos en el numerador para empezar
+\begin_inset Formula 
+\begin{align*}
+\left(fg\right)\left(\bar{x}\right)-p_{fg}\left(\bar{x}\right)= & f\left(\bar{x}\right)g\left(\bar{x}\right)-\left(f\left(\bar{a}\right)\nabla g\left(\bar{a}\right)+g\left(\bar{a}\right)\nabla f\left(\bar{a}\right)\right)\left(\bar{x}-\bar{a}\right)-f\left(\bar{a}\right)g\left(\bar{a}\right)\\
+\text{(y ahora le sumamos y restamos la cantidad mencionada)}\\
+= & \left(f\left(\bar{x}\right)-\nabla f\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\right)g\left(\bar{x}\right)+\left(g\left(\bar{x}\right)-\nabla g\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\right)f\left(\bar{a}\right)+\nabla f\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\cdot g\left(\bar{x}\right)-\nabla f\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\cdot g\left(\bar{a}\right)\\
+= & \left(f\left(\bar{x}\right)-p_{f}\left(\bar{x}\right)\right)g\left(\bar{x}\right)+\left(g\left(\bar{x}\right)-p_{g}\left(\bar{x}\right)\right)f\left(\bar{a}\right)+\nabla f\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\left(g\left(\bar{x}\right)-g\left(\bar{a}\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ dividiendo entre 
+\begin_inset Formula $\left\Vert \bar{x}-\bar{a}\right\Vert $
+\end_inset
+
+,
+ tomando valores absolutos,
+ usando la desigualdad del triángulo y,
+ también,
+ para el último sumando la desigualdad CBS (que implica que 
+\begin_inset Formula $\left|\nabla f\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)\right|\leq\left\Vert \nabla f\left(\bar{a}\right)\right\Vert \left\Vert \bar{x}-\bar{a}\right\Vert $
+\end_inset
+
+),
+ llegamos a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\left|\left(fg\right)\left(\bar{x}\right)-p_{fg}\left(\bar{x}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }\leq & \left|g\left(\bar{x}\right)\right|\frac{\left|f\left(\bar{x}\right)\right|-p_{f}\left(\bar{x}\right)}{\left\Vert \bar{x}-\bar{a}\right\Vert }+\left|f\left(\bar{a}\right)\right|\frac{\left|g\left(\bar{x}\right)\right|-p_{g}\left(\bar{x}\right)}{\left\Vert \bar{x}-\bar{a}\right\Vert }+\frac{\left\Vert \nabla f\left(\bar{a}\right)\right\Vert \left\Vert \bar{x}-\bar{a}\right\Vert \left|g\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $g$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ y 
+\begin_inset Formula $\therefore g\left(\bar{x}\right)\underset{\bar{x}\to\bar{a}}{\longrightarrow}g\left(\bar{a}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\bar{x}\to\bar{a}$
+\end_inset
+
+ el lado derecho de la desigualdad tiende a 
+\begin_inset Formula 
+\[
+\left|g\left(\bar{a}\right)\right|\cdot0+\left|f\left(\bar{x_{0}}\right)\right|\cdot0+\left\Vert \nabla f\left(\bar{a}\right)\right\Vert \cdot0=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+Dos ejemplos importantes:
+
+\uuline default
+ sean 
+\begin_inset Formula $p\left(x,y\right)=x$
+\end_inset
+
+ y 
+\begin_inset Formula $q\left(x,y\right)=y$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\left(x,y\right)$
+\end_inset
+
+.
+ En ambos casos los correspondientes planos tangentes son las propias funciones 
+\begin_inset Formula $p$
+\end_inset
+
+ y 
+\begin_inset Formula $q$
+\end_inset
+
+ por ser lineales (¡demostrarlo!
+ lo hicimos en clase) y a partir de estas dos simples funciones obtenemos,
+ usando las propiedades de las operaciones con funciones derivables,
+ que todas las siguientes son funciones derivable
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{lcl}
+f_{1}\left(x,y\right)=x+y &  & f_{5}\left(x,y\right)=x^{4}-y^{4}\\
+f_{2}\left(x,y\right)=xy &  & f_{6}\left(x,y\right)=\frac{xy}{x^{2}+y^{2}},\left(x,y\right)\neq0\\
+f_{3}\left(x,y\right)=x^{2}+y^{2} &  & f_{7}\left(x,y\right)=\frac{x^{3}+7xy-xy^{4}}{x^{3}+y^{3}},x^{3}+y^{3}\neq0\\
+f_{4}\left(x,y\right)=x^{2}-y^{2}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(En general,
+ las reglas de derivación 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ que toda función racional 
+\begin_inset Formula $R\left(x,y\right)=\frac{P\left(x,y\right)}{Q\left(x,y\right)}$
+\end_inset
+
+ con 
+\begin_inset Formula $P$
+\end_inset
+
+ y 
+\begin_inset Formula $Q$
+\end_inset
+
+ polinomios es derivable en todos los puntos en los que 
+\begin_inset Formula $Q\left(x,y\right)\neq0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+En general,
+ todo polinomio de 2 variables de cualquier grado es derivable.
+\end_layout
+
+\begin_layout Standard
+Pequeño ejercicio:
+ calcular las derivadas de 
+\begin_inset Formula $f_{4}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f_{5}$
+\end_inset
+
+ y 
+\begin_inset Formula $f_{7}$
+\end_inset
+
+ en cualquier punto 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hay funciones,
+ sin embargo,
+ que aún no sabemos si son derivables,
+ como por ejemplo,
+ las siguientes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+h\left(x,y\right)= & \sin\left(x+y\right)\\
+g\left(x,y\right)= & e^{x\cos\left(x^{2}+y^{2}\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y muchas más que son composiciones de funciones de variable real con funciones de dos variables.
+ Ello requiere de la Regla de la Cadena,
+ que analizamos a continuación.
+\end_layout
+
+\begin_layout Section
+Regla de la Cadena
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte II.
+ pág.
+ 39
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Sean 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $g:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ está en 
+\begin_inset Formula $\text{int}D_{f}$
+\end_inset
+
+ y 
+\begin_inset Formula $g\left(\bar{a}\right)\in\text{int}D_{g}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $f\left(\bar{a}\right)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $g\circ f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ y 
+\begin_inset Formula $D\left(g\circ f\right)\left(\bar{a}\right)=D_{g}\left(f\left(\bar{a}\right)\right)\cdot D_{f}\left(\bar{a}\right)$
+\end_inset
+
+ i.e.
+ 
+\begin_inset Formula $D\left(g\circ f\right)\left(\bar{a}\right)=g'\left(f\left(\bar{a}\right)\right)\cdot\nabla f\left(\bar{a}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(Pasamos a ver unos ejemplos antes de la demostración)
+\end_layout
+
+\begin_layout Standard
+OBS.
+ Como 
+\begin_inset Formula $g:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+,
+ la derivada 
+\begin_inset Formula $D_{g}\left(f\left(a\right)\right)$
+\end_inset
+
+ es la derivada usual como función de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+,
+ es decir,
+ es 
+\begin_inset Formula $g'\left(f\left(a\right)\right)$
+\end_inset
+
+.
+ El producto 
+\begin_inset Formula $D_{g}\left(f\left(a\right)\right)\cdot D_{f}\left(a\right)$
+\end_inset
+
+es (escalar) por (vector) = vector.
+ La demostración la pospondremos hasta el caso general de funciones de 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ejemplos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{ccc}
+\bullet & h\left(x,y\right)=e^{xy} & \left(h:\mathbb{R}^{2}\to\mathbb{R}\right)\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h\text{ es derivable y }D_{h}\left(x,y\right)=\nabla h\left(x,y\right)=\left(ye^{xy},xe^{xy}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cll}
+\bullet & h_{1}\left(x,y\right)=\sin\left(x\cos y\right) & \left(x,y\right)\mapsto x\cos y\mapsto\sin\left(x\cos y\right)\\
+ & h_{2}\left(x,y\right)=x^{y}=e^{y\log x} & \left(x,y\right)\mapsto y\log x=u\mapsto e^{u}\\
+ & h_{3}\left(x,y\right)=\sqrt{x^{2}+y^{2}}=e^{y\log x} & \left(x,y\right)\mapsto x^{2}+y^{2}=u\mapsto\sqrt{u}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cl}
+ & D_{h_{1}}\left(x,y\right)=\nabla h_{1}\left(x,y\right)=\left(\cos\left(x\cos y\right)\cdot\cos y,\cos\left(x\cos y\right)\cdot\left(-x\sin y\right)\right)\\
+ & D_{h_{2}}\left(x,y\right)=\nabla h_{2}\left(x,y\right)=\left(e^{y\log x}\cdot\frac{y}{x},e^{y\log x}\cdot\log x\right)\\
+ & D_{h_{3}}\left(x,y\right)=\nabla h_{3}\left(x,y\right)=\left(\frac{x}{\sqrt{x^{2}+y^{2}}},\frac{y}{\sqrt{x^{2}+y^{2}}}\right)=\frac{1}{\sqrt{x^{2}+y^{2}}}\left(x,y\right)
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En general,
+ aunque no sepamos el teorema es claro cómo debe ser la fórmula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cl}
+\bullet & h\left(x,y\right)=f\left(g\left(x,y\right)\right)\text{, si es derivable,}\end{array}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+D_{h}\left(x,y\right)= & \nabla h\left(x,y\right)\\
+= & \left(f'\left(g\left(x,y\right)\right)\cdot\frac{\partial g}{\partial x}\left(x,y\right),f'\left(g\left(x,y\right)\right)\cdot\frac{\partial g}{\partial y}\left(x,y\right)\right)\\
+= & f'\left(g\left(x,y\right)\right)\cdot\nabla g\left(x,y\right)\\
+\\\therefore D_{h}\left(x,y\right)= & D_{f}\left(g\left(x,y\right)\right)\cdot D_{g}\left(x,y\right)
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
