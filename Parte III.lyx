@@ -1,0 +1,777 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Derivadas Direccionales y Diferenciabilidad.
+ Gradientes.
+\end_layout
+
+\begin_layout Section
+Derivadas Direccionales:
+ Diferenciabiliad y gradientes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Plano tangente a 
+\begin_inset Formula $g_{f}$
+\end_inset
+
+ en 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En general,
+ si intersectamos la gráfica y el plano tangente con un plano 
+\begin_inset Formula $Q_{\bar{u}}\bot XY$
+\end_inset
+
+,
+ obtenemos una curva 
+\begin_inset Formula $g_{f}\cap Q_{\bar{u}}$
+\end_inset
+
+ que podemos visualizar como función de una variable,
+ y una recta 
+\begin_inset Formula $T\cap Q_{\bar{u}}$
+\end_inset
+
+ que es tangente a dicha curva en el punto en cuestión.
+\end_layout
+
+\begin_layout Standard
+Esto lo podemos hacer en cualquier dirección,
+ i.e.,
+ el plano 
+\begin_inset Formula $Q_{\bar{u}}$
+\end_inset
+
+ que pasa por 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ puede 
+\begin_inset Quotes eld
+\end_inset
+
+apuntar2 en cualquier dirección 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+.
+ La curva y la tangente mencionadas están en la misma dirección.
+\end_layout
+
+\begin_layout Standard
+Para obtener A y B a 
+\begin_inset Formula $Q$
+\end_inset
+
+ lo tomamos,
+ respectivamente,
+ paralelo a 
+\begin_inset Formula $XZ$
+\end_inset
+
+ y a 
+\begin_inset Formula $YZ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En resumen:
+ (sobre derivadas direccionales)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intersectamos 
+\begin_inset Formula $g_{f}$
+\end_inset
+
+ con un plano 
+\begin_inset Formula $Q_{\bar{u}}$
+\end_inset
+
+ en dirección de 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+ (unitario) y se produce una curva 
+\begin_inset Formula $Q_{\bar{u}}\cap g_{f}=C_{\bar{u}}$
+\end_inset
+
+ que podemos pensar como la gráfica de una función de una variable.
+ Concretamente ,
+ como la función 
+\begin_inset Formula $g_{\bar{u}}\left(t\right)=f\left(\bar{a}+t\bar{u}\right),\,t\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observen que 
+\begin_inset Formula $g_{\bar{u}}\left(0\right)=f\left(\bar{a}\right)$
+\end_inset
+
+.
+ Entonces la derivada de 
+\begin_inset Formula $g_{\bar{u}}$
+\end_inset
+
+ en 
+\begin_inset Formula $0$
+\end_inset
+
+,
+ si es que existe,
+ es la derivada direccional de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+en dirección de 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+.
+ Es decir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+g'\left(0\right)= & \lim_{t\to0}\frac{g_{\bar{u}}\left(t\right)-g_{\bar{u}}\left(0\right)}{t}\\
+= & \lim_{t\to0}\frac{f\left(\bar{a}+t\bar{u}\right)-f\left(\bar{a}\right)}{t}\\
+= & D_{\bar{u}}f\left(\bar{a}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta derivada es una medida de cómo cambia 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ en dirección de 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+(Derivada direccional) Sea 
+\begin_inset Formula $\bar{a}=\left(x_{0},y_{0}\right)\in\text{int }Dom\left(f\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+ un vector unitario (i.e.
+ 
+\begin_inset Formula $\left\Vert \bar{u}\right\Vert =1$
+\end_inset
+
+).
+ La derivada direccional de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el vector 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ en dirección de 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+ se denota por 
+\begin_inset Formula $D_{\bar{u}}f\left(\bar{a}\right)$
+\end_inset
+
+ y se define como
+\begin_inset Formula 
+\[
+\lim_{t\to0}\frac{f\left(\bar{a}+t\bar{u}\right)-f\left(\bar{a}\right)}{t}
+\]
+
+\end_inset
+
+ si es que este límite existe.
+\end_layout
+
+\begin_layout Standard
+Ejemplo:
+ Sea 
+\begin_inset Formula $f\left(x,y\right)=x^{2}+y^{2}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\bar{a}=\left(x_{0},y_{0}\right).$
+\end_inset
+
+Entonces:
+\begin_inset Formula 
+\begin{align*}
+D_{\bar{u}}f\left(\bar{a}\right)= & \lim_{t\to0}\frac{f\left(\left(x_{0},y_{0}\right)+t\left(u_{1},u_{2}\right)\right)-f\left(x_{0},y_{0}\right)}{t}\\
+= & \lim_{t\to0}\frac{f\left(x_{0}+tu_{1},y_{0}+tu_{2}\right)-f\left(x_{0},y_{0}\right)}{t}\\
+= & \lim_{t\to0}\frac{\left(x_{0}+tu_{1}\right)^{2}+\left(y_{0}+tu_{2}\right)^{2}-\left(x_{0}^{2}+y_{0}^{2}\right)}{t}\\
+= & \lim_{t\to0}\frac{2t\left(x_{0}u_{1}+y_{0}u_{2}\right)+t^{2}\left(u_{1}^{2}+u_{2}^{2}\right)}{t}\\
+\text{(noten que \ensuremath{u_{1}^{2}+u_{2}^{2}=1})}= & \lim_{t\to0}2\left(x_{0}u_{1}+y_{0}u_{2}\right)+t\\
+= & 2\left(x_{0}u_{1}+y_{0}u_{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\therefore D_{\bar{u}}f\left(\bar{a}\right)\exists\,\forall\bar{u}\text{ y }\forall\bar{a}=\left(x_{0},y_{0}\right).\tag{\uparrow}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es interesante que este resultado lo podemos escribir como 
+\begin_inset Formula 
+\[
+D_{\bar{u}}f\left(\bar{a}\right)=\nabla f\left(\bar{a}\right)\cdot\bar{u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En particular,
+ si 
+\begin_inset Formula $\bar{u}_{1}=e_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\bar{u}_{2}=e_{2}$
+\end_inset
+
+ obtenemos 
+\begin_inset Formula $D_{\bar{u}_{1}}f\left(\bar{a}\right)=\nabla f\left(\bar{a}\right)\cdot\left(1,0\right)=\frac{\partial f}{\partial x}\left(\bar{a}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $D_{\bar{u}_{2}}f\left(\bar{a}\right)=\nabla f\left(\bar{a}\right)\cdot\left(0,1\right)=\frac{\partial f}{\partial y}\left(\bar{a}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Esto no es de extrañarse puesto que obviamente las derivadas direccionales en dirección de 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ o de 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+ son,
+ respectivamente,
+ las derivadas parciales en dirección de 
+\begin_inset Formula $x$
+\end_inset
+
+ o en dirección de 
+\begin_inset Formula $y$
+\end_inset
+
+ de la función 
+\begin_inset Formula $f$
+\end_inset
+
+;
+ es decir:
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}\left(\bar{a}\right)=D_{e_{1}}f\left(\bar{a}\right)\text{ y }\frac{\partial f}{\partial y}\left(\bar{a}\right)=D_{e_{2}}f\left(\bar{a}\right)
+\]
+
+\end_inset
+
+ como el lector podrá comprobar fácilmente usando la definición.
+\end_layout
+
+\begin_layout Standard
+Por otro lado,
+ el resultado 
+\begin_inset Formula $\left(\uparrow\right)$
+\end_inset
+
+ no es ninguna casualidad:
+ para todas las funciones derivables las derivadas direccionales existen en todas las direcciones y están dadas por 
+\begin_inset Formula $\left(\uparrow\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Demostraremos esto a continuación:
+\end_layout
+
+\begin_layout Theorem*
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+derivable en 
+\begin_inset Formula $\bar{a}=\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+ Entonces,
+ 
+\begin_inset Formula $\forall\bar{u}$
+\end_inset
+
+ unitario 
+\begin_inset Formula $D_{\bar{u}}f\left(\bar{a}\right)$
+\end_inset
+
+ existe y está dada por la fórmula 
+\begin_inset Formula 
+\[
+D_{\bar{u}}f\left(\bar{a}\right)=D_{f}\left(\bar{a}\right)\cdot\bar{u}=\nabla f\left(\bar{a}\right)\cdot\bar{u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+,
+ el plano tangente correspondiente está dado por 
+\begin_inset Formula $p\left(\bar{x}\right)=f\left(\bar{a}\right)+\nabla f\left(\bar{a}\right)\left(\bar{x}-\bar{a}\right)$
+\end_inset
+
+ y cumple 
+\begin_inset Formula 
+\[
+\lim_{\bar{x}\to\bar{a}}\frac{\left|f\left(\bar{x}\right)-p\left(\bar{x}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }=0
+\]
+
+\end_inset
+
+i.e.
+ 
+\begin_inset Formula 
+\[
+\lim_{\bar{x}\to\bar{a}}\frac{\left|f\left(\bar{x}\right)-f\left(\bar{a}\right)-\nabla f\left(\bar{a}\right)\cdot\left(\bar{x}-\bar{a}\right)\right|}{\left\Vert \bar{x}-\bar{a}\right\Vert }=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Acercándonos a 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ por puntos de la forma 
+\begin_inset Formula $\bar{x}=\bar{a}+t\bar{u}$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+ es cualquier vector unitario,
+ tenemos 
+\begin_inset Formula $\bar{x}-\bar{a}=t\bar{u}$
+\end_inset
+
+,
+ y 
+\begin_inset Formula 
+\begin{align*}
+\lim_{t\to0}\frac{\left|f\left(\bar{a}+t\bar{u}\right)-f\left(\bar{a}\right)-\nabla f\left(\bar{a}\right)\cdot t\bar{u}\right|}{\left\Vert t\bar{u}\right\Vert } & =0\\
+\therefore\lim_{t\to0}\frac{\left|f\left(\bar{a}+t\bar{u}\right)-f\left(\bar{a}\right)-\nabla f\left(\bar{a}\right)\cdot t\bar{u}\right|}{\left|t\right|} & =0\\
+\therefore\lim_{t\to0}\left|\frac{f\left(\bar{a}+t\bar{u}\right)-f\left(\bar{a}\right)}{\left|t\right|}-\frac{\nabla f\left(\bar{a}\right)\left(t\bar{u}\right)}{\left|t\right|}\right| & =0\\
+\text{i.e. }\lim_{t\to0}\left|\frac{f\left(\bar{a}+t\bar{u}\right)-f\left(\bar{a}\right)}{\left|t\right|}-\nabla f\left(\bar{a}\right)\cdot\bar{u}\right| & =0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\lim_{t\to0}\frac{f\left(\bar{a}+t\bar{u}\right)-f\left(\bar{a}\right)}{\left|t\right|}=\nabla f\left(\bar{a}\right)\cdot\bar{u}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{i.e. }D_{\bar{u}}f\left(\bar{a}\right)=\nabla f\left(\bar{a}\right)\cdot\bar{u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es natural que en el plano tangente a una cierta función 
+\begin_inset Formula $f$
+\end_inset
+
+ en un punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+,
+ el haz de rectas que se forma en dicho plano con centro en 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ constituye un haz de rectas tangentes a 
+\begin_inset Formula $g_{f}$
+\end_inset
+
+ en las diversas direcciones;
+ por lo tanto,
+ si un plano tangente existe,
+ existen todas las derivadas direccionales que son las pendientes de todas esas rectas tangentes,
+ como se pretende ilustrar en la figura aquí al lado (la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ la omitimos pero suponemos que existe.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otra parte,
+ noten que el mencionado haz de rectas en el plano tangente es como una 
+\begin_inset Quotes eld
+\end_inset
+
+proyección2 del correspondiente haz de rectas en el plano 
+\begin_inset Formula $XY$
+\end_inset
+
+ con centro en 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+sobre el plano tangente.
+\end_layout
+
+\begin_layout Standard
+Cabe la pregunta ¿si 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene derivadas direccionales en todas las direcciones,
+ ello implica que 
+\begin_inset Formula $f$
+\end_inset
+
+ tenga plano tangente?
+\end_layout
+
+\begin_layout Standard
+Más precisamente ,
+ la pregunta es:
+ ¿Si 
+\begin_inset Formula $D_{\bar{u}}f\left(\bar{a}\right)$
+\end_inset
+
+ existe 
+\begin_inset Formula $\forall\bar{u}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Esta pregunta es lo recíproco del teorema anterior y la respuesta -quiza algo sorprendente- es que NO.
+ Veamos un ejemplo.
+\end_layout
+
+\end_body
+\end_document
