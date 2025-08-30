@@ -437,12 +437,7 @@ Si se omiten detalles vitales para una demostración/implementación,
 
 \end_deeper
 \begin_layout Section
-Primera sesión:
- Dinámica de funciones 
-\begin_inset Formula $f:[0,1]\rightarrow\mathbb{R}$
-\end_inset
-
-
+Generalidades
 \end_layout
 
 \begin_layout Frame
@@ -450,7 +445,7 @@ Primera sesión:
 status open
 
 \begin_layout Plain Layout
-Generalidades
+
 \end_layout
 
 \end_inset
@@ -937,6 +932,15 @@ f(y_{0})=f\left(\lim_{n\rightarrow\infty}f^{n}(x_{0})\right)=\lim_{n\rightarrow\
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Primera sesión:
+ Dinámica de funciones 
+\begin_inset Formula $f:[0,1]\rightarrow\mathbb{R}$
 \end_inset
 
 
