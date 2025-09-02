@@ -2371,10 +2371,336 @@ Tomemos ahora cualquier intervalo
 \begin_inset Formula $\left[\frac{l}{2^{n}},\frac{l+1}{2^{n}}\right]\subset(a,b)$
 \end_inset
 
+ para algún 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $T^{n}\left(\left[\frac{l}{2^{n}},\frac{l+1}{2^{n}}\right]=[0,1]\right)$
+\end_inset
+
+ tenemos que existe un punto fijo 
+\begin_inset Formula $p$
+\end_inset
+
+ de 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ en 
+\begin_inset Formula $\left[\frac{l}{2^{n}},\frac{l+1}{2^{n}}\right]$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $p\in(a,b)$
+\end_inset
+
+ y se sigue que 
+\begin_inset Formula $Per\,T$
+\end_inset
+
+ es denso en 
+\begin_inset Formula $[0,1].$
+\end_inset
+
 
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+CAOS - CAOS - CAOS - ...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Sea 
+\begin_inset Formula $X$
+\end_inset
+
+ un espacio métrico y 
+\begin_inset Formula $f:X\rightarrow X$
+\end_inset
+
+ continua.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+
+\end_layout
+
+\begin_layout Block
+De acuerdo con la definición dada por R.
+ L.
+ devaney en 1985 (ver [Dev]),
+ 
+\begin_inset Flex Emphasize
+status open
+
+\begin_layout Plain Layout
+una función 
+\begin_inset Formula $f:X\rightarrow X$
+\end_inset
+
+ es caótica 
+\end_layout
+
+\end_inset
+
+si cumple lo siguiente:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Formula $TT$
+\end_inset
+
+ en 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+El conjunto 
+\begin_inset Formula $Per\,T$
+\end_inset
+
+ es denso en 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ es sensible a las condiciones iniciales (
+\emph on
+definición pendiente
+\emph default
+)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+CAOS - CAOS - CAOS - ...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Tiempo después,
+ un grupo de matemáticos (ver [6 de HJ]) demostró quelas condiciones 1 y 2 implican la 3;
+ así que basta con que se cumplan 1 y 2 para que 
+\begin_inset Formula $f$
+\end_inset
+
+ sea una función caótica en el sentido de Devaney.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+Hemos probado entonces,
+ que 
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+La función tienda es caótica en 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interludio 3:
+ El teorema de Sharkovskii (I)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un intervalo en 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $f:A\rightarrow A$
+\end_inset
+
+ continua.
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+
+\emph on
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Problema:
+\end_layout
+
+\end_inset
+
+ 
+\emph default
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un punto periódico de periodo 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $n\neq m$
+\end_inset
+
+,
+ ¿será que 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene también un punto de periodo 
+\begin_inset Formula $m$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Por ejemplo,
+ una función cuya gráfica sea una recta que pase por el origen tiene por lo menos un punto fijo -
+\emph on
+el origen
+\emph default
+- y ningún otro punto periódico.
+\end_layout
+
+\begin_layout Standard
+Y la función 
+\begin_inset Formula $f(x)=1-x$
+\end_inset
+
+ tiene un único punto fijo 
+\begin_inset Formula $x=\frac{1}{2}$
+\end_inset
+
+ y si 
+\begin_inset Formula $x\neq\frac{1}{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x\in[0,1]$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es de periodo dos.
+\end_layout
+
+\begin_layout Standard
+O sea que la respuesta a la pregunta planteada si 
+\begin_inset Formula $n=1$
+\end_inset
+
+ o 
+\begin_inset Formula $n=2$
+\end_inset
+
+ es negativa.
+ Pero algo sorprendente sucede si 
+\begin_inset Formula $n=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
