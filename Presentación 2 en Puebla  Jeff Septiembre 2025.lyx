@@ -435,7 +435,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Estructurar una exposición es una tarea difícil y la siguiente estructura podría no ser adecuada.
@@ -677,12 +677,14 @@ Sea
 
 \end_layout
 
-\begin_layout Frame
+\begin_deeper
+\begin_layout Standard
 NOTA:
  Se demostró que las primeras dos condiciones implican la tercera.
  Eso nos ayudará.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -707,7 +709,8 @@ Una familia de funciones en
 
 \end_layout
 
-\begin_layout Frame
+\begin_deeper
+\begin_layout Standard
 Sea 
 \begin_inset Formula $F_{a}:\mathbb{R}^{2}\to\mathbb{R}^{2}$
 \end_inset
@@ -717,23 +720,23 @@ Sea
 \end_inset
 
  definida por 
-\begin_inset Formula $F_{a}\left(x,y\right)=\left(x^{2}-y^{2}+2a_{1}x+2a_{2}y,2xy+2a_{2}x-2a_{1}y\right)$
+\begin_inset Formula 
+\[
+F_{a}\left(x,y\right)=\left(x^{2}-y^{2}+2a_{1}x+2a_{2}y,2xy+2a_{2}x-2a_{1}y\right)
+\]
+
 \end_inset
 
  o,
  usando números complejos,
  
-\begin_inset Formula $F_{a}\left(z\right)=z^{2}+2a\bar{z},\,a=\left(a_{1},a_{2}\right)\in\mathbb{C}$
+\begin_inset Formula 
+\[
+F_{a}\left(z\right)=z^{2}+2a\bar{z},\,a=\left(a_{1},a_{2}\right)\in\mathbb{C}.
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
 OBS.
  Si 
 \begin_inset Formula $a\neq0$
@@ -747,11 +750,7 @@ OBS.
  no es holomorfa.
 \end_layout
 
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
+\begin_layout Standard
 Nos interesa analizar un miembro particular de esta familia:
  el caso 
 \begin_inset Formula $a=1$
@@ -760,6 +759,7 @@ Nos interesa analizar un miembro particular de esta familia:
 .
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -823,16 +823,33 @@ d\left(f\left(x\right),f\left(y\right)\right)\leq rd\left(x,y\right).
 
 \end_layout
 
-\begin_layout Frame
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Lema de contracción
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_deeper
-\begin_layout Lemma
-Lema de contracción
-\end_layout
-
-\begin_layout Lemma
+\begin_layout Standard
 Sea 
 \begin_inset Formula $X$
 \end_inset
@@ -865,11 +882,7 @@ Sea
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
+\begin_layout Standard
 Si 
 \begin_inset Formula $X$
 \end_inset
@@ -896,6 +909,7 @@ Si
  es muy sencilla.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -4144,7 +4158,7 @@ status open
 
 
 \backslash
-begin{tikzpicture}[scale=0.5,
+begin{tikzpicture}[scale=0.4,
 \end_layout
 
 \begin_layout Plain Layout
@@ -6081,8 +6095,8 @@ Cada vértice de
 .
 \end_layout
 
-\end_deeper
-\begin_layout Frame
+\begin_layout Standard
+\align center
 \begin_inset Note Note
 status open
 
@@ -6092,6 +6106,18 @@ Foto 1 a mano
 
 \end_inset
 
+
+\begin_inset Graphics
+	filename Diagrama sin título.drawio (1).png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 
 \end_layout
 
@@ -6168,6 +6194,10 @@ G es un homeomorfismo de
 
 \end_deeper
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
 En consecuencia,
  hay 4 inversas,
  cada una de 
@@ -6191,8 +6221,16 @@ En consecuencia,
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
 Es decir,
  cada una de estas inversas es una contracción.
+\end_layout
+
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Frame
@@ -6233,7 +6271,32 @@ Demostración de la conclusión
 \end_layout
 
 \begin_deeper
-\begin_layout Proof
+\begin_layout Block
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Demostración
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Para cada 
 \begin_inset Formula $i=0,1,2,3,$
 \end_inset
@@ -6249,7 +6312,7 @@ Para cada
  .
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 \begin_inset Formula $G^{-1}$
 \end_inset
 
@@ -6277,7 +6340,7 @@ Para cada
 .
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 De aquí se sigue que 
 \begin_inset Formula $G\left(p_{i}\right)=p_{i}$
 \end_inset
@@ -6285,7 +6348,7 @@ De aquí se sigue que
 .
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 Continuamos con este proceso:
  tomamos ahora las imágenes inversas,
  bajo 
@@ -6300,7 +6363,7 @@ Continuamos con este proceso:
 .
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 Obtenemos 
 \begin_inset Formula $4^{2}$
 \end_inset
@@ -6313,7 +6376,55 @@ Obtenemos
 .
 \end_layout
 
-\begin_layout Proof
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+(cont.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 Para 
 \begin_inset Formula $i$
 \end_inset
@@ -6348,7 +6459,7 @@ Para
 ).
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 Resulta,
  entonces,
  que 
@@ -6368,7 +6479,7 @@ Resulta,
 .
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 \begin_inset Formula $G^{2}$
 \end_inset
 
@@ -6400,7 +6511,7 @@ Resulta,
 ).
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 En consecuencia,
  en cada 
 \begin_inset Formula $\Delta_{ij}$
@@ -6414,7 +6525,7 @@ En consecuencia,
  y por lo tanto hay un punto de periodo 2.
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 ¡
 \begin_inset Formula $Per\,G$
 \end_inset
@@ -6427,6 +6538,7 @@ En consecuencia,
 \end_layout
 
 \end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -6435,6 +6547,1589 @@ En consecuencia,
 \end_layout
 
 \begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+(cont.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Continuando así:
+ Para cada 
+\begin_inset Formula $n\in\mathbb{N}\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tomando imágenes inversas de orden 
+\begin_inset Formula $n$
+\end_inset
+
+ de 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ obtenemos una subdivisión de 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ en 
+\begin_inset Formula $4^{n}$
+\end_inset
+
+ triángulos equiláteros 
+\begin_inset Formula 
+\[
+\Delta_{w_{1}\dots w_{n}},\:w_{i}\in\left\{ 0,1,2,3\right\} ,\,i=1,\dots,n,
+\]
+
+\end_inset
+
+ tales que 
+\begin_inset Formula 
+\[
+\Delta_{w_{1}\dots w_{n-1}}=\bigcup_{w_{n}=0}^{3}\Delta_{w_{0}\dots w_{n}},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+G\left(\Delta_{w_{1}w_{2}\dots w_{n}}\right) & =\Delta_{w_{2}\dots w_{n}}\\
+G^{2}\left(\Delta_{w_{1}w_{2}\dots w_{n}}\right) & =\Delta_{w_{3}\dots w_{n}}\\
+\vdots\\
+G^{n}\left(\Delta_{w_{1}w_{2}\dots w_{n}}\right) & =\Delta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G^{n}$
+\end_inset
+
+ es un homeomorfismo de 
+\begin_inset Formula $\Delta_{w_{1}\dots w_{n}}$
+\end_inset
+
+ en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ ,
+ su inversa es una contracción,
+ por lo tanto existe 
+\begin_inset Formula $P\in\Delta_{w_{1}\dots w_{n}}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $G^{n}\left(P\right)=P$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+(cont.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Nótese que 
+\begin_inset Formula 
+\[
+\text{Lado de }\Delta_{w_{1}\dots w_{n}}=\frac{l}{2^{n}}\tag{\ensuremath{l=\text{lado de }\Delta}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{Área de }\Delta_{w_{1}\dots w_{n}}=\frac{a}{4^{n}}\tag{\ensuremath{a=\text{área de }\Delta}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto:
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape slanted
+¡¡
+\begin_inset Formula $Per\:G$
+\end_inset
+
+ es denso en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+!!
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+NOTA:
+ Se puede comprobar que para todo 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ existe 
+\begin_inset Formula $p\in\Delta$
+\end_inset
+
+ de periodo 
+\begin_inset Formula $n$
+\end_inset
+
+ y todos estos puntos periódicos son repulsores.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=.6,
+\end_layout
+
+\begin_layout Plain Layout
+
+        decoration={
+\end_layout
+
+\begin_layout Plain Layout
+
+            markings,
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+            mark=at position 3/5 with {
+\backslash
+arrow[line width=.3pt]{stealth}}
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    % Imagen inversa 1:
+\end_layout
+
+\begin_layout Plain Layout
+
+    % Para el sombreado del triángulo Delta
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path[fill=gray!30] (0:2) -- (120:2) -- (240:2) -- cycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{scope}[shift={(2,0)}]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tikzmath{
+\end_layout
+
+\begin_layout Plain Layout
+
+        int 
+\backslash
+i,
+ 
+\backslash
+j;
+\end_layout
+
+\begin_layout Plain Layout
+
+        for 
+\backslash
+i in {0,...,2-1}{
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+a = green;
+ let 
+\backslash
+b = red;
+ let 
+\backslash
+c = blue;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+a= red;
+ let 
+\backslash
+b = blue;
+ let 
+\backslash
+c = green;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        let 
+\backslash
+a = blue;
+ let 
+\backslash
+b = green;
+ let 
+\backslash
+c= red;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+                {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+draw[
+\backslash
+a,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/2) ++ (270:
+\backslash
+j*3.4641/2) -- ++ (150:3.4641/2);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+draw[
+\backslash
+b,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/2) ++ (270:
+\backslash
+j*3.4641/2) ++ (150:3.4641/2) -- ++(270:3.4641/2);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+draw[
+\backslash
+c,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/2) ++ (270:
+\backslash
+j*3.4641/2) ++ (150:3.4641/2) ++(270:3.4641/2) -- ++(30:3.4641/2);
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+        };
+\end_layout
+
+\begin_layout Plain Layout
+
+        for 
+\backslash
+i in {0,...,2}{
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+c = punto;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+c = puntoT;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        let 
+\backslash
+c = puntoC;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+                {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+draw (150:
+\backslash
+i*1.7321) ++ (270:
+\backslash
+j*1.7321) node[
+\backslash
+c] {};
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+        };
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+coordinate (InicioA) at (60:1.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+coordinate (FinA) at (6.6,1.2124);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[->] (InicioA) ..
+ controls +(45:2) and +(135:2) ..
+ node[above]{$G$} (FinA);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+coordinate (InicioB) at (-1.4,-5);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+coordinate (FinB) at (-1.4,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[->] (InicioB) ..
+ controls +(135:2) and +(225:2) ..
+ node[left]{$G$} (FinB);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path (6.6,-1.2124) + (0,-5) coordinate[name=InicioC];
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path (-60:1.4) + (0,-5) coordinate[name=FinC];
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[->] (InicioC) ..
+ controls +(-135:2) and +(-45:2) ..
+ node[below]{$G$} (FinC);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{scope}[shift={(8,0)}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        % Para el sombreado del triángulo Delta
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+path[fill=gray!30] (0:2) -- (120:2) -- (240:2) -- cycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+begin{scope}[shift={(2,0)}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+tikzmath{
+\end_layout
+
+\begin_layout Plain Layout
+
+            int 
+\backslash
+i,
+ 
+\backslash
+j;
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+i in {0,1-1}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+a = green;
+ let 
+\backslash
+b = red;
+ let 
+\backslash
+c = blue;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+a= red;
+ let 
+\backslash
+b = blue;
+ let 
+\backslash
+c = green;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                            let 
+\backslash
+a = blue;
+ let 
+\backslash
+b = green;
+ let 
+\backslash
+c= red;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+a,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641) ++ (270:
+\backslash
+j*3.4641) -- ++ (150:3.4641);
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+b,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641) ++ (270:
+\backslash
+j*3.4641) ++ (150:3.4641) -- ++(270:3.4641);
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+c,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641) ++ (270:
+\backslash
+j*3.4641) ++ (150:3.4641) ++(270:3.4641) -- ++(30:3.4641);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+i in {0,1}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+c = punto;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+c = puntoT;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                            let 
+\backslash
+c = puntoC;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw (150:
+\backslash
+i*3.4641) ++ (270:
+\backslash
+j*3.4641) node[
+\backslash
+c] {};
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+node at (0,0) {$
+\backslash
+Delta$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+node at (0:2.4) {$V_1$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+node at (120:2.4) {$V_2$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+node at (240:2.4) {$V_3$};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{scope}[shift={(0,-5)}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        % Para el sombreado del triángulo Delta
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+path[fill=gray!30] (0:2) -- (120:2) -- (240:2) -- cycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+begin{scope}[shift={(2,0)}]
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tikzmath{
+\end_layout
+
+\begin_layout Plain Layout
+
+            int 
+\backslash
+i,
+ 
+\backslash
+j;
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+i in {0,...,4-1}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+a = green;
+ let 
+\backslash
+b = red;
+ let 
+\backslash
+c = blue;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+a= red;
+ let 
+\backslash
+b = blue;
+ let 
+\backslash
+c = green;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                            let 
+\backslash
+a = blue;
+ let 
+\backslash
+b = green;
+ let 
+\backslash
+c= red;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+a,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/4) ++ (270:
+\backslash
+j*3.4641/4) -- ++ (150:3.4641/4);
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+b,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/4) ++ (270:
+\backslash
+j*3.4641/4) ++ (150:3.4641/4) -- ++(270:3.4641/4);
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+c,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/4) ++ (270:
+\backslash
+j*3.4641/4) ++ (150:3.4641/4) ++(270:3.4641/4) -- ++(30:3.4641/4);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+i in {0,...,4}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+c = punto;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+c = puntoT;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                            let 
+\backslash
+c = puntoC;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw (150:
+\backslash
+i*3.4641/4) ++ (270:
+\backslash
+j*3.4641/4) node[
+\backslash
+c] {};
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{scope}[shift={(8,-5)}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        % Para el sombreado del triángulo Delta
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+path[fill=gray!30] (0:2) -- (120:2) -- (240:2) -- cycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+begin{scope}[shift={(2,0)}]
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+tikzmath{
+\end_layout
+
+\begin_layout Plain Layout
+
+            int 
+\backslash
+i,
+ 
+\backslash
+j;
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+i in {0,...,8-1}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+a = green;
+ let 
+\backslash
+b = red;
+ let 
+\backslash
+c = blue;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+a= red;
+ let 
+\backslash
+b = blue;
+ let 
+\backslash
+c = green;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                            let 
+\backslash
+a = blue;
+ let 
+\backslash
+b = green;
+ let 
+\backslash
+c= red;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+a,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/8) ++ (270:
+\backslash
+j*3.4641/8) -- ++ (150:3.4641/8);
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+b,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/8) ++ (270:
+\backslash
+j*3.4641/8) ++ (150:3.4641/8) -- ++(270:3.4641/8);
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw[
+\backslash
+c,very thick,postaction={decorate}] (150:
+\backslash
+i*3.4641/8) ++ (270:
+\backslash
+j*3.4641/8) ++ (150:3.4641/8) ++(270:3.4641/8) -- ++(30:3.4641/8);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+            for 
+\backslash
+i in {0,...,8}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                for 
+\backslash
+j in {0,...,
+\backslash
+i}{
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if {mod(
+\backslash
+i+
+\backslash
+j,3)}==0 then { let 
+\backslash
+c = punto;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        if {mod(
+\backslash
+i+
+\backslash
+j,3)}==1 then { let 
+\backslash
+c = puntoT;
+ } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+                            let 
+\backslash
+c = puntoC;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                    {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+draw (150:
+\backslash
+i*3.4641/8) ++ (270:
+\backslash
+j*3.4641/8) node[
+\backslash
+c] {};
+\end_layout
+
+\begin_layout Plain Layout
+
+                    };
+\end_layout
+
+\begin_layout Plain Layout
+
+                };
+\end_layout
+
+\begin_layout Plain Layout
+
+            };
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imágenes inversas bajo la función 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
