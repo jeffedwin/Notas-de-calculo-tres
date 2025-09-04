@@ -8,10 +8,11 @@
 \begin_preamble
 \usetheme{Warsaw}
 % or ...
-
+\usepackage{caption}
 \setbeamercovered{transparent}
+\setbeamertemplate{caption}[numbered]
 % or whatever (possibly just delete it)
-
+\usepackage{multicol}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{cd}
@@ -23,6 +24,8 @@
 \usetikzlibrary{math}
 \usetikzlibrary{calligraphy}
 \usetikzlibrary{calc}
+
+\usepackage[all]{xy}
 
 
 \tikzset{
@@ -494,7 +497,8 @@ Si se omiten detalles vitales para una demostración/implementación,
 
 \end_deeper
 \begin_layout Section
-Dinámica de funciones 
+Segunda sesión:
+ Dinámica de funciones 
 \begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}^{2}$
 \end_inset
 
@@ -525,22 +529,126 @@ Ejemplos famosos:
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
 La herradura de Smale
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
 El solenoide
 \end_layout
 
 \begin_layout Itemize
-Difeomorfismos de Anosov (en el ¿toro?)
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+Difeomorfismos de Anosov
 \end_layout
 
 \begin_layout Itemize
-Atracto de Henon
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+4-
+\end_layout
+
+\end_inset
+
+Atractor de Henon
 \end_layout
 
 \end_deeper
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 Aquí aparecen en general fenómenos dinámicos que no suceden en funciones de 
 \begin_inset Formula $\mathbb{R}$
@@ -550,7 +658,7 @@ Aquí aparecen en general fenómenos dinámicos que no suceden en funciones de
 \begin_inset Formula $\mathbb{R}$
 \end_inset
 
-o de 
+ o de 
 \begin_inset Formula $\mathbb{C}$
 \end_inset
 
@@ -562,27 +670,35 @@ o de
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 Por ejemplo:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 La existencia de 
-\begin_inset Quotes eld
-\end_inset
-
+\shape slanted
 variedades estables
-\begin_inset Quotes erd
-\end_inset
-
+\shape default
  y 
-\begin_inset Quotes eld
-\end_inset
-
+\shape slanted
 variedades inestables
-\begin_inset Quotes erd
-\end_inset
-
+\shape default
 .
  
 \end_layout
@@ -592,6 +708,22 @@ variedades inestables
 \end_layout
 
 \end_deeper
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 Veremos un ejemplo particular,
  no tan famoso,
@@ -644,6 +776,17 @@ Sea
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $f$
 \end_inset
 
@@ -655,6 +798,17 @@ Sea
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $Per\,f$
 \end_inset
 
@@ -666,18 +820,100 @@ Sea
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+4-
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $f$
 \end_inset
 
  es sensible a las condiciones iniciales
 \end_layout
 
-\end_deeper
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 NOTA:
  Se demostró que las primeras dos condiciones implican la tercera.
@@ -727,7 +963,11 @@ F_{a}\left(x,y\right)=\left(x^{2}-y^{2}+2a_{1}x+2a_{2}y,2xy+2a_{2}x-2a_{1}y\righ
 
 \end_inset
 
- o,
+
+\end_layout
+
+\begin_layout Standard
+o,
  usando números complejos,
  
 \begin_inset Formula 
@@ -737,6 +977,26 @@ F_{a}\left(z\right)=z^{2}+2a\bar{z},\,a=\left(a_{1},a_{2}\right)\in\mathbb{C}.
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 OBS.
  Si 
 \begin_inset Formula $a\neq0$
@@ -748,6 +1008,35 @@ OBS.
 \end_inset
 
  no es holomorfa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -823,6 +1112,22 @@ d\left(f\left(x\right),f\left(y\right)\right)\leq rd\left(x,y\right).
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_deeper
 \begin_layout Block
 \begin_inset Argument 1
@@ -882,6 +1187,22 @@ Sea
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Si 
 \begin_inset Formula $X$
@@ -956,10 +1277,22 @@ det\,DF_{a}\left(x,y\right)=4\left[\left(x^{2}+y^{2}\right)-\left(a_{1}^{2}+a_{2
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\end_deeper
-\begin_layout Frame
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 El conjunto de puntos críticos es,
  por lo tanto,
  una circunferencia de radio 
@@ -969,41 +1302,7 @@ El conjunto de puntos críticos es,
  con centro en el origen.
 \end_layout
 
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
-A la imagen,
- bajo 
-\begin_inset Formula $F_{a}$
-\end_inset
-
-,
- de este conjunto de puntos críticos se le llama el conjunto de valores críticos.
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
-Es fácil comprobar que este último conjunto es una hipocicloide de tres picos.
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
-Ilustraremos estos conjuntos en el caso que nos interesa:
- 
-\begin_inset Formula $a=1$
-\end_inset
-
-.
-\end_layout
-
+\end_deeper
 \begin_layout Frame
 \begin_inset Note Note
 status open
@@ -1028,6 +1327,68 @@ marcos
 \end_inset
 
 
+\end_layout
+
+\begin_layout PlainFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Puntos críticos y valores críticos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+A la imagen,
+ bajo 
+\begin_inset Formula $F_{a}$
+\end_inset
+
+,
+ de este conjunto de puntos críticos se le llama el conjunto de valores críticos.
+\end_layout
+
+\begin_layout PlainFrame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+Es fácil comprobar que este último conjunto es una hipocicloide de tres picos.
+\end_layout
+
+\begin_layout PlainFrame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+Ilustraremos estos conjuntos en el caso que nos interesa:
+ 
+\begin_inset Formula $a=1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1094,8 +1455,36 @@ F\left(z\right)=z^{2}-2\bar{z}.
 
 \end_layout
 
-\end_deeper
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Geométricamente,
  a 
 \begin_inset Formula $a\in\mathbb{C}$
@@ -1120,6 +1509,7 @@ Geométricamente,
  Finalmente suma ambos resultados.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1510,6 +1900,22 @@ det\,DF_{a}\left(x,y\right)=4\left[\left(x^{2}+y^{2}\right)-1\right]=4\left(\lef
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -2433,6 +2839,35 @@ Por definición,
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Observando que 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -2444,13 +2879,9 @@ Observando que
 \end_inset
 
  (que está 
-\begin_inset Quotes eld
-\end_inset
-
+\shape slanted
 dentro
-\begin_inset Quotes erd
-\end_inset
-
+\shape default
  de 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -2460,18 +2891,44 @@ dentro
 \end_inset
 
  (que queda 
-\begin_inset Quotes eld
-\end_inset
-
-fuera
-\begin_inset Quotes erd
-\end_inset
-
- de 
+\shape slanted
+fuera 
+\shape default
+de 
 \begin_inset Formula $\Lambda$
 \end_inset
 
 ) .
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2479,10 +2936,7 @@ fuera
 \end_inset
 
  es la frontera común a ambas regiones.
-\end_layout
-
-\begin_layout Standard
-A la región interior a 
+ A la región interior a 
 \begin_inset Formula $\Lambda$
 \end_inset
 
@@ -2512,11 +2966,27 @@ A la región interior a
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Theorem
 \begin_inset Formula $A\left(F\right)=\mathcal{K}\cup\Lambda$
 \end_inset
 
- Y 
+ y 
 \begin_inset Formula $A_{\infty}=\mathcal{L}$
 \end_inset
 
@@ -5040,7 +5510,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -5988,6 +6458,19 @@ La función
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -6056,6 +6539,16 @@ Geométricamente podemos observar lo siguiente:
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
 Cada 
 \begin_inset Formula $p\in\text{int }\Delta$
 \end_inset
@@ -6069,6 +6562,17 @@ Cada
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $q\in\left(\partial\Delta-\left\{ \text{vértices}\right\} \right)$
 \end_inset
 
@@ -6084,6 +6588,16 @@ Cada
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+4-
+\end_layout
+
+\end_inset
+
 Cada vértice de 
 \begin_inset Formula $\Delta$
 \end_inset
@@ -6107,9 +6621,39 @@ Foto 1 a mano
 \end_inset
 
 
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Diagrama sin título.drawio (1).png
-	scale 20
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preimágenes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -6166,17 +6710,7 @@ nolink "false"
  inferimos también que:
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-4.
- 
-\end_layout
-
-\end_inset
-
+\begin_layout Itemize
 G es un homeomorfismo de 
 \begin_inset Formula $\Delta_{i}$
 \end_inset
@@ -6192,12 +6726,36 @@ G es un homeomorfismo de
 .
 \end_layout
 
-\end_deeper
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Frame
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 En consecuencia,
  hay 4 inversas,
  cada una de 
@@ -6220,20 +6778,70 @@ En consecuencia,
 .
 \end_layout
 
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Frame
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Es decir,
  cada una de estas inversas es una contracción.
 \end_layout
 
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Frame
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Conclusión:
  
 \begin_inset Formula $G$
@@ -6250,6 +6858,7 @@ Conclusión:
 .
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -6313,6 +6922,35 @@ Para cada
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $G^{-1}$
 \end_inset
 
@@ -6341,11 +6979,69 @@ Para cada
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 De aquí se sigue que 
 \begin_inset Formula $G\left(p_{i}\right)=p_{i}$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6361,6 +7057,35 @@ Continuamos con este proceso:
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6460,6 +7185,35 @@ Para
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Resulta,
  entonces,
  que 
@@ -6477,6 +7231,35 @@ Resulta,
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6512,6 +7295,35 @@ Resulta,
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 En consecuencia,
  en cada 
 \begin_inset Formula $\Delta_{ij}$
@@ -6523,6 +7335,35 @@ En consecuencia,
 
 ,
  y por lo tanto hay un punto de periodo 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6595,6 +7436,22 @@ Continuando así:
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Tomando imágenes inversas de orden 
 \begin_inset Formula $n$
 \end_inset
@@ -6620,21 +7477,159 @@ Tomando imágenes inversas de orden
 \end_inset
 
  tales que 
-\begin_inset Formula 
-\[
-\Delta_{w_{1}\dots w_{n-1}}=\bigcup_{w_{n}=0}^{3}\Delta_{w_{0}\dots w_{n}},
-\]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Delta_{w_{1}
+\backslash
+dots w_{n-1}}&=
+\backslash
+bigcup_{w_{n}=0}^{3}
+\backslash
+Delta_{w_{0}
+\backslash
+dots w_{n}},
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+G
+\backslash
+left(
+\backslash
+Delta_{w_{1}w_{2}
+\backslash
+dots w_{n}}
+\backslash
+right)&=
+\backslash
+Delta_{w_{2}
+\backslash
+dots w_{n}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+G^{2}
+\backslash
+left(
+\backslash
+Delta_{w_{1}w_{2}
+\backslash
+dots w_{n}}
+\backslash
+right)&=
+\backslash
+Delta_{w_{3}
+\backslash
+dots w_{n}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vdots&
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+G^{n}
+\backslash
+left(
+\backslash
+Delta_{w_{1}w_{2}
+\backslash
+dots w_{n}}
+\backslash
+right)&=
+\backslash
+Delta
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
 
 \end_inset
 
 
-\begin_inset Formula 
-\begin{align*}
-G\left(\Delta_{w_{1}w_{2}\dots w_{n}}\right) & =\Delta_{w_{2}\dots w_{n}}\\
-G^{2}\left(\Delta_{w_{1}w_{2}\dots w_{n}}\right) & =\Delta_{w_{3}\dots w_{n}}\\
-\vdots\\
-G^{n}\left(\Delta_{w_{1}w_{2}\dots w_{n}}\right) & =\Delta
-\end{align*}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -6728,6 +7723,22 @@ Nótese que
 \[
 \text{Área de }\Delta_{w_{1}\dots w_{n}}=\frac{a}{4^{n}}\tag{\ensuremath{a=\text{área de }\Delta}}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -8092,6 +9103,12 @@ end{tikzpicture}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fer-4.4"
+
+\end_inset
+
 Imágenes inversas bajo la función 
 \begin_inset Formula $G$
 \end_inset
@@ -8135,6 +9152,999 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+Sean
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V$
+\end_inset
+
+ los vértices
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N=\bigcup_{n=0}^{\infty}G^{-1}\left(V\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T=\bigcup_{n=0}^{\infty}G^{-n}\left(\partial\Delta\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N$
+\end_inset
+
+ y 
+\begin_inset Formula $T$
+\end_inset
+
+ son,
+ respectivamente,
+ el conjunto de vértices y el conjunto de lados de todos los triángulos 
+\begin_inset Formula $\Delta_{w_{1}\dots w_{n}},\,n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+En 
+\begin_inset Formula $N-T$
+\end_inset
+
+ todos los puntos son preperiódicos (porque eventualmente se vuelven vértices de 
+\begin_inset Formula $\Delta$
+\end_inset
+
+).
+ Obviamente este conjunto es denso en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $T-\partial\Delta\subset\text{int }\Delta$
+\end_inset
+
+ y no hay puntos periódicos en 
+\begin_inset Formula $T-\partial\Delta$
+\end_inset
+
+ (porque eventualmente se mueven a 
+\begin_inset Formula $\partial\Delta$
+\end_inset
+
+ y como 
+\begin_inset Formula $T\left(\partial\Delta\right)=\partial\Delta$
+\end_inset
+
+ ahí se quedan).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\left(x,y\right)\in\text{int }\Delta$
+\end_inset
+
+ y 
+\begin_inset Formula $G^{n}\left(x,y\right)=\left(x,y\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\left(x,y\right)\in G^{-1}\left(\partial\Delta\right)$
+\end_inset
+
+.
+ De hecho toda la órbita de 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ está contenida en 
+\begin_inset Formula $G^{-1}\left(\partial\Delta\right)$
+\end_inset
+
+.
+ Más aún:
+ toda la órbita está contenida en 
+\begin_inset Formula $\text{int }\Delta-N$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hay entonces 
+\begin_inset Formula $4^{n}$
+\end_inset
+
+ puntos distintos 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ tales que 
+\begin_inset Formula $G^{-n}\left(x,y\right)$
+\end_inset
+
+.
+ Son de periodo 
+\begin_inset Formula $n$
+\end_inset
+
+ o periodo algún divisor de 
+\begin_inset Formula $n$
+\end_inset
+
+ (por ejemplo,
+ en 
+\begin_inset Formula $4^{2}-4=12$
+\end_inset
+
+ de periodo 
+\begin_inset Formula $2$
+\end_inset
+
+ exactamente,
+ es decir 6 órbitas de periodo 2).
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+EJERCICIO:
+ comprobar que al menos uno de esos 
+\begin_inset Formula $4^{n}$
+\end_inset
+
+ puntos es exactamente de periodo 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+CONCLUSIÓN:
+ Bajo 
+\begin_inset Formula $G$
+\end_inset
+
+ hay puntos periódicos de todos los periodos y 
+\begin_inset Formula $Per\:G$
+\end_inset
+
+ es denso en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+De lo anterior se pueden sacar muchas conclusiones;
+ en particular que 
+\shape slanted
+todos los puntos periódicos son repulsores
+\shape default
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Formula $G:\Delta\to\Delta$
+\end_inset
+
+ es transitiva.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+Existen puntos bajo 
+\begin_inset Formula $G$
+\end_inset
+
+ cuya órbita es densa.
+ Más aún,
+ el conjunto de puntos cuya órbita es densa es denso en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+(Dejamos como ejercicio tratar de demostrar estos hechos).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\shape slanted
+Conclusión de los anteriores resultados:
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ es caótica en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+OBS.
+ Los conjuntos 
+\begin_inset Formula $N$
+\end_inset
+
+ y 
+\begin_inset Formula $T$
+\end_inset
+
+ son totalmente invariantes,
+ es decir 
+\begin_inset Formula 
+\[
+G\left(N\right)=N=G^{-1}\left(N\right)\text{ y }G\left(T\right)=T=G^{-1}\left(T\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+(Por ejemplo,
+ 
+\begin_inset Formula $\partial\Delta$
+\end_inset
+
+ es invariante hacia adelante pero no hacia atrás)
+\end_layout
+
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+El conjunto 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ de los 
+\shape slanted
+orificios
+\shape default
+ que 
+\shape slanted
+deja
+\shape default
+ 
+\begin_inset Formula $T$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Defiición
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\mathcal{O}=\Delta-T$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ es totalmente invariante porque 
+\begin_inset Formula $T$
+\end_inset
+
+ lo es.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Por las leyes de De Morgan:
+\begin_inset Formula 
+\[
+\mathcal{O}=\Delta-\left(\bigcup_{n=0}^{\infty}G^{-n}\left(\partial\Delta\right)\right)=\bigcap_{n=0}^{\infty}\left(\Delta-G^{-n}\left(\partial\Delta\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+O sea que 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ es la intersección numerable de conjuntos 
+\begin_inset Formula 
+\[
+U_{n}=\Delta-G^{-n}\left(\partial\Delta\right)
+\]
+
+\end_inset
+
+ que son abiertos y densos en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Por el teorema de Baire:
+ 
+\shape slanted
+
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ es denso en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\shape slanted
+¡
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+es un triángulo de Sierpinski!
+\end_layout
+
+\begin_layout Standard
+\align center
+(Ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fer-4.4"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $G$
+\end_inset
+
+ y 
+\begin_inset Formula $F$
+\end_inset
+
+ son conjugados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+Existe un homeomorfismo 
+\begin_inset Formula $H:\Delta\to A\left(F\right)$
+\end_inset
+
+ que conjuga a 
+\begin_inset Formula $F:A\left(F\right)\to A\left(F\right)$
+\end_inset
+
+ con 
+\begin_inset Formula $G:\Delta\to\Delta$
+\end_inset
+
+,
+ i.e.
+ para 
+\begin_inset Formula $x\in\Delta$
+\end_inset
+
+:
+ 
+\begin_inset Formula $F\left(H\left(x,y\right)\right)=H\left(G\left(x,y\right)\right)$
+\end_inset
+
+,
+ o bien 
+\begin_inset Formula $G=H^{-1}\circ F\circ H$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig. 6.3.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+La imagen bajo 
+\begin_inset Formula $H$
+\end_inset
+
+ de segmentos verticales en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Frame
+El diagrama conmuta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\paragraph_spacing double
+
+\family roman
+\shape italic
+\size largest
 \begin_inset Formula 
 \[
 \text{¡FIN!}
@@ -8143,6 +10153,16 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\align center
+
+\family roman
+\shape italic
+\size large
+¡Muchas gracias!
 \end_layout
 
 \end_deeper
