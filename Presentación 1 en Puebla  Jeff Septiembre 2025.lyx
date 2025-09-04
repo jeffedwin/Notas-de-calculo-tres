@@ -1574,20 +1574,6 @@ Resolviendo
  son repulsores.
 \end_layout
 
-\begin_layout Frame
-\begin_inset Formula $\qquad\qquad\qquad$
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imágenes Clase 1/2-9.png
-	scale 18
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1689,12 +1675,7 @@ Regresando a la tienda
 \end_layout
 
 \begin_layout Frame
-Viendo la gráfica de 
-\begin_inset Formula $T^{2}$
-\end_inset
-
- es evidente que hay dos puntos de periodo dos y ambos son repulsores.
- 
+Aquí se muestra un órbita de periodo 2:
 \end_layout
 
 \begin_layout Frame
@@ -1708,6 +1689,48 @@ Viendo la gráfica de
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+He aquí dos órbitas de periodo 3:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imágenes Clase 1/7-2.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -1748,12 +1771,12 @@ Es fácil darnos una idea de cómo es,
 \end_layout
 
 \begin_layout Frame
-\begin_inset Formula $\quad$
+\begin_inset Formula $\qquad\qquad$
 \end_inset
 
 
 \begin_inset Graphics
-	filename Imágenes Clase 1/7-2.png
+	filename Imágenes Clase 1/7-1.png
 	scale 25
 
 \end_inset
@@ -1768,44 +1791,6 @@ Es fácil darnos una idea de cómo es,
 \end_inset
 
 !
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Fórmula para 
-\begin_inset Formula $T^{n}(x)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula $\qquad\qquad$
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imágenes Clase 1/7-1.png
-	scale 30
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2253,14 +2238,26 @@ DE REGRESO A LA TIENDA
 
 \begin_deeper
 \begin_layout Theorem
-La tienda es topológicamente transitiva
+
+\emph on
+La tienda es topológicamente transitiva.
 \end_layout
 
 \begin_layout Standard
 Demostración:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
 Observación:
  Para cualquier 
 \begin_inset Formula $n\in\mathbb{N}$
@@ -2277,7 +2274,17 @@ tenemos que
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
 Sean 
 \begin_inset Formula $U$
 \end_inset
@@ -2309,7 +2316,17 @@ abiertos no vacíos en
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
 Tomamos 
 \begin_inset Formula $n$
 \end_inset
@@ -2331,7 +2348,17 @@ tal que,
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+4-
+\end_layout
+
+\end_inset
+
 Entonces 
 \begin_inset Formula $T^{n}(a,b)=[0,1]$
 \end_inset
@@ -2423,9 +2450,24 @@ Per
 
 \begin_layout Standard
 Demostración:
- Usaremos la siguiente consecuencia del teorema del valor intermedio:
+ 
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+Usaremos la siguiente consecuencia del teorema del valor intermedio:
+\end_layout
+
+\begin_deeper
 \begin_layout Block
 
 \emph on
@@ -2448,11 +2490,18 @@ Si
 .
 \end_layout
 
-\begin_layout Block
+\end_deeper
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
 
+\begin_layout Plain Layout
+
+2-
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
 Tomemos ahora cualquier intervalo 
 \begin_inset Formula $(a,b)\subset[0,1]$
 \end_inset
@@ -2473,7 +2522,17 @@ Tomemos ahora cualquier intervalo
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
 Como 
 \begin_inset Formula $T^{n}\left(\left[\frac{l}{2^{n}},\frac{l+1}{2^{n}}\right]=[0,1]\right)$
 \end_inset
@@ -2591,7 +2650,7 @@ El conjunto
 \begin_inset Formula $X$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -2602,7 +2661,7 @@ El conjunto
 \emph on
 definición pendiente
 \emph default
-)
+).
 \end_layout
 
 \end_deeper
@@ -2629,6 +2688,8 @@ CAOS - CAOS - CAOS - ...
 
 \begin_deeper
 \begin_layout Standard
+
+\emph on
 Tiempo después,
  un grupo de matemáticos (ver [Banks]) demostró que las condiciones 1 y 2 implican la 3;
  así que basta con que se cumplan 1 y 2 para que 
@@ -2640,8 +2701,11 @@ Tiempo después,
 
 \end_deeper
 \begin_layout Frame
+
+\emph on
 Entonces,
- hemos probado que 
+ hemos probado que:
+ 
 \end_layout
 
 \begin_deeper
@@ -3438,6 +3502,16 @@ Dinámica de la función P
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
 Si 
 \begin_inset Formula $x\in\left(\frac{1}{3},\frac{2}{2}\right)$
 \end_inset
@@ -3465,6 +3539,16 @@ Si
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
 0 y 
 \begin_inset Formula $\frac{3}{4}$
 \end_inset
@@ -3490,6 +3574,16 @@ Si
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
 La imagen de 
 \begin_inset Formula $\left[0,\frac{1}{3}\right]$
 \end_inset
@@ -3527,11 +3621,7 @@ La imagen de
 
 \end_deeper
 \begin_layout Frame
-Ver gráfica de 
-\begin_inset Formula $P^{2}$
-\end_inset
 
-.
 \end_layout
 
 \begin_layout Standard
@@ -3546,13 +3636,21 @@ Ver gráfica de
 \end_layout
 
 \begin_layout Frame
+Veamos la gráfica de 
+\begin_inset Formula $P^{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Frame
 \begin_inset Formula $\qquad\qquad\qquad\quad$
 \end_inset
 
 
 \begin_inset Graphics
 	filename Imágenes Clase 1/10-2.png
-	scale 13
+	scale 12
 
 \end_inset
 
@@ -3734,7 +3832,23 @@ Por otro lado,
 
 \end_layout
 
-\begin_layout Itemize
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
 Introduciendo dinámica simbólica se demuestra que en 
 \begin_inset Formula $J(P)$
 \end_inset
@@ -3754,18 +3868,37 @@ Introduciendo dinámica simbólica se demuestra que en
 
 .
  En conclusión:
-\begin_inset Formula 
-\[
-\text{¡¡}P\text{ es caótica en }J(P)=\mathcal{C}!!
-\]
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge ¡¡$P$ es caótica en $J(P)=
+\backslash
+mathcal{C}$!!}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_deeper
-\begin_layout Frame
 
 \end_layout
 
@@ -3846,6 +3979,15 @@ familia de las tiendas.
 \end_layout
 
 \begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Observaciones
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -3926,22 +4068,6 @@ Bibliografía
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-
-\lang english
-[
-\emph on
-Alexander 1994
-\emph default
-] D.
- S.
- Alexander,
- "A History of Complex Dynamics:
- From Schroder to Fatou and Julia",
- Vieweg,
- 1994.
-\end_layout
-
 \begin_layout Itemize
 
 \lang english
