@@ -1293,6 +1293,8 @@ pause
 \end_layout
 
 \begin_layout Standard
+
+\shape slanted
 El conjunto de puntos críticos es,
  por lo tanto,
  una circunferencia de radio 
@@ -1343,6 +1345,8 @@ Puntos críticos y valores críticos
 \end_layout
 
 \begin_layout PlainFrame
+
+\shape slanted
 A la imagen,
  bajo 
 \begin_inset Formula $F_{a}$
@@ -1886,7 +1890,7 @@ det\,DF_{a}\left(x,y\right)=4\left[\left(x^{2}+y^{2}\right)-1\right]=4\left(\lef
 
 \end_inset
 
- por lo que el conjunto de puntos críticos es ka circunferencia unitaria 
+ por lo que el conjunto de puntos críticos es la circunferencia unitaria 
 \begin_inset Formula $C=\left\{ z\in\mathbb{C}|\left|z\right|=1\right\} $
 \end_inset
 
@@ -4608,11 +4612,11 @@ Un modelo geométrico de la dinámica de
 
 \begin_deeper
 \begin_layout Standard
-Geometricamente se define la función 
+Geométricamente se define la función 
 \begin_inset Formula $G$
 \end_inset
 
- de un triángulo equilátero en si mismo como sigue:
+ de un triángulo equilátero en sí mismo como sigue:
 \end_layout
 
 \begin_layout Standard
@@ -6448,16 +6452,6 @@ La función
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-Los pasos de la función 
-\begin_inset Formula $G$
-\end_inset
-
-:
- doblar,
- voltear y estirar.
-\end_layout
-
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -6886,6 +6880,8 @@ pause
 \begin_layout Standard
 Conclusión:
  
+\shape slanted
+
 \begin_inset Formula $G$
 \end_inset
 
@@ -6956,7 +6952,7 @@ Para cada
 \begin_inset Formula $G:\Delta_{i}\to\Delta$
 \end_inset
 
- es un polimorfismo y por lo tanto tiene inversa continua 
+ es un homeomorfismo y por lo tanto tiene inversa continua 
 \begin_inset Formula $G_{i}^{-1}:\Delta\to\Delta_{i}$
 \end_inset
 
@@ -7057,8 +7053,17 @@ De aquí se sigue que
 .
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Standard
-\begin_inset Phantom VPhantom
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
@@ -7070,22 +7075,7 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
+\begin_deeper
 \begin_layout Standard
 Continuamos con este proceso:
  tomamos ahora las imágenes inversas,
@@ -7143,17 +7133,8 @@ Obtenemos
 .
 \end_layout
 
-\end_deeper
-\end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
+\begin_inset Phantom VPhantom
 status open
 
 \begin_layout Plain Layout
@@ -7165,24 +7146,15 @@ status open
 
 \end_layout
 
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 1
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-1-
-\end_layout
 
-\end_inset
-
-
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-(cont.)
+\backslash
+pause
 \end_layout
 
 \end_inset
@@ -7190,7 +7162,6 @@ status open
 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 Para 
 \begin_inset Formula $i$
@@ -7379,48 +7350,6 @@ En consecuencia,
  y por lo tanto hay un punto de periodo 2.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-¡
-\begin_inset Formula $Per\,G$
-\end_inset
-
- es denso en 
-\begin_inset Formula $\Delta$
-\end_inset
-
-!
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -7435,31 +7364,6 @@ status open
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-(cont.)
 \end_layout
 
 \end_inset
@@ -7704,7 +7608,6 @@ pause
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -7718,31 +7621,6 @@ status open
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-(cont.)
 \end_layout
 
 \end_inset
@@ -7807,7 +7685,39 @@ Por lo tanto:
 !!
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+NOTA:
+ Se puede comprobar que para todo 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ existe 
+\begin_inset Formula $p\in\Delta$
+\end_inset
+
+ de periodo 
+\begin_inset Formula $n$
+\end_inset
+
+ y todos estos puntos periódicos son repulsores.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -7829,25 +7739,6 @@ status open
 
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-NOTA:
- Se puede comprobar que para todo 
-\begin_inset Formula $n\in\mathbb{N}$
-\end_inset
-
- existe 
-\begin_inset Formula $p\in\Delta$
-\end_inset
-
- de periodo 
-\begin_inset Formula $n$
-\end_inset
-
- y todos estos puntos periódicos son repulsores.
-\end_layout
-
-\end_deeper
 \begin_layout Frame
 \begin_inset Float figure
 placement document
@@ -9184,6 +9075,14 @@ Imágenes inversas bajo la función
 status open
 
 \begin_layout Plain Layout
+Conjuntos univariantes bajo 
+\begin_inset Formula $G$
+\end_inset
+
+ en 
+\begin_inset Formula $\Delta$
+\end_inset
+
 
 \end_layout
 
@@ -9515,7 +9414,9 @@ pause
 
 \begin_layout Frame
 CONCLUSIÓN:
- Bajo 
+ 
+\shape slanted
+Bajo 
 \begin_inset Formula $G$
 \end_inset
 
@@ -9586,6 +9487,10 @@ pause
 \end_inset
 
 
+\end_layout
+
+\begin_layout Frame
+Tenemos además el siguiente teorema:
 \end_layout
 
 \begin_deeper
@@ -9672,7 +9577,18 @@ pause
 \end_layout
 
 \begin_layout Frame
-(Dejamos como ejercicio tratar de demostrar estos hechos).
+
+\shape slanted
+Conclusión de los anteriores resultados:
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ es caótica en 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -9696,52 +9612,12 @@ status open
 \end_layout
 
 \begin_layout Frame
-
-\shape slanted
-Conclusión de los anteriores resultados:
- 
-\begin_inset Formula $G$
-\end_inset
-
- es caótica en 
-\begin_inset Formula $\Delta$
-\end_inset
-
-.
+Otras características importantes:
 \end_layout
 
-\begin_layout Frame
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-OBS.
- Los conjuntos 
+\begin_deeper
+\begin_layout Itemize
+Los conjuntos 
 \begin_inset Formula $N$
 \end_inset
 
@@ -9761,6 +9637,7 @@ G\left(N\right)=N=G^{-1}\left(N\right)\text{ y }G\left(T\right)=T=G^{-1}\left(T\
 
 \end_layout
 
+\end_deeper
 \begin_layout Frame
 (Por ejemplo,
  
@@ -9799,7 +9676,8 @@ pause
 
 \end_layout
 
-\begin_layout Frame
+\begin_deeper
+\begin_layout Itemize
 El conjunto 
 \begin_inset Formula $\mathcal{O}$
 \end_inset
@@ -9819,7 +9697,6 @@ deja
 :
 \end_layout
 
-\begin_deeper
 \begin_layout Block
 \begin_inset Argument 1
 status open
@@ -9836,7 +9713,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Defiición
+Definición
 \end_layout
 
 \end_inset
@@ -9871,6 +9748,8 @@ pause
 \end_layout
 
 \begin_layout Frame
+OBS.
+ 
 \begin_inset Formula $\mathcal{O}$
 \end_inset
 
@@ -9883,6 +9762,70 @@ pause
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig. 4.7.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fer-4.7"
+
+\end_inset
+
+Quitando 
+\begin_inset Formula $\text{int\,}\Delta_{0}$
+\end_inset
+
+ y sus imágenes inversas,
+ aparece un triángulo de Sierpinski.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -10039,7 +9982,7 @@ es un triángulo de Sierpinski!
 (Ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:fer-4.4"
+reference "fig:fer-4.7"
 plural "false"
 caps "false"
 noprefix "false"
