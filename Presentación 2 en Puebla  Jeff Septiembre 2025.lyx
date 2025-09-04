@@ -4590,7 +4590,15 @@ para cada
 status open
 
 \begin_layout Plain Layout
-Un modelo geométrico de la dinámica de Fen
+Un modelo geométrico de la dinámica de 
+\begin_inset Formula $F$
+\end_inset
+
+ en 
+\begin_inset Formula $A(F)$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4599,6 +4607,14 @@ Un modelo geométrico de la dinámica de Fen
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Geometricamente se define la función 
+\begin_inset Formula $G$
+\end_inset
+
+ de un triángulo equilátero en si mismo como sigue:
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -4618,7 +4634,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -4628,7 +4644,7 @@ status open
 
 
 \backslash
-begin{tikzpicture}[scale=0.4,
+begin{tikzpicture}[scale=0.7,
 \end_layout
 
 \begin_layout Plain Layout
@@ -5437,12 +5453,34 @@ name "fig:fer-4.2"
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 El triángulo equilátero 
 \begin_inset Formula $\Delta$
 \end_inset
 
-está descrito como sigue:
+ está descrito como sigue:
 \begin_inset Formula 
 \[
 \Delta=\left\{ \left(x,y\right)|x\in\left[-1,2\right]\text{ y }\frac{\sqrt{3}}{3}\left(x-2\right)\leq y\leq-\frac{\sqrt{3}}{3}\left(x-2\right)\right\} .
@@ -5466,6 +5504,10 @@ Los 4 triángulos
 \begin_inset Separator plain
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -5510,7 +5552,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -6631,8 +6673,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Diagrama sin título.drawio (1).png
-	scale 25
+	filename fig-8 (1).png
+	scale 23
 
 \end_inset
 
