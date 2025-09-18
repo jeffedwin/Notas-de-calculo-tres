@@ -481,7 +481,206 @@ Ahora,
 \begin_inset Formula $\mathbb{R}^{3}$
 \end_inset
 
- un plano tiene 
+ un plano tiene una ecuación de la forma 
+\begin_inset Formula 
+\[
+Ax+By+Cz+D=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si suponemos 
+\begin_inset Formula $C\neq0$
+\end_inset
+
+,
+ podemos despejar 
+\begin_inset Formula $z$
+\end_inset
+
+ como función de 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ y obtenemos
+\begin_inset Formula 
+\begin{equation}
+z=ax+by+c\equiv p(x,y)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con 
+\begin_inset Formula $a=\frac{A}{C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $b=\frac{B}{C}$
+\end_inset
+
+,
+ y 
+\begin_inset Formula $c=\frac{D}{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La primera condición que un plano tangente debe tener (¡si es que existe!) es que tiene que pasar por el punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O sea,
+ debe ocurrir que 
+\begin_inset Formula $p(x_{0},y_{0})=f(x_{0},y_{0})$
+\end_inset
+
+ (ver fig (4)).
+\end_layout
+
+\begin_layout Standard
+Esta condición nos permite 
+\begin_inset Quotes eld
+\end_inset
+
+despejar 
+\begin_inset Quotes erd
+\end_inset
+
+ la constante 
+\begin_inset Formula $c$
+\end_inset
+
+ de la ecuación 
+\begin_inset Formula $(1)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x_{0},y_{0})=ax_{0}+by_{0}+c=f(x_{0},y_{0}),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+de donde
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c=f(x_{0},y_{0})-ax_{0}-by_{0},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y por lo tanto
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p(x,y)=ax+by+(f(x_{0},y_{0})-ax_{0}-by_{0})=a(x-x_{0})+b(y-y_{0})+f(x_{0},y_{0}).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Todos
+\bar default
+ los planos que pasan por 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ tienen una ecuación dada por 
+\begin_inset Formula $(2)$
+\end_inset
+
+.
+ De toda esta infinidad de planos ¿cuál será el plano tangente buscado?
+ ¿Qué queremos decir con eso de que sea 
+\begin_inset Quotes eld
+\end_inset
+
+el que más se parece
+\begin_inset Quotes erd
+\end_inset
+
+ en las 
+\begin_inset Quotes eld
+\end_inset
+
+cercanías
+\begin_inset Quotes erd
+\end_inset
+
+ de 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+?
+ ¿Cómo precisar eso matemáticamente?
+\end_layout
+
+\begin_layout Standard
+Una primera idea al respecto puede ser la de 
+\begin_inset Quotes eld
+\end_inset
+
+medir
+\begin_inset Quotes erd
+\end_inset
+
+ la distancia entre el plano tangente (buscado) y la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Desde luego,
+ debiera ocurrir que esta distancia tendiera a cero conforme nos acercamos a 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O sea,
+ si 
+\begin_inset Formula $(x,y)\in U$
+\end_inset
+
+ es cualquier
 \end_layout
 
 \end_body
