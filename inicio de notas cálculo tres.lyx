@@ -1,16 +1,16 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
 \origin unavailable
 \textclass article
 \use_default_options true
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -18,7 +18,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -50,7 +52,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -66,33 +70,418 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
 
-\begin_layout Standard
-Hola, este es el inicio de una colaboración entre Erika, Ala
+\begin_layout Section*
+Derivada de funciones 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-n y Jeff para hacer unas notas de cálculo tres.
+En aras de la claridad,
+ para tratar el concepto de derivada de 
+\begin_inset Formula $f:\mathbb{R}^{n}\rightarrow\mathbb{R}^{m}$
+\end_inset
+
+ empezaremos por el caso más sencillo:
+ cuando 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ Ello nos dará las bases para avanzar al caso más general de 
+\begin_inset Formula $f:\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ con 
+\begin_inset Formula $n>2$
+\end_inset
+
+;
+ y finalmente,
+ al caso general de 
+\begin_inset Formula $f:\mathbb{R}^{n}\rightarrow\mathbb{R}^{m}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Hola de vuelta
+Haremos primero una discusión de las ideas en el terreno geométrico y evemtualmente,
+ formalizaremos estas ideas hasta llegar a conceptos y formulaciones puramente analíticas.
 \end_layout
 
 \begin_layout Standard
-Bueno, pues a darle !!
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{3mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Saludos
+Vale la pena recordar,
+ para empezar,
+ la noción de derivada cuando 
+\begin_inset Formula $f$
+\end_inset
+
+ es de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbb{R}.$
+\end_inset
+
+ Si la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ es como en la figura 0,
+ la derivada en el punto 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ es la pendiente de la recta tangente a la gráfica en el punto 
+\begin_inset Formula $P_{0}=(x_{0,}f(x_{0}))$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ es el ángulo que la recta tangente 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ hace con el eje 
+\begin_inset Formula $X$
+\end_inset
+
+ (positivo),
+ entonces la derivada en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ es la tangente trigonométrica del ángulo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+;
+ i.e.
+ 
+\begin_inset Formula 
+\[
+f\text{´}(x_{0})=\tan\alpha.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lo que hay que destacar es que como la gráfica de una función 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ es,
+ en términos generales,
+ una curva en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+,
+ tiene sentido hablar de rectas tangentes a (puntos de) dicha curva.
+\end_layout
+
+\begin_layout Standard
+Tomemos ahora 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Su gráfica es,
+ por lo general,
+ una superficie en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Entonces,
+ aquí lo que tendría sentido no es hablar de rectas tangentes,
+ sino de 
+\bar under
+planos tangentes
+\bar default
+ a los diversos puntos de la gráfica (ver figuras siguientes).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{3mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ Entonces,
+ dado 
+\begin_inset Formula $\bar{x_{0}}=(x_{0},y_{0})\in Dom(f)$
+\end_inset
+
+ y el correspondiente punto 
+\begin_inset Formula $P_{0}=(x_{0},y_{0},f(x_{0},y_{0}))$
+\end_inset
+
+ en la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+,
+ 
+\begin_inset Formula $graf(f)$
+\end_inset
+
+,
+ lo que buscamos es 
+\bar under
+definir
+\bar default
+ el plano tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+¿Qué características debe tener un tal plano?
+\end_layout
+
+\begin_layout Standard
+Volvamos un momento al caso 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ Supongamos,
+ como en la figura,
+ que 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ es la recta tangente al punto 
+\begin_inset Formula $P_{0}=(x_{0,}f(x_{0}))\in graf(f)$
+\end_inset
+
+.
+ Si 
+\begin_inset Quotes eld
+\end_inset
+
+amplificamos
+\begin_inset Quotes erd
+\end_inset
+
+ la zona cercana al punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ podemos notar que para puntos 
+\begin_inset Quotes eld
+\end_inset
+
+muy cercanos
+\begin_inset Quotes erd
+\end_inset
+
+ a 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+,
+ la recta tangente 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ y la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ son prácticamente 
+\begin_inset Quotes eld
+\end_inset
+
+indistinguibles
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Desde este punto de vista podemos decir que,
+ en las 
+\begin_inset Quotes eld
+\end_inset
+
+cercanías
+\begin_inset Quotes erd
+\end_inset
+
+ de 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+,
+ la recta 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ es la recta que 
+\bar under
+más se parece
+\bar default
+ a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ (Véase la figura 3).
+\end_layout
+
+\begin_layout Standard
+Y esta idea es justamente la que queremos usar para definir plano tangente a la gráfica de 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+;
+ debe ser el plano que pasa por el punto 
+\begin_inset Formula $P_{0}\in graf(f)$
+\end_inset
+
+ que 
+\begin_inset Quotes eld
+\end_inset
+
+más se parece
+\begin_inset Quotes erd
+\end_inset
+
+ a la superficie=gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en una vecindad del punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Precisemos:
+ de entrada vamos a suponer que 
+\begin_inset Formula $f$
+\end_inset
+
+ está definida en algún conjunto abierto 
+\begin_inset Formula $U\subseteq\mathbb{R}^{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f:U\rightarrow\mathbb{R}$
+\end_inset
+
+ y que 
+\begin_inset Formula $\bar{x_{0}}=(x_{0},y_{0})\in U$
+\end_inset
+
+.
+ La gráfica de esta función es,
+ por definición,
+ el conjunto en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ dado por 
+\begin_inset Formula 
+\[
+graf(f)=\left\{ \left(x,y,f(x,y)\right)|(x,y)\in U\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consideremos el punto 
+\begin_inset Formula $P_{0}=(x_{0,}f(x_{0}))\in graf(f)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ahora,
+ en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ un plano tiene 
 \end_layout
 
 \end_body
