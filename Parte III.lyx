@@ -773,5 +773,517 @@ Esta pregunta es lo recíproco del teorema anterior y la respuesta -quiza algo s
  Veamos un ejemplo.
 \end_layout
 
+\begin_layout Standard
+Ejemplo 1:
+ Sea 
+\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+\frac{xy^{2}}{x^{2}+y^{4}} & \text{si }\left(x,y\right)\neq\left(0,0\right)\\
+0 & \text{si }\left(x,y\right)\neq\left(0,0\right)
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Este ejemplo lo hicimos en clase y demostramos que todas las derivadas direccionales existen en 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ y,
+ sin embargo,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ no es ni siquiera continua en 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(Noten que,
+ por lo demás,
+ por el teorema de la derivada del cociente y otros más,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en todo 
+\begin_inset Formula $\left(x,y\right)\neq\left(0,0\right)$
+\end_inset
+
+.
+ Un pequeño ejercicio es calcular la derivada en esos puntos 
+\begin_inset Formula $\neq\left(0,0\right)$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+Les recomendamos hacer este ejercicio o repasar sus apuntes.
+\end_layout
+
+\begin_layout Standard
+Ejemplo 2:
+ siguiendo la 
+\begin_inset Quotes eld
+\end_inset
+
+filosofía
+\begin_inset Quotes erd
+\end_inset
+
+ de hacer ejmplos sencillos de lo que estamos discutiendo podemos proceder como sigue:
+ sea 
+\begin_inset Formula $f\left(x,y\right)=\{0\text{ en todos los puntos de la parábola }y=x^{2}\text{, en los que definimos }f\text{ como }1\text{, excepto en }\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(La idea es como 
+\begin_inset Quotes eld
+\end_inset
+
+sacar
+\begin_inset Quotes erd
+\end_inset
+
+ a la parábola -excepto el origen- del plano 
+\begin_inset Formula $XY$
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+definirla
+\begin_inset Quotes erd
+\end_inset
+
+ a una cierta altura,
+ digamos 
+\begin_inset Formula $=1\dots$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Es fácil ver que 
+\begin_inset Formula $D_{u}f\left(0,0\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\bar{u}$
+\end_inset
+
+ unitario y,
+ otra vez,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ no es continua en 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(También lo discutimos en clase...
+ ¿recuerdan?)
+\end_layout
+
+\begin_layout Standard
+Estos ejemplos muestran lo 
+\shape slanted
+fuerte
+\shape default
+ que es la propiedad de una función de ser derivable en un punto 
+\begin_inset Formula $\bar{x}_{0}=\left(x_{0},y_{0}\right)$
+\end_inset
+
+;
+ es decir,
+ la propiedad de tener un plano tangente a la gráfica en 
+\begin_inset Formula $P_{0}=\left(x_{0},y_{0},f\left(x_{0},y_{0}\right)\right)$
+\end_inset
+
+:
+ Es 
+\shape slanted
+imposible
+\shape default
+ remplazar esta propiedad por la de tener rectas tangentes a la gráfica en todas las posibles direcciones...
+\end_layout
+
+\begin_layout Standard
+Más adelante veremos que agregando condiciones adecuadas a las derivadas parciales,
+ obtendremos condiciones suficientes para la existencia del tal plano tangente...
+\end_layout
+
+\begin_layout Standard
+Pero mientras,
+ veamos otra muy importante propiedad del gradiente cuando la función es derivable:
+\end_layout
+
+\begin_layout Theorem*
+(Teorema Gral 1) Si 
+\begin_inset Formula $D_{f}\left(\bar{x}_{0}\right)$
+\end_inset
+
+ existe y es 
+\begin_inset Formula $\neq0$
+\end_inset
+
+,
+ entonces la derivada direccional en 
+\begin_inset Quotes eld
+\end_inset
+
+dirección del gradiente
+\begin_inset Quotes erd
+\end_inset
+
+ es el valor máximo de todas las derivadas direccionales,
+ y en 
+\begin_inset Quotes eld
+\end_inset
+
+dirección del menos gradiente
+\begin_inset Quotes erd
+\end_inset
+
+,
+ es el valor mínimo.
+ En otras palabras,
+ si 
+\begin_inset Formula 
+\[
+\bar{u}_{0}=\frac{1}{\left\Vert \nabla f\left(\bar{x}_{0}\right)\right\Vert }\nabla f\left(\bar{x}_{0}\right)\text{ y }\bar{u}_{1}=\frac{-1}{\left\Vert \nabla f\left(\bar{x}_{0}\right)\right\Vert }\nabla f\left(\bar{x}_{0}\right),
+\]
+
+\end_inset
+
+ se cumple que,
+ 
+\begin_inset Formula $\forall\bar{u}$
+\end_inset
+
+ unitario:
+ 
+\begin_inset Formula 
+\[
+D_{u_{1}}f\left(\bar{x}_{0}\right)\leq D_{u}f\left(\bar{x}_{0}\right)\leq D_{u_{0}}f\left(\bar{x}_{0}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+ es unitario,
+ el producto 
+\begin_inset Formula $\nabla f\left(\bar{x}_{0}\right)\cdot\bar{u}$
+\end_inset
+
+ es la proyección ortogonal de 
+\begin_inset Formula $\nabla f\left(\bar{x}_{0}\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+,
+ como se ilustra en el dibujo contiguo.
+ Geométricamente entonces,
+ es evidente que esta proyección alcanza su valor máximo cuando 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+ es el vector unitario en dirección de 
+\begin_inset Formula $\nabla f\left(\bar{x}_{0}\right)$
+\end_inset
+
+,
+ y alcanza su valor mínimo cuando está en dirección de 
+\begin_inset Formula $-\nabla f\left(\bar{x}_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Una discusión de estos hechos la hicimos en clase y,
+ a la vez,
+ dimos una demostración muy sencilla usando que 
+\begin_inset Formula $\nabla f\left(\bar{x}_{0}\right)\cdot\bar{u}=\left\Vert \nabla f\left(\bar{x}_{0}\right)\right\Vert \left\Vert \bar{u}\right\Vert \cos\theta=\left\Vert \nabla f\left(\bar{x}_{0}\right)\right\Vert \cos\theta$
+\end_inset
+
+ (porque 
+\begin_inset Formula $\left\Vert \bar{u}\right\Vert =1$
+\end_inset
+
+) donde 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es el 
+\begin_inset Formula $\angle$
+\end_inset
+
+ entre 
+\begin_inset Formula $\nabla f\left(\bar{x}_{0}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+.
+ También dimos otra demostración más 
+\shape slanted
+sofisticada
+\shape default
+.
+ ¿Recuerdan?
+\end_layout
+
+\begin_layout Theorem*
+(Teorema Gral 2) Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ derivable y 
+\begin_inset Formula $D_{f}\left(\bar{x}_{0}\right)\neq0$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $\bar{x}_{0}$
+\end_inset
+
+ está en la curva de nivel 
+\begin_inset Formula $c$
+\end_inset
+
+ (noten que entonces,
+ 
+\begin_inset Formula $c=f\left(\bar{x}_{0}\right)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\nabla f\left(\bar{x}_{0}\right)$
+\end_inset
+
+ es 
+\begin_inset Formula $\bot$
+\end_inset
+
+ a dicha tangente.
+ (Aquí suponemos 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimos una demostración usando una Regla de la Cadena que aún no discutimos en el curso.
+ supusimos que,
+ al menos cerca de 
+\begin_inset Formula $\bar{x}_{0}$
+\end_inset
+
+,
+ la curva de nivel 
+\begin_inset Formula $c=f\left(\bar{x}_{0}\right)$
+\end_inset
+
+ se puede parametrizar por una función derivable 
+\begin_inset Formula $\gamma:\left(a,b\right)\to\mathbb{R}^{2}$
+\end_inset
+
+ con 
+\begin_inset Formula $\gamma\left(t_{0}\right)=\bar{x}_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\gamma'\left(t_{0}\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como es una curva de nivel,
+ 
+\begin_inset Formula $f\left(\bar{x}\right)=c$
+\end_inset
+
+ en todos los puntos de dicha curva;
+ en particular,
+ 
+\begin_inset Formula $f\left(\gamma\left(t\right)\right)=c\,\forall t\in\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Por la mencionada RC,
+ (y el hecho de que 
+\begin_inset Formula $f\circ\gamma$
+\end_inset
+
+ es constante) 
+\begin_inset Formula 
+\[
+\frac{d}{dt}\left(f\circ\gamma\right)\left(t\right)=D_{f}\left(\gamma\left(t\right)\right)\cdot\gamma'\left(t\right)=\nabla f\left(\gamma\left(t\right)\right)\cdot\gamma'\left(t\right)=0\:\forall t\in\left(a,b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\nabla f\left(\gamma\left(t_{0}\right)\right)\neq\bar{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\gamma'\left(t_{0}\right)\neq\bar{0}$
+\end_inset
+
+,
+ se sigue que son ortogonales.
+\end_layout
+
+\begin_layout Standard
+Consideramos válido este teorema aunque por ahora,
+ no supondremos que lo hemos demostrado.
+\end_layout
+
+\begin_layout Standard
+Ejercicio:
+ dibuja curvas de nivel de 
+\begin_inset Formula $f\left(x^{2}+y^{2}\right)$
+\end_inset
+
+ y comprueba que en cada punto de cada curva el gradiente efectivamente es perpendicular a (la tangente a) la curva.
+\end_layout
+
 \end_body
 \end_document
