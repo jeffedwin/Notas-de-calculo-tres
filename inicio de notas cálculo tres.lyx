@@ -390,9 +390,9 @@ cercanías
 \end_inset
 
  es la recta que 
-\bar under
+\emph on
 más se parece
-\bar default
+\emph default
  a la gráfica de 
 \begin_inset Formula $f$
 \end_inset
