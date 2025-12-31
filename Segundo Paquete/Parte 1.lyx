@@ -1,0 +1,707 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{mathtools}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Límites de funciones 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+;
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ es punto de acumulación de 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+.
+ ¿
+\begin_inset Formula $\underset{x\to x_{0}}{\lim}f(x)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\to x_{0}}f(x)=\ell$
+\end_inset
+
+ si cuando 
+\begin_inset Formula $x\approx x_{0}$
+\end_inset
+
+entonces 
+\begin_inset Formula $f(x)\approx\ell$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ i.
+ e.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $f(x)$
+\end_inset
+
+ se puede acercar a 
+\begin_inset Formula $l$
+\end_inset
+
+ tanto como queramos si 
+\begin_inset Formula $x$
+\end_inset
+
+ está suficientemente cerca de 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $\forall\varepsilon>0\,\exists\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left|f(x)-\ell\right|<\varepsilon$
+\end_inset
+
+ si 
+\begin_inset Formula $0<\left|x-x_{0}\right|<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte 1 Pág 5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+;
+ 
+\begin_inset Formula $\bar{x}_{0}\in\mathbb{R}^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\bar{x}_{0}$
+\end_inset
+
+ es punto de acumulación de 
+\begin_inset Formula $D_{f}\subseteq\mathbb{R}^{2}$
+\end_inset
+
+.
+ ¿
+\begin_inset Formula $\lim_{\bar{x}\to\bar{x}_{0}}f(\overline{x})=\ell$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte 1 Pág 5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $f\left(x,y\right)=\frac{xy}{x^{2}+y^{2}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(x,y\right)\neq\left(0,0\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $D_{f}=\mathbb{R}^{2}\setminus\left\{ \left(0,0\right)\right\} $
+\end_inset
+
+.
+ ¿
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(0,0\right)}{\lim}f(x,y)$
+\end_inset
+
+ existe?
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{gather*}
+f\left(x,0\right)=0\xrightarrow[x\to0]{}0\\
+f\left(0,y\right)=0\xrightarrow[y\to0]{}0\\
+f\left(x,x\right)=\frac{x^{2}}{2x^{2}}=\frac{1}{2}\xrightarrow[\left(x,x\right)\to\left(0,0\right)]{}\frac{1}{2}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+¡NO TIENE LÍMITE EN 
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+\align center
+(porque por distintos caminos,
+ al aproximarnos a 
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+,
+ obtenemos que 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ se aproxima a distintos valores)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Página 6
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(x_{0},y_{0}\right)}{\lim}f\left(x,y\right)=\ell$
+\end_inset
+
+ si 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ se acerca tanto como se quiera a 
+\begin_inset Formula $\ell$
+\end_inset
+
+ siempre que 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+esté suficientemente cerca de 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(x_{0},y_{0}\right)}{\lim}f\left(x,y\right)=\ell$
+\end_inset
+
+ si 
+\begin_inset Formula $\forall\varepsilon>0,\,\exists\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left(x,y\right)\in D_{f}$
+\end_inset
+
+ y 
+\begin_inset Formula $0<\left\Vert \left(x,y\right)-\left(x_{0},y_{0}\right)\right\Vert <\delta$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left|f\left(x,y\right)-\ell\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $f\left(x,y\right)=\frac{x^{2}y}{x^{2}+y^{2}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(x,y\right)\neq\left(0,0\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $D_{f}=\mathbb{R}^{2}\setminus\left\{ \left(0,0\right)\right\} .$
+\end_inset
+
+¿
+\begin_inset Formula $\underset{\bar{x}\to\bar{0}}{\lim}f(x,y)$
+\end_inset
+
+ existe?
+\end_layout
+
+\begin_layout Example*
+(Vamos a experimentar un poco...)
+\end_layout
+
+\begin_layout Example*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\backslash
+begin{rcases*}
+\end_layout
+
+\begin_layout Plain Layout
+
+f
+\backslash
+left(0,y
+\backslash
+right)=0
+\backslash
+underset{y
+\backslash
+to0}{
+\backslash
+longrightarrow}0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+f
+\backslash
+left(0,y
+\backslash
+right)=0
+\backslash
+underset{y
+\backslash
+to0}{
+\backslash
+longrightarrow}0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{rcases*} 
+\backslash
+begin{tabular}{c}
+\end_layout
+
+\begin_layout Plain Layout
+
+      el límite
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      debe ser cero
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{tabular}  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&f
+\backslash
+left(x,x
+\backslash
+right)=
+\backslash
+frac{x^{3}}{2x^{2}}=
+\backslash
+frac{x}{2}
+\backslash
+underset{x 
+\backslash
+to 0}{
+\backslash
+longrightarrow}0
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{gather*}
+f\left(x,mx\right)=\frac{mx^{3}}{x^{2}+m^{2}x^{2}}=\frac{m}{1+m^{2}}x\xrightarrow[x\to0]{}0\\
+f\left(y^{2},y\right)=\frac{y^{4}y}{y^{4}+y^{2}}=\frac{y^{5}}{y^{2}\left(y^{2}+1\right)}=\frac{y^{3}}{1+y^{2}}\xrightarrow[y\to0]{}0
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+P.
+ D.
+ 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(0,0\right)}{\lim}\frac{x^{2}y}{x^{2}+y^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\[
+\left|\frac{x^{2}y}{x^{2}+y^{2}}\right|=\frac{x^{2}\left|y\right|}{x^{2}+y^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{align*}
+\text{OBS. }\frac{x\left|y\right|}{x^{2}+y^{2}} & \leq\frac{x^{2}\left|y\right|}{x^{2}},\;\left(x\neq0\right)\\
+\left|f\left(x,y\right)\right| & \leq\left|y\right|\xrightarrow[\left(x,y\right)\to\left(0,0\right)]{}0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Sea 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\delta=\varepsilon$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left|f\left(x,y\right)\right|\leq\left|y\right|\leq\left\Vert \left(x,y\right)\right\Vert <\varepsilon=\delta$
+\end_inset
+
+.
+ Entonces si 
+\begin_inset Formula $\left\Vert \left(x,y\right)\right\Vert <\delta\Rightarrow\left|f\left(x,y\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

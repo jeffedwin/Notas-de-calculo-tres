@@ -1,0 +1,1418 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{mathtools}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Definition
+\begin_inset Formula $\ell$
+\end_inset
+
+ es el límite de 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\left(x,y\right)\to\left(x_{0},y_{0}\right)$
+\end_inset
+
+ si 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\delta=\delta\left(\varepsilon,\left(x_{0},y_{0}\right)\right)>0$
+\end_inset
+
+ tal que si 
+\begin_inset Formula $\bar{x}=\left(x,y\right)\in D_{f}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(x,y\right)\neq\left(x_{0},y_{0}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(x,y\right)\in B_{\delta}\left(\bar{x}_{0},\bar{y}_{0}\right)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left|f(x,y)-\ell\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\ell$
+\end_inset
+
+ es el límite de 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\left(x,y\right)\to\left(x_{0},y_{0}\right)$
+\end_inset
+
+ si para toda sucesión 
+\begin_inset Formula $\left\{ \left(x_{k},y_{k}\right)\right\} \subset D_{f}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left(x_{k},y_{k}\right)\neq\left(x_{0},y_{0}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k\in\mathbb{N}$
+\end_inset
+
+ y 
+\begin_inset Formula $\underset{k\to\infty}{\lim}\left(x_{k},y_{k}\right)=\left(x_{0},y_{0}\right)$
+\end_inset
+
+,
+ se cumple que 
+\begin_inset Formula $\underset{k\to\infty}{\lim}f\left(x_{k},y_{k}\right)=\ell$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Ambas definiciones son equivalentes.
+ Es decir,
+ se cumple la definición 1 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ se cumple la definición 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la clase pasada demostramos 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Vamos ahora a demostrar 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+Suponemos que toda sucesión 
+\begin_inset Formula $\left\{ \bar{x}_{k}\right\} \subset D_{f}$
+\end_inset
+
+ -con 
+\begin_inset Formula $\bar{x}_{k}\neq\bar{x}_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k\in\mathbb{N}$
+\end_inset
+
+- convergente a 
+\begin_inset Formula $\bar{x}_{0}$
+\end_inset
+
+ cumple que 
+\begin_inset Formula $\left\{ f\left(\bar{x}_{k}\right)\right\} \subset\mathbb{R}$
+\end_inset
+
+ converge a 
+\begin_inset Formula $\ell$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Por contradicción:
+ supongamos que 
+\series bold
+no
+\series default
+ se cumple la definición 1,
+ i.
+ e.
+ supongamos que existe 
+\begin_inset Formula $\varepsilon=\varepsilon_{0}>0$
+\end_inset
+
+ tal que (ninguna 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ cumple lo que dice la definición 1).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\delta>0$
+\end_inset
+
+,
+ existe 
+\begin_inset Formula $\bar{x}\in D_{f}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\bar{x}\neq\bar{x}_{0}$
+\end_inset
+
+,
+ tal que 
+\begin_inset Formula $\bar{x}\in B_{\delta}\left(\bar{x}_{0}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left|f(\bar{x})-\ell\right|\geq\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Construimos una sucesión 
+\begin_inset Formula $\left\{ \bar{x}_{k}\right\} \subset D_{f}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\bar{x}_{k}\neq\bar{x}_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k\in\mathbb{N}$
+\end_inset
+
+,
+ de la siguiente manera:
+ 
+\end_layout
+
+\begin_layout Proof
+Tomamos 
+\begin_inset Formula $\delta_{1}=1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\exists\bar{x}_{1}\neq\bar{x}_{0}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\bar{x_{1}}\in D_{f}$
+\end_inset
+
+ y 
+\begin_inset Formula $\bar{x}_{1}\in B_{\delta_{1}}\left(\bar{x}_{0}\right)$
+\end_inset
+
+ que cumple que 
+\begin_inset Formula $\left|f(\bar{x}_{1})-\ell\right|\geq\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Repitiendo inductivamente este paso,
+ obtenemos que :
+\end_layout
+
+\begin_layout Proof
+Para cada 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+,
+ tomamos 
+\begin_inset Formula $\delta_{k}=\frac{1}{k}$
+\end_inset
+
+,
+ y entonces existe 
+\begin_inset Formula $\bar{x_{k}}\in D_{f}$
+\end_inset
+
+ con 
+\begin_inset Formula $\bar{x}_{k}\neq\bar{x}_{0}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\bar{x}_{k}\in B_{\delta_{k}}\left(\bar{x}_{0}\right)$
+\end_inset
+
+ (i.
+ e.
+ 
+\begin_inset Formula $0<\left|\bar{x}_{k}-\bar{x}_{0}\right|<\frac{1}{k}$
+\end_inset
+
+) y 
+\begin_inset Formula $\left|f(\bar{x}_{k})-\ell\right|\geq\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Entonces 
+\begin_inset Formula $\underset{k\to\infty}{\lim}\bar{x}_{k}=\bar{x}_{0}$
+\end_inset
+
+.
+ Por la definición 2,
+ debería cumplirse que 
+\begin_inset Formula $\underset{k\to\infty}{\lim}f\left(\bar{x}_{k}\right)=\ell$
+\end_inset
+
+.
+ Pero esto es imposible porque 
+\begin_inset Formula $\left\Vert f(\bar{x}_{k})-\ell\right\Vert \geq\varepsilon_{0}>0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k\in\mathbb{N}$
+\end_inset
+
+ (!).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\therefore$
+\end_inset
+
+ No puede pasar que no se cumpla la definición 1.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Se cumple la definición 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Si 
+\begin_inset Formula $0\leq\left|a_{n}\right|\leq\left|b_{n}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+ y 
+\begin_inset Formula $\underset{n\to\infty}{\lim}b_{n}=0$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\underset{n\to\infty}{\lim}a_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+(Criterio de comparación) Supongamos que existe 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $0\leq\left|f\left(x,y\right)\right|\leq\left|g\left(x,y\right)\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\left(x,y\right)\in B_{\delta}\left(\bar{0}\right)$
+\end_inset
+
+ y que 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(0,0\right)}{\lim}g\left(x,y\right)=0$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(0,0\right)}{\lim}f\left(x,y\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $f\left(x,y\right)=\frac{x^{2}y}{x^{2}+y^{2}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(x,y\right)\neq\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{gather*}
+\left|f\left(x,y\right)\right|=\frac{x\left|y\right|}{x^{2}+y^{2}}\leq\frac{x^{2}\left|y\right|}{x^{2}}=\left|y\right|\\
+\text{si }g\left(x,y\right)=\left|y\right|,\text{ entonces }\lim_{\left(x,y\right)\to\left(0,0\right)}g\left(x,y\right)=0\\
+\therefore\;\lim_{\left(x,y\right)\to\left(0,0\right)}\left|f\left(x,y\right)\right|=0\\
+\therefore\;\lim_{\left(x,y\right)\to\left(0,0\right)}f\left(x,y\right)=0
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $f\left(x,y\right)=\frac{\sin\left(xy\right)}{\sqrt{x^{2}+y^{2}}}$
+\end_inset
+
+.
+ Calcular 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(0,0\right)}{\lim}f\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{gather*}
+{\color{red}\left|\sin\left(xy\right)\right|\leq1\;\therefore\,\left|f\left(x,y\right)\right|\leq\frac{1}{\sqrt{x^{2}+y^{2}}}\xrightarrow[\left(x,y\right)\to\left(0,0\right)]{}\infty}\\
+{\color{red}\text{NO}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Sugerencia:
+ 
+\begin_inset Formula $\left|\sin\alpha\right|\leq\alpha$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\alpha\in\mathbb{R}$
+\end_inset
+
+.
+ (
+\begin_inset Formula $-\left|\alpha\right|\leq\sin\alpha\leq\left|\alpha\right|$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{alignat*}{1}
+f\left(x,y\right)=\frac{\left|\sin\left(xy\right)\right|}{\sqrt{x^{2}+y^{2}}}\leq & \frac{\left|x\right|\left|y\right|}{\sqrt{x^{2}+y^{2}}}\\
+\leq & \frac{\left|x\right|\left|y\right|}{\sqrt{x^{2}}}=\left|y\right|\xrightarrow[\left(x,y\right)\to\left(0,0\right)]{}0
+\end{alignat*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Continuidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+;
+ 
+\begin_inset Formula $x_{0}\in D_{f}$
+\end_inset
+
+.
+ Intuitivamente:
+ si 
+\begin_inset Formula $x\approx x_{0}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f\left(x\right)\approx f\left(x_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+;
+ 
+\begin_inset Formula $\bar{x}_{0}\in D_{f}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $\bar{x}_{0}\in D_{f}$
+\end_inset
+
+ si 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+ tal que si 
+\begin_inset Formula $\bar{x}\in D_{f}$
+\end_inset
+
+ y 
+\begin_inset Formula $\bar{x}\in B_{\delta}\left(\bar{x}_{0}\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\left|f(\bar{x})-f(\bar{x}_{0})\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+OBS.
+ Si 
+\begin_inset Formula $\bar{x}=\bar{x}_{0}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left|f(\bar{x})-f(\bar{x}_{0})\right|=0<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ No es necesario pedir 
+\begin_inset Formula $\bar{x}\neq\bar{x}_{0}$
+\end_inset
+
+ en esta definición.
+\end_layout
+
+\begin_layout Standard
+OTRA OBS.
+ Si 
+\begin_inset Formula $\bar{x}_{0}\in D_{f}$
+\end_inset
+
+ es también punto de acumulación de 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula 
+\[
+f\text{ es continua en }x_{0}\Leftrightarrow\lim_{\bar{x}\to\bar{x}_{0}}f\left(\bar{x}\right)=f\left(\bar{x}_{0}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $D_{f}=\left\{ 1\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(1\right)=1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g_{f}=\left\{ \left(1,1\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+¿
+\begin_inset Formula $f$
+\end_inset
+
+es continua en 
+\begin_inset Formula $1$
+\end_inset
+
+?
+ Sí.
+ ¡
+\begin_inset Formula $1$
+\end_inset
+
+ no es punto de acumulación!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\left\{ 1,2,3\right\} \to\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $G_{f}=\left\{ P,Q,R\right\} \subseteq\mathbb{R}^{2}$
+\end_inset
+
+.
+ ¿Es continua en 1,
+ 2 y 3?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 1,
+ Dada 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+,
+ tomamos 
+\begin_inset Formula $\delta$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left(1-\delta,1+\delta\right)$
+\end_inset
+
+ no incluya a 2 ni a 3.
+ 
+\end_layout
+
+\begin_layout Standard
+Análogamente,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 2 y en 3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ con 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+ finito.
+ (
+\begin_inset Formula $g_{f}$
+\end_inset
+
+ es un conjunto finito en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+) ¿
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en cada punto de 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Sup.
+ 
+\begin_inset Formula $x_{0}\in D_{f}$
+\end_inset
+
+.
+ P.
+ D.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $x_{0}.$
+\end_inset
+
+ Tomamos 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Tomamos 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left(x_{0}-\delta,x_{0}+\delta\right)$
+\end_inset
+
+no contenga otros elementos de 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Si 
+\begin_inset Formula $x\in D_{f}$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in\left(x_{0}-\delta,x_{0}+\delta\right)$
+\end_inset
+
+ pues 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f(x)-f(x_{0})\right|=0<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+Sea 
+\begin_inset Formula $A\subseteq\mathbb{R}^{n}$
+\end_inset
+
+.
+ Un punto 
+\begin_inset Formula $\bar{a}\in A$
+\end_inset
+
+ es un 
+\shape italic
+punto aislado
+\shape default
+ en 
+\begin_inset Formula $A$
+\end_inset
+
+ si existe 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tal que el único elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ en la bola 
+\begin_inset Formula $B_{\delta}\left(\bar{a}\right)\cap A=\left\{ \bar{a}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+En un conjunto finito en 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ todos sus elementos son puntos aislados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Todos los elementos de 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ son puntos aislados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ no tiene puntos aislados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $A=\left[0,1\right]\cup\left\{ 2\right\} $
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $f:\left[0,1\right]\cup\left\{ 2\right\} \to\mathbb{R}$
+\end_inset
+
+,
+ ¿es continua en 2?
+ 
+\series bold
+Sí.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Si un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ tiene puntos aislados y 
+\begin_inset Formula $f:A\to\mathbb{R}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en los puntos aislados de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ejemplo,
+ toda función 
+\begin_inset Formula $\Phi:\mathbb{N}\to\mathbb{R}$
+\end_inset
+
+ es continua.
+\end_layout
+
+\begin_layout Standard
+OBS.
+ 
+\begin_inset Formula $A\subseteq\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Puntos de acumulación en 
+\begin_inset Formula $A$
+\end_inset
+
+:
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua aquí 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{\bar{x}\to\bar{x}_{0}}{\lim}f\left(\bar{x}\right)=f\left(\bar{x}_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Puntos aislados en 
+\begin_inset Formula $A$
+\end_inset
+
+:
+ toda 
+\begin_inset Formula $f:A\to\mathbb{R}$
+\end_inset
+
+ es continua aquí.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1296 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{mathtools}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Giramos 
+\begin_inset Formula $z=\tan x$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x\in\left[0,\frac{\pi}{2}\right)$
+\end_inset
+
+ alrededor del eje 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ La función obtenida (superficie de revolución) es continua en 
+\begin_inset Formula $\left\{ \left(x,y\right)|x^{2}+y^{2}<\left(\frac{\pi}{2}\right)^{2}\right\} =D$
+\end_inset
+
+,
+ y no es acotada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y\right)=\frac{1}{x^{2}+y^{2}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(x,y\right)\neq\left(0,0\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{2}=\left\{ \left(x,y\right)|x^{2}+y^{2}\leq1\right\} -\left\{ \left(0,0\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y\right)\xrightarrow[\left(x,y\right)\to\left(0,0\right)]{}\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $D_{2}$
+\end_inset
+
+ y no es acotada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Qué es diferente en 
+\begin_inset Formula $\left[a,b\right]\subseteq\mathbb{R}$
+\end_inset
+
+ que aquí sí ocurre que toda 
+\begin_inset Formula $f$
+\end_inset
+
+ continua es acotada?
+\end_layout
+
+\begin_layout Conjecture*
+Si 
+\begin_inset Formula $A\subseteq\mathbb{R}^{2}$
+\end_inset
+
+ es acotado y contiene a todos sus puntos de acumulación.
+ Entonces toda función 
+\begin_inset Formula $f:A\to\mathbb{R}$
+\end_inset
+
+ continua es acotada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caso de 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ (Vamos a aprender de este caso para generalizar)
+\end_layout
+
+\begin_layout Theorem*
+Sea 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ continua.
+ Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es acotada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Supongamos que no está acotada la función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+((
+\begin_inset Formula $f$
+\end_inset
+
+ es acotada en 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ si 
+\begin_inset Formula $\exists M>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left|f\left(x\right)\right|\leq M$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left[a,b\right]$
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Proof
+((
+\begin_inset Formula $f$
+\end_inset
+
+ no es acotada si 
+\begin_inset Formula $\forall m>0$
+\end_inset
+
+ existe 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f\left(x\right)>m$
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Proof
+Supongamos que 
+\begin_inset Formula $f\left(x\right)\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+1° Tomamos 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
+ Entonces existe 
+\begin_inset Formula $x_{1}\in\left[a,b\right]$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f\left(x_{1}\right)>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+2° Tomamos 
+\begin_inset Formula $m_{2}=\max\left\{ 2,f\left(x_{1}\right)\right\} $
+\end_inset
+
+.
+ Existe 
+\begin_inset Formula $x_{2}\in\left[a,b\right]$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f\left(x_{2}\right)>m_{2}\geq2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+En general,
+ para 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+,
+ tomamos 
+\begin_inset Formula $m_{k}=\max\left\{ f\left(x_{k-1}\right),k\right\} $
+\end_inset
+
+.
+ Existe 
+\begin_inset Formula $x_{k}\in\left[a,b\right]$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f\left(x_{k}\right)>m_{k}\geq k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Entonces:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left\{ f\left(x_{k}\right)\right\} $
+\end_inset
+
+ es una sucesión infinita y todos sus términos son distintos.
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ x_{k}\right\} \subseteq\left[a,b\right]$
+\end_inset
+
+ es una sucesión infinita y todos sus términos son distintos.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left\{ f\left(x_{k}\right)\right\} $
+\end_inset
+
+ es monótona creciente y no acotada porque 
+\begin_inset Formula $f\left(x_{k}\right)>m_{k}>k$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k\in\mathbb{N}$
+\end_inset
+
+ y 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{k\to\infty}{\lim}f\left(x_{k}\right)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left\{ x_{k}\right\} \subseteq\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ x_{k}\right\} $
+\end_inset
+
+ es acotada.
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Por B-W,
+ 
+\begin_inset Formula $\left\{ x_{k}\right\} $
+\end_inset
+
+ tiene un punto límite 
+\begin_inset Formula $p\in\mathbb{R}$
+\end_inset
+
+,
+ i.
+ e.
+ 
+\begin_inset Formula $\exists\left\{ x_{k_{\ell}}\right\} \subseteq\left\{ x_{k}\right\} $
+\end_inset
+
+ tal que 
+\begin_inset Formula $\underset{\ell\to\infty}{\lim}x_{k_{\ell}}=p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $p$
+\end_inset
+
+ es punto de acumulación de 
+\begin_inset Formula $\left\{ x_{k}\right\} $
+\end_inset
+
+ porque 
+\begin_inset Formula $\left\{ x_{k}\right\} $
+\end_inset
+
+es infinita y todos sus términos son distintos.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ es punto de acumulación de 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $p\in\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Como 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $p$
+\end_inset
+
+ y 
+\begin_inset Formula $\underset{\ell\to\infty}{\lim}x_{k_{\ell}}=p$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\underset{\ell\to\infty}{\lim}f\left(x_{k_{\ell}}\right)=f\left(p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Pero 
+\begin_inset Formula $\left\{ f\left(x_{k_{\ell}}\right)\right\} $
+\end_inset
+
+ es una subsucesión de 
+\begin_inset Formula $\left\{ f\left(x_{k}\right)\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{\ell\to\infty}{\lim}f\left(x_{k_{\ell}}\right)=\infty$
+\end_inset
+
+.
+ (!)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es acotado y contiene todos sus puntos de acumulación,
+ entonces toda función continua 
+\begin_inset Formula $f:A\to\mathbb{R}$
+\end_inset
+
+ alcanza su máximo y su mínimo en 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\left(A\subseteq\mathbb{R}^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Un conjunto 
+\begin_inset Formula $A\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ que contiene a todos sus puntos de acumulación se llama 
+\shape italic
+conjunto cerrado
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ejemplos:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ cerrado
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ NO:
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ son p.
+ de ac.
+ y no están...
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[a,\infty\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ sí es cerrado y no acotado
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(a,\infty\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ NO:
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ es p.
+ de ac.
+ y 
+\begin_inset Formula $a\not\in\left(a,\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ todo real es p.
+ de ac.
+ de 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ no es cerrado
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \left(x,y\right)|x^{2}+y^{2}<1\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ NO es cerrado
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \left(x,y\right)|x^{2}+y^{2}\leq1\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ SÍ es cerrado
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=\left\{ \frac{1}{n}|n\in\mathbb{N}\right\} \subseteq\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $\longleftarrow$
+\end_inset
+
+ NO es cerrado porque 0 es p.
+ de ac.
+ y 
+\begin_inset Formula $0\not\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left.\begin{array}{c}
+\mathbb{R}\\
+\mathbb{R}^{n}
+\end{array}\right\} $
+\end_inset
+
+Todos sus elementos son p.
+ de ac.
+ y no son acotados.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ es cerrado (simplemente supongan que no lo es..
+ !)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A\subseteq\mathbb{R}^{n}$
+\end_inset
+
+.
+ Al conjunto de puntos de acumulación de 
+\begin_inset Formula $A$
+\end_inset
+
+ lo denotamos por 
+\begin_inset Formula $A'$
+\end_inset
+
+.
+ (A veces llamado 
+\begin_inset Quotes eld
+\end_inset
+
+conjunto derivado
+\begin_inset Quotes erd
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Con esta notación:
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ es cerrado 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A'\subseteq A$
+\end_inset
+
+ (por definición).
+ En particular:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\emptyset'=\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\emptyset'\subseteq\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ es cerrado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=\mathbb{N}\Rightarrow A'=\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $A'\subseteq A$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $A=\mathbb{N}$
+\end_inset
+
+ es cerrado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto finito 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A'=\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ es cerrado.
+\end_layout
+
+\begin_layout Itemize
+Una línea en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ ¿Es cerrado?
+ Sí.
+\end_layout
+
+\begin_layout Itemize
+¿Un plano en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+?
+ Sí.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \left(x,y,z\right)|x^{2}+y^{2}+z^{2}<1\right\} =A$
+\end_inset
+
+.
+ ¿
+\begin_inset Formula $A$
+\end_inset
+
+ es cerrado en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ no es cerrado porque 
+\begin_inset Formula $D=\left\{ \left(x,y,z\right)|x^{2}+y^{2}+z^{2}=1\right\} $
+\end_inset
+
+ no es subconjunto de 
+\begin_inset Formula $A$
+\end_inset
+
+ y todo punto de 
+\begin_inset Formula $D$
+\end_inset
+
+ es de acumulación.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=\bigcup_{n=2}^{\infty}\left[\frac{1}{n},1-\frac{1}{n}\right]$
+\end_inset
+
+.
+ ¿Es cerrado?
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Como 
+\begin_inset Formula $0\not\in\left[\frac{1}{n},1-\frac{1}{n}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $0\not\in A$
+\end_inset
+
+.
+ Análogamente 
+\begin_inset Formula $1\not\in A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\therefore A=\left(0,1\right)$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ No es cerrado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Sea 
+\begin_inset Formula $A\subseteq\mathbb{R}^{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ es punto frontera de 
+\begin_inset Formula $A$
+\end_inset
+
+ si toda vecindad con centro en 
+\begin_inset Formula $p$
+\end_inset
+
+ contiene puntos de 
+\begin_inset Formula $A$
+\end_inset
+
+ y de 
+\begin_inset Formula $A^{c}$
+\end_inset
+
+.
+ (OBS.
+ 
+\begin_inset Formula $A^{c}\equiv\mathbb{R}^{n}\setminus A$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D=\left\{ \left(x,y\right)|x^{2}+y^{2}<1\right\} $
+\end_inset
+
+.
+ Los puntos frontera de 
+\begin_inset Formula $D$
+\end_inset
+
+ son 
+\begin_inset Formula $\left\{ \left(x,y\right)|x^{2}+y^{2}=1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=\left\{ \left(x,y\right)|x^{2}+y^{2}\leq1\right\} $
+\end_inset
+
+.} Frontera de 
+\begin_inset Formula $A$
+\end_inset
+
+ = Frontera de 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[a,b\right]\longrightarrow\partial\left[a,b\right]=\left\{ a,b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(a,b\right)\longrightarrow\partial\left(a,b\right)=\left\{ a,b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[a,\infty\right)\longrightarrow\partial\left[a,\infty\right)=\left\{ a\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(a,\infty\right)\longrightarrow\partial\left(a,\infty\right)=\left\{ a\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{R}\longrightarrow\partial\mathbb{R}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Q}\longrightarrow\partial\mathbb{Q}=\mathbb{R}$
+\end_inset
+
+ (si 
+\begin_inset Formula $x$
+\end_inset
+
+ es cualquier real,
+ en toda vecindad de 
+\begin_inset Formula $x$
+\end_inset
+
+ hay racionales e irracionales)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{N}\longrightarrow\partial\mathbb{N}=\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C=$
+\end_inset
+
+ Conjunto de Cantor es cerrado.
+ (Todos sus elementos son puntos de ac.
+ y todos sus p.
+ de ac.
+ son elementos de 
+\begin_inset Formula $C$
+\end_inset
+
+) ¿
+\begin_inset Formula $\partial C?$
+\end_inset
+
+ 
+\begin_inset Formula $\partial C=C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula $A\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ es cerrado 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\partial A\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

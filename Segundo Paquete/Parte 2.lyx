@@ -1,0 +1,885 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{mathtools}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Recordatorio:
+ 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ (hipótesis:
+ 
+\begin_inset Formula $\bar{x}_{0}$
+\end_inset
+
+ es punto de acumulación de 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\to x_{0}}f(x)=\ell$
+\end_inset
+
+ si cuando 
+\begin_inset Formula $x\approx x_{0}$
+\end_inset
+
+entonces 
+\begin_inset Formula $f(x)\approx\ell$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ i.
+ e.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $f(x)$
+\end_inset
+
+ se puede acercar a 
+\begin_inset Formula $l$
+\end_inset
+
+ tanto como queramos si 
+\begin_inset Formula $x$
+\end_inset
+
+ está suficientemente cerca de 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $\ell\in\mathbb{R}$
+\end_inset
+
+ es el límite de 
+\begin_inset Formula $f\left(\bar{x}\right)$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\bar{x}=\left(x,y\right)$
+\end_inset
+
+ tiende a 
+\begin_inset Formula $\bar{x}_{0}=\left(x_{0},y_{0}\right)\text{\ensuremath{\Leftrightarrow}}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\delta=\delta\left(\varepsilon,\bar{x}_{0}\right)\right)$
+\end_inset
+
+ tal que si 
+\begin_inset Formula $\bar{x}\in D_{f}$
+\end_inset
+
+ y 
+\begin_inset Formula $0<\left\Vert \bar{x}-\bar{x}_{0}\right\Vert <\delta$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left|f(\bar{x})-\ell\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El último ejemplo:
+ 
+\begin_inset Formula $f\left(x,y\right)=\frac{x^{2}y}{x^{2}+y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Por todas las rectas 
+\begin_inset Formula $y=mx$
+\end_inset
+
+ ,
+ 
+\begin_inset Formula $f\left(x,mx\right)\xrightarrow[x\to0]{}0$
+\end_inset
+
+ (incluso por algunas curvas,
+ como 
+\begin_inset Formula $x=y^{2}$
+\end_inset
+
+o 
+\begin_inset Formula $y=x^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Conjetura:
+ 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(0,0\right)}{\lim}f\left(x,y\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+¿Cómo demostrarlo?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\neq0,\,\left|\frac{x^{2}y}{x^{2}+y^{2}}\right|=\frac{x^{2}\left|y\right|}{x^{2}+y^{2}}\leq\frac{x^{2}\left|y\right|}{x^{2}}=\left|y\right|\xrightarrow[\left(x,y\right)\to\left(0,0\right)]{}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(x^{2}+y^{2}\geq x^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(la idea 
+\begin_inset Formula $\left(x,y\right)\to\left(0,0\right)\Rightarrow\left|y\right|\to0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+(OBS:
+ 
+\begin_inset Formula $\left|y\right|\leq\left\Vert \left(x,y\right)\right\Vert <\varepsilon=\delta$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+,
+ tomamos 
+\begin_inset Formula $\delta=\varepsilon$
+\end_inset
+
+.
+ Entonces si 
+\begin_inset Formula $\left\Vert \left(x,y\right)-\left(0,0\right)\right\Vert =\left\Vert \left(x,y\right)\right\Vert \leq\delta$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left|f(x,y)\right|\leq\left|y\right|\leq\left\Vert \left(x,y\right)\right\Vert <\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $f\left(x,y\right)=\frac{x^{2}y^{2}}{x^{2}+y^{2}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(x,y\right)\neq\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+P.
+ D.
+ 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(0,0\right)}{\lim}f\left(x,y\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Sea 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{gather*}
+\left|f(x,y)\right|\leq y^{2}<\left\Vert \left(x,y\right)\right\Vert ^{2}<\varepsilon\\
+\therefore\textrm{ tomamos }\delta=\sqrt{\varepsilon}\\
+\therefore\left\Vert \left(x,y\right)\right\Vert <\delta\Rightarrow\left\Vert \left(x,y\right)\right\Vert ^{2}<\delta^{2}=\varepsilon\\
+\therefore\left|f\left(x,y\right)\right|<\varepsilon
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Cómo son las gráficas?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y\right)=\frac{xy}{x^{2}+y^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(f\left(x,0\right)=0\xrightarrow[x\to0]{}0\right.$
+\end_inset
+
+ y 
+\begin_inset Formula $\left.f\left(0,y\right)=0\xrightarrow[y\to0]{}0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x,x\right)=\frac{1}{2}\xrightarrow[x\to0]{}\frac{1}{2}$
+\end_inset
+
+ (
+\begin_inset Formula $\therefore\not\exists\lim$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x,mx\right)=\frac{mx^{2}}{\left(1+m^{2}\right)x^{2}}=\frac{m}{1+m^{2}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $m\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,\frac{1}{2}x\right)=\frac{\frac{1}{2}}{\left(1+\frac{1}{4}\right)}=\frac{\frac{1}{2}}{\frac{5}{4}}=\frac{2}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Cómo es 
+\begin_inset Formula $g_{f}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+f\left(x,\frac{1}{m}x\right)= & \frac{\frac{1}{m}}{\left(1+\left(\frac{1}{m}\right){}^{2}\right)}\\
+= & \frac{m^{2}}{m\left(m^{2}+1\right)}\\
+= & \frac{m}{1+m^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\begin{gather*}
+f\left(x,y\right)=\frac{x^{2}y}{x^{2}+y^{2}}\\
+f\left(x,mx\right)=\frac{mx^{3}}{x^{2}+m^{2}x^{2}}=\frac{m}{1+m^{2}}x\\
+f\left(x,mx\right)=kx\xrightarrow[x\to0]{}0\\
+f\left(x,x\right)=2x
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise*
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x,y\right)=\frac{x}{x^{2}+y^{2}}$
+\end_inset
+
+(
+\begin_inset Formula $\not\exists\lim$
+\end_inset
+
+ en 
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x,y\right)=\frac{x^{2}y^{2}}{x^{2}+y^{2}}$
+\end_inset
+
+(sí 
+\begin_inset Formula $\exists$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x,y\right)=\left(x^{2}+y^{2}\right)\sin\left(\frac{1}{x^{2}+y^{2}}\right)$
+\end_inset
+
+ ,
+ 
+\begin_inset Formula $\left(\alpha^{2}\sin\left(\frac{1}{\alpha^{2}}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+(Operaciones) Supongamos 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(x_{0},y_{0}\right)}{\lim}f\left(x,y\right)=\ell$
+\end_inset
+
+ y 
+\begin_inset Formula $\underset{\left(x,y\right)\to\left(x_{0},y_{0}\right)}{\lim}g\left(x,y\right)=m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula 
+\[
+\underset{\bar{x}\to\bar{x}_{0}}{\lim}f\left(\bar{x}\right)=\ell\;\text{ y \;\underset{\bar{x}\to\bar{x}_{0}}{\lim}g\left(\bar{x}\right)=m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Entonces:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{\bar{x}\to\bar{x}_{0}}{\lim}\left(f\left(\bar{x}\right)+g\left(\bar{x}\right)\right)=\ell+m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{\bar{x}\to\bar{x}_{0}}{\lim}\left(f\left(\bar{x}\right)g\left(\bar{x}\right)\right)=\ell\cdot m$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\underset{\bar{x}\to\bar{x}_{0}}{\lim}\left(\alpha f\left(\bar{x}\right)\right)=\alpha\ell,\,\forall\alpha\in\mathbb{R}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $m\neq0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\underset{\bar{x}\to\bar{x}_{0}}{\lim}\left(\frac{f\left(\bar{x}\right)}{g\left(\bar{x}\right)}\right)=\frac{\ell}{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Si 
+\begin_inset Formula $\underset{\bar{x}\to\bar{x}_{0}}{\lim}f\left(\bar{x}\right)$
+\end_inset
+
+ existe,
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es acotada en una vecindad de 
+\begin_inset Formula $\bar{x}_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Si 
+\begin_inset Formula $\underset{\bar{x}\to\bar{x}_{0}}{\lim}f\left(\bar{x}\right)>0$
+\end_inset
+
+,
+ entonces existen 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ y 
+\begin_inset Formula $m>0$
+\end_inset
+
+ tales que 
+\begin_inset Formula $f\left(\bar{x}_{0}\right)\geq m$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\bar{x}\in B_{\delta}\left(\bar{x_{0}}\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\bar{x}\neq\bar{x}_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\bar{x}\in Dom_{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
