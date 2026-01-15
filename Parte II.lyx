@@ -120,6 +120,7 @@ Recordatorio de la definición de parciales:
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Float figure
 placement H
 alignment document
@@ -128,6 +129,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/001. Pág. 31.svg
+	width 6cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -959,16 +968,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/002. Pág. 39.svg
+	width 10cm
 
-\end_layout
+\end_inset
 
-\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Parte II.
- pág.
- 39
+
 \end_layout
 
 \end_inset

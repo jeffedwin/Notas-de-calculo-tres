@@ -114,17 +114,17 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/003.Pág.41.svg
+	width 8cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Plano tangente a 
-\begin_inset Formula $g_{f}$
-\end_inset
-
- en 
-\begin_inset Formula $P_{0}$
-\end_inset
-
 
 \end_layout
 
@@ -216,6 +216,21 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág42-1.svg
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág42-2.svg
+	height 6cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -271,6 +286,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág42-3.svg
+	height 5cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -591,6 +614,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág45.svg
+	height 5cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -695,6 +726,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág46.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -769,7 +807,7 @@ Más precisamente ,
 \end_layout
 
 \begin_layout Standard
-Esta pregunta es lo recíproco del teorema anterior y la respuesta -quiza algo sorprendente- es que NO.
+Esta pregunta es lo recíproco del teorema anterior y la respuesta -quizá algo sorprendente- es que NO.
  Veamos un ejemplo.
 \end_layout
 
@@ -837,7 +875,7 @@ filosofía
 \begin_inset Quotes erd
 \end_inset
 
- de hacer ejmplos sencillos de lo que estamos discutiendo podemos proceder como sigue:
+ de hacer ejemplos sencillos de lo que estamos discutiendo podemos proceder como sigue:
  sea 
 \begin_inset Formula $f\left(x,y\right)=\{0\text{ en todos los puntos de la parábola }y=x^{2}\text{, en los que definimos }f\text{ como }1\text{, excepto en }\left(0,0\right)$
 \end_inset
@@ -854,6 +892,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág47.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -1034,6 +1079,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág49-1.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -1176,6 +1228,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fig Parte II/III.Pág49-2.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 

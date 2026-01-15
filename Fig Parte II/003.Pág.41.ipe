@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70212" creator="svgtoipe 20240516">
+<ipestyle>
+<layout paper="343 231" frame="343 231" origin="0 0" crop="no"/>
+<opacity name="10%" value="0.10"/>
+<opacity name="20%" value="0.20"/>
+<opacity name="30%" value="0.30"/>
+<opacity name="40%" value="0.40"/>
+<opacity name="50%" value="0.50"/>
+<opacity name="60%" value="0.60"/>
+<opacity name="70%" value="0.70"/>
+<opacity name="80%" value="0.80"/>
+<opacity name="90%" value="0.90"/>
+<pathstyle cap="0" join="0" fillrule="wind"/>
+</ipestyle>
+<ipestyle>
+</ipestyle>
+<page>
+<group matrix="1 0 0 -1 0 231">
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+224 560 m
+476 560 l
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" fill="0 0 0" pen="0.4" cap="0" join="1">
+476 560 m
+471 561.664 l
+471 558.336 l
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+134.906 470.906 m
+224 560 l
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" fill="0 0 0" pen="0.4" cap="0" join="1">
+134.906 470.906 m
+139.617 473.262 l
+137.262 475.617 l
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+224 560 m
+224 686 l
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" fill="0 0 0" pen="0.4" cap="0" join="1">
+224 686 m
+222.336 681 l
+225.664 681 l
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+294 700 m
+294 532 l
+392 490 l
+392 658 l
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+364.059 615.145 m
+364.059 502.062 l
+</path>
+<path fill="0 0 0">
+231.859 85.8555 m
+231.859 83.457 228.258 83.457 228.258 85.8555 c
+228.258 88.2539 231.859 88.2539 231.859 85.8555 c
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+406 630 m
+364 602 l
+274.309 601.926 l
+316.309 629.926 l
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+294 615.055 m
+383.66 615.172 l
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+363.887 580.629 m
+383.66 615.172 433.551 631.68 432.051 631.078 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+432.051 631.078 m
+375.598 653 336.262 637.082 335.66 636.184 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+364.059 580.93 m
+346.77 590.539 331.004 584.531 317.016 575.977 c
+303.027 567.418 290.816 556.305 277.805 561.41 c
+264.793 566.516 250.98 587.836 251.277 587.836 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+251.277 587.836 m
+278.004 586.035 293.621 596.543 294.219 596.844 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+294 596.715 m
+317.969 608.012 331.855 621.168 335.66 636.184 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+294 596.715 m
+309.594 591.688 335.617 602.094 335.617 602.094 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+335.617 602.094 m
+358.488 625.238 392 610.148 392 610.148 c
+</path>
+<path fill="0 0 0">
+231.859 198.938 m
+231.859 196.535 228.258 196.535 228.258 198.938 c
+228.258 201.336 231.859 201.336 231.859 198.938 c
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+364.059 502.062 m
+330.961 516.297 l
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" fill="0 0 0" pen="0.4" cap="0" join="1">
+330.961 516.297 m
+334.898 512.789 l
+336.211 515.852 l
+h
+</path>
+<group>
+<group>
+</group>
+</group>
+<group>
+</group>
+<group>
+</group>
+<group>
+</group>
+<group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+</group>
+<group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+</group>
+<group>
+<group>
+</group>
+</group>
+<group>
+</group>
+<group>
+</group>
+<group>
+</group>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+454.605 641.094 m
+440.992 647.301 426.176 642.695 410.16 627.281 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" fill="0 0 0" pen="0.4" cap="0" join="1">
+410.16 627.281 m
+414.918 629.547 l
+412.609 631.949 l
+h
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" pen="0.4" cap="0" join="1">
+245.305 649.801 m
+248.508 626.18 261.422 613.77 284.043 612.566 c
+</path>
+<path matrix="1 0 0 -1 -134 701" stroke="0 0 0" fill="0 0 0" pen="0.4" cap="0" join="1">
+284.043 612.566 m
+279.137 614.496 l
+278.961 611.168 l
+h
+</path>
+</group>
+</page>
+</ipe>
