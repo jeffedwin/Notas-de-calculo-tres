@@ -126,6 +126,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P1-p7-1.svg
+	height 5cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -260,6 +268,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P2-p1-2.svg
+	height 5cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -284,6 +300,47 @@ status open
 El último ejemplo:
  
 \begin_inset Formula $f\left(x,y\right)=\frac{x^{2}y}{x^{2}+y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P1-p8-1.svg
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -368,6 +425,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P2-p2.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -874,10 +938,6 @@ Si
 \begin_inset Separator plain
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

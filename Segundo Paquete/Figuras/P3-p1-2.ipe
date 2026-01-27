@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20260116134527" modified="D:20260116140716"/>
+<info created="D:20260116134527" modified="D:20260127145745"/>
 <preamble>\usepackage{amssymb, mathrsfs}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -324,18 +324,71 @@ h
 224 798 l
 </path>
 <use layer="beta" matrix="1 0 0 1 0 6" name="mark/disk(sx)" pos="280 714" size="normal" stroke="black"/>
+<path stroke="red" fill="red" dash="dotted" opacity="30%" stroke-opacity="opaque">
+24 0 0 24 280 720 e
+</path>
 <path matrix="1.6 0 0 1 -230.4 0" stroke="black">
 384 672 m
 464 672 l
 </path>
-<use matrix="1 0 0 1 24.593 0" name="mark/disk(sx)" pos="424 672" size="normal" stroke="black"/>
+<use matrix="1.6 0 0 1 -230.4 0" name="mark/disk(sx)" pos="424 672" size="normal" stroke="black"/>
+<path matrix="1.6 0 0 1 -230.4 0" stroke="black">
+416 680 m
+408 672
+416 664 c
+</path>
+<path matrix="1.6 0 0 1 -230.4 0" stroke="black">
+432 680 m
+440 672
+432 664 c
+</path>
 <path stroke="black" arrow="normal/tiny">
 328 704 m
 360 720
 392 704 c
 </path>
 <text transformations="translations" pos="360 720" stroke="black" type="label" width="5.95" height="6.926" depth="1.93" halign="center" valign="baseline" style="math">f</text>
-<text transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
-<text transformations="translations" pos="280 728" stroke="black" type="label" width="10.163" height="5.661" depth="1.49" halign="center" valign="baseline" style="math">\bar{x}_0</text>
+<text matrix="1.6 0 0 1 -230.4 0" transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
+<text matrix="1 0 0 1 6.84967 -3.14024" transformations="translations" pos="280 728" stroke="black" type="label" width="10.163" height="5.661" depth="1.49" halign="center" valign="baseline" style="math">\bar{x}_0</text>
+<path stroke="black">
+280 720 m
+259.755 707.111 l
+</path>
+<text matrix="1 0 0 1 10.0512 2.09317" transformations="translations" pos="256 720" stroke="black" type="label" width="4.805" height="6.918" depth="0" halign="center" valign="top" style="math">\delta</text>
+<path matrix="1 0 0 1 4 32" stroke="black">
+196 560 m
+476 560 l
+</path>
+<use matrix="1.6 0 0 1 -282.4 -80" name="mark/disk(sx)" pos="424 672" size="normal" stroke="black"/>
+<path matrix="1.6 0 0 1 -282.4 -80" stroke="black">
+416 680 m
+408 672
+416 664 c
+</path>
+<path matrix="1.6 0 0 1 -282.4 -80" stroke="black">
+432 680 m
+440 672
+432 664 c
+</path>
+<text matrix="1.6 0 0 1 -282.4 -88" transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="center" style="math">\ell</text>
+<path matrix="1.6 0 0 1 -443.2 -80" stroke="black">
+416 680 m
+408 672
+416 664 c
+</path>
+<path matrix="1.6 0 0 1 -233.6 -80" stroke="black">
+432 680 m
+440 672
+432 664 c
+</path>
+<use matrix="1 0 0 1 4 32" name="mark/disk(sx)" pos="336 560" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 4 30" transformations="translations" pos="336 546" stroke="black" type="label" width="4.981" height="6.42" depth="0" halign="center" valign="center" style="math">0</text>
+<text matrix="1 0 0 1 4 32" transformations="translations" pos="212 544" stroke="black" type="label" width="18.5" height="6.808" depth="0.83" halign="center" valign="center" style="math">-M</text>
+<text matrix="1 0 0 1 4 32" transformations="translations" pos="460 544" stroke="black" type="label" width="10.751" height="6.808" depth="0" halign="center" valign="center" style="math">M</text>
+<path stroke="red" pen="heavier" stroke-opacity="50%">
+376.8 592 m
+415.2 592 l
+</path>
+<use name="mark/disk(sx)" pos="396 592" size="normal" stroke="black"/>
 </page>
 </ipe>

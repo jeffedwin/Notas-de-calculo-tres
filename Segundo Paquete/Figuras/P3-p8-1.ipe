@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20260116134527" modified="D:20260116140716"/>
+<info created="D:20260116134527" modified="D:20260127161409"/>
 <preamble>\usepackage{amssymb, mathrsfs}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -335,7 +335,14 @@ h
 392 704 c
 </path>
 <text transformations="translations" pos="360 720" stroke="black" type="label" width="5.95" height="6.926" depth="1.93" halign="center" valign="baseline" style="math">f</text>
-<text transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
-<text transformations="translations" pos="280 728" stroke="black" type="label" width="10.163" height="5.661" depth="1.49" halign="center" valign="baseline" style="math">\bar{x}_0</text>
+<text matrix="1 0 0 1 24 0" transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
+<text matrix="1 0 0 1 0 -12" transformations="translations" pos="280 728" stroke="black" type="label" width="8.918" height="4.579" depth="1.1" halign="center" valign="top" size="footnote" style="math">\bar{x}_0</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="400 672" stroke="black" type="label" width="8.778" height="18.564" depth="6.18" halign="center" valign="center" size="Huge" style="math">(</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="496 672" stroke="black" type="label" width="7.317" height="15.477" depth="5.15" halign="center" valign="center" size="huge" style="math">)</text>
+<path stroke="black" dash="dotted">
+24 0 0 24 280 720 e
+</path>
+<text transformations="translations" pos="520 672" stroke="black" type="label" width="7.195" height="6.863" depth="0" halign="center" valign="center" style="math">\mathbb{R}</text>
+<text transformations="translations" pos="280 644" stroke="black" type="label" width="11.665" height="8.11" depth="0" halign="center" valign="top" style="math">\mathbb{R}^2</text>
 </page>
 </ipe>

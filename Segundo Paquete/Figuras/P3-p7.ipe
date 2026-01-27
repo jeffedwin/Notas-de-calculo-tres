@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20260116134527" modified="D:20260116140716"/>
+<info created="D:20260116134527" modified="D:20260127155058"/>
 <preamble>\usepackage{amssymb, mathrsfs}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -314,28 +314,42 @@ h
 <page>
 <layer name="alpha"/>
 <layer name="beta"/>
-<view layers="alpha beta" active="beta"/>
-<path layer="alpha" matrix="1 0 0 1 1.2107 0" stroke="black" arrow="normal/tiny">
-154 672 m
-336 672 l
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha beta gamma delta epsilon" active="beta"/>
+<path layer="alpha" stroke="black" arrow="normal/tiny">
+224 672 m
+224 742 l
 </path>
-<path matrix="1 0 0 0.75 0 157.495" stroke="black" arrow="normal/tiny">
-224 630 m
-224 798 l
+<path matrix="1.16667 0 0 1 -37.3333 0" stroke="black" arrow="normal/tiny">
+224 672 m
+308 672 l
 </path>
-<use layer="beta" matrix="1 0 0 1 0 6" name="mark/disk(sx)" pos="280 714" size="normal" stroke="black"/>
-<path matrix="1.6 0 0 1 -230.4 0" stroke="black">
-384 672 m
-464 672 l
-</path>
-<use matrix="1 0 0 1 24.593 0" name="mark/disk(sx)" pos="424 672" size="normal" stroke="black"/>
 <path stroke="black" arrow="normal/tiny">
-328 704 m
-360 720
-392 704 c
+223.868 672 m
+151.687 630.25 l
 </path>
-<text transformations="translations" pos="360 720" stroke="black" type="label" width="5.95" height="6.926" depth="1.93" halign="center" valign="baseline" style="math">f</text>
-<text transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
-<text transformations="translations" pos="280 728" stroke="black" type="label" width="10.163" height="5.661" depth="1.49" halign="center" valign="baseline" style="math">\bar{x}_0</text>
+<path layer="beta" stroke="red" fill="red" opacity="30%" stroke-opacity="opaque">
+308 672 m
+266 700 l
+182 700 l
+224 672 l
+h
+</path>
+<path stroke="black" dash="dotted">
+266 700 m
+182 700 l
+182.037 647.805 l
+266.037 647.805 l
+h
+</path>
+<path stroke="black" dash="dotted">
+266.037 647.805 m
+308 672 l
+</path>
+<text matrix="1 0 0 1 0.313 -2.25" transformations="translations" pos="151.687 630.25" stroke="black" type="label" width="9.036" height="6.808" depth="0" halign="right" valign="top" style="math">X</text>
+<text matrix="1 0 0 1 0 2" transformations="translations" pos="224 742" stroke="black" type="label" width="7.513" height="6.808" depth="0" halign="center" valign="bottom" style="math">Z</text>
+<text matrix="1 0 0 1 1.99894 0" transformations="translations" pos="322.001 672" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="center">Y</text>
 </page>
 </ipe>

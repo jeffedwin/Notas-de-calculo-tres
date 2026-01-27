@@ -157,6 +157,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p1-1.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -242,6 +249,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p1-2.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -257,6 +271,13 @@ status open
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
 \end_inset
 
 
@@ -373,6 +394,47 @@ si
 .
 \end_layout
 
+\begin_layout Proof
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p2-1.svg
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -459,6 +521,47 @@ Sea
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p2-2.svg
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -562,10 +665,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p3-1.svg
+	height 5cm
 
-\end_layout
+\end_inset
 
-\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -636,6 +743,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p3-2.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -763,6 +877,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p4.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -1213,6 +1334,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p7.svg
+	height 5cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1386,6 +1515,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p8-1.svg
+	height 5cm
+
+\end_inset
+
 
 \end_layout
 
@@ -1450,6 +1586,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/P3-p8-2.svg
+	height 5cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout

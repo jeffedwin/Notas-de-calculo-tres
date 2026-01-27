@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20260116134527" modified="D:20260116140716"/>
+<info created="D:20260116134527" modified="D:20260127153538"/>
 <preamble>\usepackage{amssymb, mathrsfs}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -335,7 +335,67 @@ h
 392 704 c
 </path>
 <text transformations="translations" pos="360 720" stroke="black" type="label" width="5.95" height="6.926" depth="1.93" halign="center" valign="baseline" style="math">f</text>
-<text transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
+<text matrix="1 0 0 1 24 0" transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
 <text transformations="translations" pos="280 728" stroke="black" type="label" width="10.163" height="5.661" depth="1.49" halign="center" valign="baseline" style="math">\bar{x}_0</text>
+<use name="mark/disk(sx)" pos="292.305 728.609" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="294.03 720.106" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="297.85 731.936" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="299.576 725.898" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="303.643 719.613" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="298.959 717.148" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="291.319 710.37" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="288.854 719.12" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="282.938 710.123" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="289.347 702.975" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="270.738 703.468" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="276.037 709.26" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="267.534 715.792" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="268.766 724.665" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="264.822 731.936" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="272.093 738.715" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="289.224 741.549" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="289.717 734.894" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="298.22 739.084" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="303.519 734.278" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="278.748 739.331" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="272.586 745" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="264.822 737.975" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="257.305 734.894" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="262.481 727.007" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="258.414 717.025" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="256.196 727.007" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="264.329 710.616" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="281.336 703.468" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="274.928 717.641" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="410.043 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="406.465 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="433.117 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="422.383 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="416.907 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="432.752 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="438.593 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="427.056 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="399.893 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="443.339 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="444.727 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="464.807 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="460.061 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="454.438 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="451.737 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="467.728 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="478.827 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="484.157 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="473.861 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="457.865 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="488.182 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="494.22 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="430.506 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="470.682 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="413.376 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="424.837 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="475.981 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="461.439 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="441.228 672" size="tiny" stroke="black"/>
+<use name="mark/disk(sx)" pos="435.435 672" size="tiny" stroke="black"/>
 </page>
 </ipe>

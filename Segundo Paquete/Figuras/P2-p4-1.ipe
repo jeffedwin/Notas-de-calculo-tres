@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20260116134527" modified="D:20260116140716"/>
-<preamble>\usepackage{amssymb, mathrsfs}</preamble>
+<info created="D:20260119190918" modified="D:20260125172247"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -313,29 +312,38 @@ h
 </ipestyle>
 <page>
 <layer name="alpha"/>
-<layer name="beta"/>
-<view layers="alpha beta" active="beta"/>
-<path layer="alpha" matrix="1 0 0 1 1.2107 0" stroke="black" arrow="normal/tiny">
-154 672 m
-336 672 l
+<view layers="alpha" active="alpha"/>
+<path layer="alpha" stroke="black" arrow="normal/tiny">
+224 560 m
+224 658 l
 </path>
-<path matrix="1 0 0 0.75 0 157.495" stroke="black" arrow="normal/tiny">
-224 630 m
-224 798 l
-</path>
-<use layer="beta" matrix="1 0 0 1 0 6" name="mark/disk(sx)" pos="280 714" size="normal" stroke="black"/>
-<path matrix="1.6 0 0 1 -230.4 0" stroke="black">
-384 672 m
-464 672 l
-</path>
-<use matrix="1 0 0 1 24.593 0" name="mark/disk(sx)" pos="424 672" size="normal" stroke="black"/>
 <path stroke="black" arrow="normal/tiny">
-328 704 m
-360 720
-392 704 c
+224 560 m
+350 560 l
 </path>
-<text transformations="translations" pos="360 720" stroke="black" type="label" width="5.95" height="6.926" depth="1.93" halign="center" valign="baseline" style="math">f</text>
-<text transformations="translations" pos="424 664" stroke="black" type="label" width="4.151" height="6.918" depth="0" halign="center" valign="top" style="math">\ell</text>
-<text transformations="translations" pos="280 728" stroke="black" type="label" width="10.163" height="5.661" depth="1.49" halign="center" valign="baseline" style="math">\bar{x}_0</text>
+<path matrix="0.501383 -0.865225 0.864813 0.502094 -373.065 472.371" stroke="black" arrow="normal/tiny">
+224 560.532 m
+224 476 l
+</path>
+<use name="mark/disk(sx)" pos="272.151 535.161" size="small" stroke="black"/>
+<path matrix="0.292643 -0.500774 0.504768 0.290601 -33.8776 509.131" stroke="black" dash="dotted">
+224 560.532 m
+224 476 l
+</path>
+<path matrix="0.717683 0 0 1 20.9008 -24.7157" stroke="black" dash="dotted">
+224 560 m
+350 560 l
+</path>
+<path stroke="black">
+182.949 535.284 m
+229.333 535.284
+272 624
+289.444 560
+314.448 559.754 c
+</path>
+<path matrix="0.805299 0 0 1 43.613 -29.2979" stroke="black">
+280 616 m
+224 616 l
+</path>
 </page>
 </ipe>
