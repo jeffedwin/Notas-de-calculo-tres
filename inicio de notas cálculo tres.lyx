@@ -575,7 +575,7 @@ despejar
 \begin_layout Standard
 \begin_inset Formula 
 \[
-p(x_{0},y_{0})=ax_{0}+by_{0}+c=f(x_{0},y_{0}),
+p\text{(x_{0},y_{0})}=ax_{0}+by_{0}+c=f(x_{0},y_{0}),
 \]
 
 \end_inset
@@ -604,9 +604,9 @@ y por lo tanto
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-p(x,y)=ax+by+(f(x_{0},y_{0})-ax_{0}-by_{0})=a(x-x_{0})+b(y-y_{0})+f(x_{0},y_{0}).
-\end{equation}
+\[
+p(x,y)=ax+by+(f(x_{0},y_{0})-ax_{0}-by_{0})=a(x-x_{0})+b(y-y_{0})+f(x_{0},y_{0})...(2)
+\]
 
 \end_inset
 
@@ -680,7 +680,1648 @@ O sea,
 \begin_inset Formula $(x,y)\in U$
 \end_inset
 
- es cualquier
+ es cualquier punto cercano a 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+,
+ una forma de medir esta distancia entre el plano 
+\begin_inset Formula $\mathscr{\mathcal{P}}$
+\end_inset
+
+ y la gràfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ es a través de la diferencia
+\begin_inset Formula 
+\[
+\left|f(x,y)-p(x,y)\right|.\textrm{ (Ver figura más adelante)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y debería ocurrir,
+ claro está que 
+\begin_inset Formula 
+\begin{equation}
+\lim_{(x,y)\to(x_{0},y_{0})}\left|f(x,y)-p(x,y)\right|=0\label{eq:2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lamentablemente si 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+ cualquier plano que pase por 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ cumplirá está condición.
+\end_layout
+
+\begin_layout Standard
+El dibujo para planos puede ser algo confuso en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ pero piénsese en el caso 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+;
+ sea 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ 
+\bar under
+cualquier
+\bar default
+ recta que pase por 
+\begin_inset Formula $P_{0}=(x_{0},f(x_{0}))$
+\end_inset
+
+.
+ Como se muestra en la figura 5,
+ es evidente que 
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}\left|f(x)-p(x)\right|=0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ representa a la recta 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+.
+ (Ver fig 5)
+\end_layout
+
+\begin_layout Standard
+(Ver ejercicio al final)
+\end_layout
+
+\begin_layout Standard
+Necesitamos una condición más fuerte que 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+
+\end_inset
+
+ para definir el plano tangente buscado.
+ Para obtenerla nos ayudaremos de una situación que puede ocurrir en una competencia deportiva.
+\end_layout
+
+\begin_layout Standard
+Supongamos que en un concurso de tiro al blanco,
+ el tirador 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ falla por diez cms su tiro y el tirador 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ por 20 cms.
+ ¿Cuál tiene mejor puntería?
+\end_layout
+
+\begin_layout Standard
+La verdad es que no hay que apresurarnos a dar una respuesta que parece obvia porque hace falta información.
+ Supongamos,
+ entonces,
+ que 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ tiró a 1 metro de distancia mientras que 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ tiró a 50 metros de distancia...
+ ¿Cuál tiene mejor puntería?
+\end_layout
+
+\begin_layout Standard
+O sea que hay que tomar en cuenta 
+\bar under
+desde dónde
+\bar default
+ están tirando los concursantes,
+ hay que 
+\bar under
+relativizar
+\bar default
+ estos resultados.
+ Un modo de hacer esto es considerar el cociente 
+\begin_inset Formula 
+\[
+\frac{\textrm{distancia al blanco}}{\textrm{distancia del tirador}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En nuestro caso,
+ 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ tendría,
+ como puntuación 
+\begin_inset Formula $\frac{10\textrm{cm}}{1\textrm{metro}}=\frac{10}{100}=\frac{1}{10}$
+\end_inset
+
+,
+ y 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ tendría 
+\begin_inset Formula $\frac{20\textrm{cm}}{50\textrm{metros}}=\frac{20}{5000}=\frac{2}{500}$
+\end_inset
+
+.
+ El ganador es,
+ por supuesto,
+ 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ dado que 
+\begin_inset Formula $\frac{2}{500}<\frac{1}{10}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Adaptando el ejemplo del tiro al blanco a nuestro problema de definir 
+\begin_inset Quotes eld
+\end_inset
+
+plano tangente a la gráfica en el punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+,
+ la idea sería no considerar solamente lo que podemos llamar la 
+\bar under
+discrepancia total
+\bar default
+ entre el valor de 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ y el de 
+\begin_inset Formula $p(x,y)$
+\end_inset
+
+,
+ es decir,
+ no soalmente pensar en 
+\begin_inset Formula 
+\[
+\left|f(x,y)-p(x,y)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta es la 
+\bar under
+discrepancia total
+\bar default
+ o,
+ si se quiere,
+ una medida del 
+\bar under
+error total
+\bar default
+ que cometemos si en lugar del valor 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ de la función en el punto 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+,
+ tomamos el valor 
+\begin_inset Formula $p(x,y)$
+\end_inset
+
+ de un plano (que pasa por 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+) en el punto (x,y).
+\end_layout
+
+\begin_layout Standard
+Debemos 
+\begin_inset Quotes eld
+\end_inset
+
+relativizar
+\begin_inset Quotes erd
+\end_inset
+
+ aquí también.
+ ¿Y cómo hacer esto?
+ Una manera es fijarnos también en la distancia entre el punto 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ y el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+,
+ y tomar el cociente:
+\begin_inset Formula 
+\[
+\frac{\left|f(x,y)-p(x,y)\right|}{\left\Vert (x,y)-(x_{0},y_{0})\right\Vert }.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A este cociente lo podemos llamar el 
+\bar under
+error relativo
+\bar default
+ de aproximar 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ mediante 
+\begin_inset Formula $p(x,y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El plano tangente será quel para el cual este error relativo se vaya a cero conforme 
+\begin_inset Formula $(x,y)\to(x_{0},y_{0})$
+\end_inset
+
+.
+ (Ver fig 8)
+\end_layout
+
+\begin_layout Standard
+En resumen damos la siguiente,
+ a manera de definición preliminar:
+\end_layout
+
+\begin_layout Standard
+Def 1 Sea 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $(x_{0},y_{0})\in U\subseteq Dom(f)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ abierto en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Un plano en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ dado por una ecuación 
+\begin_inset Formula 
+\begin{equation}
+p(x,y)=a(x-x_{0})+b(y-y_{0})+f(x_{0},y_{0})\label{eq:3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es el plano tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P_{0}=(x_{0},y_{0},f(x_{0},y_{0}))$
+\end_inset
+
+ si,
+ y sólo si,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lim_{(x,y)\to(x_{0},y_{0})}\frac{\left|f(x,y)-p(x,y)\right|}{\left\Vert (x,y)-(x_{0},y_{0})\right\Vert }=0.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este momento cualquiera puede preguntar si de verdad esta definición representa lo que queremos decir...
+ ¿Cómo saber eso?
+\end_layout
+
+\begin_layout Standard
+Pues podemos 
+\begin_inset Quotes eld
+\end_inset
+
+simplemente
+\begin_inset Quotes erd
+\end_inset
+
+ avanzar,
+ proceder a hacer ejemplos y obtener resultados que confirmen,
+ en distintos modos,
+ nuestra intuición y nuestra experiencia de lo que debe ser un plano tangente...
+\end_layout
+
+\begin_layout Standard
+Está bien,
+ es válido.
+ Pero podemos,
+ antes,
+ hacer lo siguiente:
+ así como en Física se hacen experimentos para fortalecer o comprobar tal o cual conjetura,
+ podríamos aquí hacer algún tipo de comprobación,
+ con algún caso conocido,
+ de que esta definición sí funciona.
+ Y un caso conocido que tenemos a la mano es la definición de recta tangente a la gráfica de una función 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ en un punto 
+\begin_inset Formula $P_{0}=(x_{0},f(x_{0}))$
+\end_inset
+
+.
+ Como es bien sabido esta recta tangente se define como aquella que pasa por 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ y cuya pendiente es 
+\begin_inset Formula $f\text{´}(x_{0})$
+\end_inset
+
+ (Por supuesto que esta definición sólo tiene sentido si 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Entonces,
+ primero vamos a 
+\bar under
+adecuar
+\bar default
+ la def 1 dada para funciones 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ al caso 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ y luego demostrar que esta 
+\begin_inset Quotes eld
+\end_inset
+
+adecuación
+\begin_inset Quotes erd
+\end_inset
+
+ es equivalente a la definición usual de función derivable en el caso 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para empezar,
+ una recta en 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ (que no es perpendicular al eje 
+\begin_inset Formula $X$
+\end_inset
+
+) está dada por una ecuación de la forma 
+\begin_inset Formula 
+\begin{equation}
+y=mx+b\equiv p(x)\label{eq:5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $m$
+\end_inset
+
+ es la pendiente de la recta.
+ Si 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ está definida en un abierto 
+\begin_inset Formula $U\subseteq\mathbb{R}$
+\end_inset
+
+ - un intervalo abierto,
+ por ejemplo - y 
+\begin_inset Formula $x_{0}\in U$
+\end_inset
+
+,
+ la recta dada por (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+
+\end_inset
+
+) pasa por el punto 
+\begin_inset Formula $P_{0}=(x_{0,}f(x_{0}))\in Graf(f)\Longleftrightarrow p(x_{0})=f(x_{0})$
+\end_inset
+
+.
+ Esto nos permite 
+\begin_inset Quotes eld
+\end_inset
+
+despejar
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $b$
+\end_inset
+
+:
+ 
+\begin_inset Formula $p(x_{0})=mx_{0}+b=f(x_{0})$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\textrm{y }\therefore b=f(x_{0})-mx_{0},
+\]
+
+\end_inset
+
+de modo que al reemplazar este valor en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+
+\end_inset
+
+) la ecuación de la recta en cuestión nos queda 
+\begin_inset Formula 
+\begin{equation}
+p(x)=m(x-x_{0})+f(x_{0}).\label{eq:6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cualquier recta que pasa por el punto 
+\begin_inset Formula $P_{0}=(x_{0},f(x_{0}))$
+\end_inset
+
+ está dada por una ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Entonces,
+ la definición 1 para definir 
+\begin_inset Quotes eld
+\end_inset
+
+recta tangente
+\begin_inset Quotes erd
+\end_inset
+
+ en el caso de 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ queda como sigue:
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+definición 1´
+\uuline default
+
+\begin_inset Formula $\;$
+\end_inset
+
+Sea 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ definida en 
+\begin_inset Formula $U=$
+\end_inset
+
+abierto en 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $x_{0}\in U.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{L}(x)=m(x-x_{0})+f(x_{0})$
+\end_inset
+
+ es 
+\begin_inset Quotes eld
+\end_inset
+
+la
+\begin_inset Quotes erd
+\end_inset
+
+ recta tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},f(x_{0}))=P_{0}\Longleftrightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}\frac{\left|f(x)-\mathcal{L}(x)\right|}{\left|x-x_{0}\right|}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con esta definición demostraremos la siguiente
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Proposición 1
+\bar default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $x_{0}\Longleftrightarrow$
+\end_inset
+
+ la recta tangente 
+\begin_inset Formula $\mathcal{L}(x)$
+\end_inset
+
+ dada en la def 1´ existe.
+ 
+\end_layout
+
+\begin_layout Standard
+En tal caso,
+ la pendiente de dicha recta es 
+\begin_inset Formula $m=f\text{´}(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+Ejercicio:
+
+\uuline default
+ demostrar esta proposición (lo hicimos en clase).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo el trabajo que nos hemos tomado para definir 
+\bar under
+plano tangente
+\bar default
+ ha sido con un solo objetivo:
+ definir el concepto de derivabilidad de una función 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+;
+ obviamente las funciones derivables serán aquellas para las cuales existe plano tangente* en el sentido de la discusión precedente.
+ Formalizamos este concepto a través de la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\bar under
+Definición
+\bar default
+ A:
+ Sea 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ definida en un abierto 
+\begin_inset Formula $U\subseteq$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\bar{x_{0}}=(x_{0},y_{0})\in U$
+\end_inset
+
+.
+ La función 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{x_{0}}=(x_{0},y_{0})$
+\end_inset
+
+ si,
+ y sólo si,
+ existe un plano tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P_{0}=(x_{0},y_{0},f(x_{0},y_{0})).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(También podemos escribir 
+\begin_inset Formula $P_{0}=(\bar{x_{0}},f(\bar{x_{0}}))$
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Algunos ejemplos
+\bar default
+:
+ Hay casos sencillos de funciones que con esta definición ya podemos demostrar que son derivables en determinados puntos.
+ Por ejemplo,
+ si 
+\begin_inset Formula $f$
+\end_inset
+
+es una función cuya gráfica es un plano,
+ pues obviamente el plano tangente en cualquier punto es ese mismo plano.
+ En particular si 
+\begin_inset Formula $f(x,y)\equiv\textrm{constante}=c$
+\end_inset
+
+ 
+\begin_inset Formula $\forall(x,y)$
+\end_inset
+
+,
+ su gráfica es un plano paralelo al plano 
+\begin_inset Formula $XY$
+\end_inset
+
+ y su correspondiente plano tangente en cualquier punto es la propia función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Asentamos estos hechos en los siguientes ejemplos.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Ejemplo 1
+\bar default
+.
+ Sea 
+\begin_inset Formula $f(x,y)=c\:\forall(x,y)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en todo punto 
+\begin_inset Formula $(x_{0},y_{0})\in\mathbb{R}^{2}$
+\end_inset
+
+ y el plano tangente correspondiente está dado por la misma función 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ (La demostración usando la def 1 es trivial).
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Ejemplo 2
+\bar default
+.
+ Las funciones 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ cuya gráfica es un plano son de la forma 
+\begin_inset Formula $f(x,y)=ax+by+c$
+\end_inset
+
+.
+ Estas funciones se llaman 
+\begin_inset Quotes eld
+\end_inset
+
+afines
+\begin_inset Quotes erd
+\end_inset
+
+ (más adelante hablaremos más extensamente sobre 
+\begin_inset Quotes eld
+\end_inset
+
+funciones afines
+\begin_inset Quotes erd
+\end_inset
+
+,
+ que constan de una parte lineal 
+\begin_inset Formula $+$
+\end_inset
+
+ constante y que en todo el desarrollo previo del tema de este capítulo han jugado un papel fundamental).
+ El plano tangente obviamente es el mismo plano determinado por 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+NOTA
+\uuline default
+
+\begin_inset Formula $\;$
+\end_inset
+
+Estos dos ejemplos los discutimos y demostramos en clase.
+ También el siguiente ejemplo fue discutido en clase.
+\end_layout
+
+\begin_layout Standard
+Con el ejemplo 2 cubrimos todos los polinomios de grado 
+\begin_inset Formula $\leq1$
+\end_inset
+
+ en dos variables (el ejemplo 1 es un caso particular del ejemplo 2).
+ Pero mucho más allá de esto 
+\bar under
+no
+\bar default
+ podemos llegar aún.
+ En particular porque un plano tangente a la gráfica de una función 
+\begin_inset Formula $f$
+\end_inset
+
+ está dado por una función de la forma 
+\begin_inset Formula $a(x-x_{0})+b(y-y_{0})+c$
+\end_inset
+
+ y,
+ entonces ¿cómo vamos a saber cuáles son los coeficientes 
+\begin_inset Formula $"a"$
+\end_inset
+
+ y 
+\begin_inset Formula $"b"$
+\end_inset
+
+ que aparecen en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+)?
+ 
+\end_layout
+
+\begin_layout Standard
+A resolver este problema nos vamos a dedicar en la siguiente sección.
+ Pero mientras,
+ hay veces que sí podemos encontrar el tal plano tangente,
+ a saber,
+ cuando geométricamente sea obvio cuál es,
+ como mostramos en el siguiente ejemplo.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Ejemplo 3
+\bar default
+.
+ Demostrar que 
+\begin_inset Formula $f(x,y)=x^{2}+y^{2}$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Obviamente en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+ el plano tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ es el plano 
+\begin_inset Formula $XY$
+\end_inset
+
+,
+ que está dado por la función 
+\begin_inset Formula $p(x,y)\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Entonces hay que demostrar que 
+\begin_inset Formula 
+\[
+\lim_{(x,y)\to(0,0)}\frac{\left|f(x,y)-p(x,y)\right|}{\left\Vert (x,y)-(0,0)\right\Vert }=\lim_{(x,y)\to(0,0)}\frac{\left|x^{2}+y^{2}-0\right|}{\left\Vert (x,y)\right\Vert }=0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lo cual es muy sencillo y lo dejamos 
+\begin_inset Quotes eld
+\end_inset
+
+al lector
+\begin_inset Quotes erd
+\end_inset
+
+ (lo hicimos en clase).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+ejercicio:
+ demuestra que 
+\begin_inset Formula $f(x,y)=x^{2}-y^{2}$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Determinación de los coeficientes 
+\begin_inset Formula $"a"$
+\end_inset
+
+ y 
+\begin_inset Formula $"b"$
+\end_inset
+
+ de la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+) de un plano tangente
+\end_layout
+
+\begin_layout Standard
+Empecemos por la siguiente cuestión general:
+ 
+\end_layout
+
+\begin_layout Standard
+Si
+\begin_inset Formula 
+\begin{equation}
+z=Ax+By+C\label{eq:7}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es la ecuación de un plano en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ¿Qué representan los coeficientes 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Nótese que la intersección de este plano con el plano 
+\begin_inset Formula $XZ$
+\end_inset
+
+ es la recta 
+\begin_inset Formula $z=Ax+C$
+\end_inset
+
+ (que obtenemos al hacer 
+\begin_inset Formula $y=0$
+\end_inset
+
+ en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+)),
+ y por lo tanto el coeficiente 
+\begin_inset Formula $A$
+\end_inset
+
+ es la pendiente de esta recta en el plano 
+\begin_inset Formula $XZ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Análogamente,
+ 
+\begin_inset Formula $z=By+C$
+\end_inset
+
+ es la recta intersección del plano (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+) con el plano 
+\begin_inset Formula $YZ$
+\end_inset
+
+ y por lo tanto 
+\begin_inset Formula $B$
+\end_inset
+
+ es la pendiente de esta recta.
+\end_layout
+
+\begin_layout Standard
+Al mismo tiempo observen que 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+ son lo que con justicia podemos llamar las 
+\begin_inset Quotes eld
+\end_inset
+
+inclinaciones
+\begin_inset Quotes erd
+\end_inset
+
+ del plano (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+
+\end_inset
+
+) (siendo un plano es natural que necesitemos dos números para determinar su 
+\begin_inset Quotes eld
+\end_inset
+
+inclinación
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+inclinaciones
+\begin_inset Quotes erd
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Así que,
+ como una primera conclusión,
+ obtenemos que en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+) los coeficientes 
+\begin_inset Formula $"a"$
+\end_inset
+
+ y 
+\begin_inset Formula $"b"$
+\end_inset
+
+ son las pendientes de las rectas intersección con los planos 
+\begin_inset Formula $XZ$
+\end_inset
+
+ y 
+\begin_inset Formula $YZ$
+\end_inset
+
+ respectivamente.
+ 
+\end_layout
+
+\begin_layout Standard
+Ahora usaremos esta información combinada con el conocido resultado de geometría en 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ de que si un plano cualquiera,
+ 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+,
+ interseca (transversalmente) a dos planos 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{Q\text{´}}$
+\end_inset
+
+ paralelos entre sí,
+ entonces las rectas de intersección 
+\begin_inset Formula $\mathcal{P}\cap\mathcal{Q}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{P}\cap\mathcal{Q\text{´}}$
+\end_inset
+
+ son paralelas.
+ 
+\end_layout
+
+\begin_layout Standard
+Supongamos que 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un plano tangente 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ a su gráfica en el punto 
+\begin_inset Formula $P_{0}=(x_{0},y_{0},f(x_{0},y_{0}))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ un plano perpendicular al plano 
+\begin_inset Formula $XY$
+\end_inset
+
+ cuya intersección con el plano 
+\begin_inset Formula $XY$
+\end_inset
+
+ es la recta 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+.
+ El punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ está en esta recta.
+ (ver fig 9)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ intersecta al plano 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ en una recta 
+\begin_inset Formula $\mathcal{L}=\mathcal{Q}\cap\mathcal{P}$
+\end_inset
+
+ y a la vez,
+ 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ intersecta a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+,
+ 
+\begin_inset Formula $graf(f)$
+\end_inset
+
+,
+ en una curva 
+\begin_inset Formula $graf(f)\cap\mathcal{Q}$
+\end_inset
+
+;
+ obsérvese que 
+\bar under
+necesariamente
+\bar default
+ la recta 
+\begin_inset Formula $\mathcal{L}=\mathcal{Q}\cap\mathcal{P}$
+\end_inset
+
+ es tangente a esta gráfica 
+\begin_inset Formula $graf(f)\cap\mathcal{Q}$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ (dado que 
+\begin_inset Formula $\mathcal{Q}\cap\mathcal{P}$
+\end_inset
+
+ está en el plano tangente 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+).
+ En otras palabras,
+ si vemos al plano 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+de frente
+\begin_inset Quotes erd
+\end_inset
+
+ (como nuestro 
+\begin_inset Quotes eld
+\end_inset
+
+asistente
+\begin_inset Quotes erd
+\end_inset
+
+,
+ el monito en el dibujo),
+ lo vemos así:
+\end_layout
+
+\begin_layout Standard
+Por otro lado,
+ como 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ es paralelo al plano 
+\begin_inset Formula $XZ$
+\end_inset
+
+,
+ la recta 
+\begin_inset Formula $\mathcal{L}=\mathcal{Q}\cap\mathcal{P}$
+\end_inset
+
+ es paralela a la recta 
+\begin_inset Formula $\mathcal{Q}\cap XZ$
+\end_inset
+
+ y por lo tanto,
+ el coeficiente 
+\begin_inset Formula $"a"$
+\end_inset
+
+ de (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+) es la pendiente de 
+\begin_inset Formula $\mathcal{L}=\mathcal{Q}\cap\mathcal{P}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pero esta recta 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ por ser tangente a la curva 
+\begin_inset Formula $g_{f}\cap\mathcal{Q}$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ tiene como pendiente la derivada (en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+) de la función cuya gráfica es 
+\begin_inset Formula $g_{f}\cap\mathcal{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Veamos esto con más cuidado:
+ los puntos de la recta 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+ son de la forma 
+\begin_inset Formula $(x,y_{0})$
+\end_inset
+
+,
+ de modo que si restringimos 
+\begin_inset Formula $f$
+\end_inset
+
+ a 
+\begin_inset Quotes eld
+\end_inset
+
+variar
+\begin_inset Quotes erd
+\end_inset
+
+ en dicha recta,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ se vuelve una función solo de la variable 
+\begin_inset Formula $"x"$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Llamemos 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ a esta función,
+ es decir,
+ hagamos 
+\begin_inset Formula 
+\[
+g(x)=f(x,y_{0}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces 
+\begin_inset Formula $"a"$
+\end_inset
+
+ es la derivada en 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ de esta función 
+\begin_inset Formula $g$
+\end_inset
+
+,
+ o sea 
+\begin_inset Formula 
+\[
+a=g\text{´}(x_{0}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+~Nota al pie~ En el plano 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ (como en la fig.
+ 9) 
+\begin_inset Formula $\mathcal{S}=$
+\end_inset
+
+recta 
+\begin_inset Quotes eld
+\end_inset
+
+secante
+\begin_inset Quotes erd
+\end_inset
+
+ que pasa por 
+\begin_inset Formula $P_{\mathcal{S}}=(x,y_{0},f(x,y_{0}))$
+\end_inset
+
+ y por 
+\begin_inset Formula $P_{0}=(x_{0},y_{0},f(x_{0},y_{0}))$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{L}=$
+\end_inset
+
+recta tangente a 
+\begin_inset Formula $graf(f)\cap\mathcal{Q}$
+\end_inset
+
+ en 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pendiente de 
+\begin_inset Formula $\mathcal{S}=\frac{f(x,y_{0})-f(x_{0,}y_{0})}{x-x_{0}}\equiv m_{\mathcal{S}}$
+\end_inset
+
+ y pendiente de 
+\begin_inset Formula $\mathcal{L}=\lim_{x\to x_{0}}m_{\mathcal{S}}$
+\end_inset
+
+.
+ ~
+\end_layout
+
+\begin_layout Standard
+Por definición 
 \end_layout
 
 \end_body
