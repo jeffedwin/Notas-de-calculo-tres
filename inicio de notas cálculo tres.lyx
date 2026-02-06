@@ -1767,40 +1767,22 @@ ejercicio:
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newline
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
-\begin_layout Standard
-
+\begin_layout Section*
+Determinación de los coeficientes "a" y "b" de la ecuación 
 \bar under
-Determinación de los coeficientes 
-\begin_inset Formula $"a"$
-\end_inset
-
- y 
-\begin_inset Formula $"b"$
-\end_inset
-
- de la ecuación (
+(
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3"
 
 \end_inset
 
-) de un plano tangente
+)
+\bar default
+ de un plano tangente
 \end_layout
 
 \begin_layout Standard
@@ -2321,7 +2303,785 @@ Pendiente de
 \end_layout
 
 \begin_layout Standard
-Por definición 
+Por definición,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{\tag{d1}g´(x_{0})=\lim_{x\to x_{0}}\frac{g(x)-g(x_{0})}{x-x_{0}}=\lim_{x\to x_{0}}\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}} }\label{eq:d1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto,
+ si este límite existe,
+ su valor es precisamente el coeficiente 
+\begin_inset Formula $"a"$
+\end_inset
+
+ de (
+\begin_inset Formula $\ast$
+\end_inset
+
+).
+ (Ver figura 10)
+\end_layout
+
+\begin_layout Standard
+Procediendo en forma análoga podemos determinar 
+\begin_inset Formula $"b"$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Brevemente:
+ tomamos ahora un plano 
+\begin_inset Formula $\mathcal{Q\text{´}}$
+\end_inset
+
+ortogonal al plano 
+\begin_inset Formula $XY$
+\end_inset
+
+ cuya recta de intersección del plano 
+\begin_inset Formula $XY$
+\end_inset
+
+ está dada por 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+.
+ Es decir,
+ esta recta son los puntos de la forma 
+\begin_inset Formula $(x_{0},y)$
+\end_inset
+
+;
+ nótese que ahora lo que varía es la variable 
+\begin_inset Formula $"y"$
+\end_inset
+
+ mientras 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ se mantiene fijo.
+ Razonando como hicimos en la discusión precedente llegamos a la conclusión de que 
+\begin_inset Formula $"b"$
+\end_inset
+
+ es la pendiente de la recta tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ cuando restringimos a 
+\begin_inset Formula $f$
+\end_inset
+
+ a variar únicamente en los puntos de la forma 
+\begin_inset Formula $(x_{0},y)\in Dom(f)$
+\end_inset
+
+.
+ Definimos entonces 
+\begin_inset Formula 
+\[
+h(y)=f(x_{0},y)\,\text{ con }(x_{0},y)\in Dom(f)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y concluimos que 
+\begin_inset Formula 
+\[
+h\text{´}(y_{0})=b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por definición,
+ 
+\begin_inset Formula 
+\begin{equation}
+\tag{d2}h\text{´}(y_{0})=\lim_{y\to y_{0}}\frac{h(y)-h(y_{0})}{y-y_{0}}=\lim_{y\to y_{0}}\frac{f(x_{0},y)-f(x_{0},y_{0})}{y-y_{0}}\label{eq:d2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y si este límite existe su valor es el coeficiente buscado 
+\begin_inset Formula $"b"$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Te recomendamos,
+ estimado lector,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+llenar
+\begin_inset Quotes erd
+\end_inset
+
+ los detalles del razonamiento para obtener 
+\begin_inset Formula $"b"$
+\end_inset
+
+ y hacer el dibujo correspondiente.
+ ¡Este sería un buen ejercicio para tí!
+ 
+\end_layout
+
+\begin_layout Standard
+Las derivadas obtenidas en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d1"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d2"
+
+\end_inset
+
+) juegan un papel muy importante y tienen un nombre especial:
+ se llaman 
+\begin_inset Quotes eld
+\end_inset
+
+derivadas parciales
+\begin_inset Quotes erd
+\end_inset
+
+;
+ la dada por (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d1"
+
+\end_inset
+
+) se llama derivada parcial de 
+\begin_inset Formula $f$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ y se denota por 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+.
+ La dada por (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d2"
+
+\end_inset
+
+) se llama derivada parcial de 
+\begin_inset Formula $f$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $y$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ y se denota por 
+\begin_inset Formula $\frac{\partial f}{\partial y}(x_{0},y_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En la siguiente seción habremos de familiarizarnos más con este concepto y demostraremos,
+ a partir de la def 1 sin recurrir a la geometría,
+ que si una función tiene plano tangente en el punto 
+\begin_inset Formula $P_{0}=(x_{0},y_{0},f(x_{0},y_{0}))$
+\end_inset
+
+,
+ entonces estas derivadas parciales existen (en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+) y son,
+ como hemos mostrado geométricamente,
+ los coeficientes respectivos 
+\begin_inset Formula $"a"$
+\end_inset
+
+ y 
+\begin_inset Formula $"b"$
+\end_inset
+
+ de la ecuación (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{eq:3}
+\end_layout
+
+\end_inset
+
+) que define a dicho plano.
+ 
+\end_layout
+
+\begin_layout Standard
+Dado que -como también hemos señalado- estos coeficientes 
+\begin_inset Formula $"a"$
+\end_inset
+
+ y 
+\begin_inset Formula $"b"$
+\end_inset
+
+ son las 
+\begin_inset Quotes eld
+\end_inset
+
+inclinaciones
+\begin_inset Quotes erd
+\end_inset
+
+ del plano tangente,
+ es natural 
+\bar under
+definir a la derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ usando estos dos números
+\bar default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Damos,
+ entonces,
+ la siguiente definición,
+ complemento indispensable de la definición 
+\begin_inset Formula $A$
+\end_inset
+
+ (te recomendamos releerla en este momento).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\bar under
+Definición
+\bar default
+ B:
+ Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función derivable en 
+\begin_inset Formula $\bar{x_{0}}\in int\,Dom(f)$
+\end_inset
+
+.
+ Entonces la derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ la denotamos por 
+\begin_inset Formula $Df(\bar{x_{0}})$
+\end_inset
+
+ y la definimos como el vector
+\begin_inset Formula 
+\[
+\left(\frac{\partial f}{\partial x}(x_{0},y_{0}),\frac{\partial f}{\partial y}(x_{0},y_{0})\right)..............()
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obsérvese la lógica seguida hasta aquí:
+ como 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{x_{0}}=(x_{0},y_{0})$
+\end_inset
+
+,
+ tiene plano tangente a su gráfica en el punto 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+.
+ Y como tal plano existe,
+ las derivadas parciales existen en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ y en consecuencia tiene sentido definir 
+\begin_inset Formula $Df(\bar{x_{0}})$
+\end_inset
+
+ como el vector ().
+\end_layout
+
+\begin_layout Standard
+Pasemos a formalizar...
+\end_layout
+
+\begin_layout Section*
+Definición formal de derivadas parciales 
+\end_layout
+
+\begin_layout Standard
+Sin más trámite repetimos las definiciones (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d1"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d2"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\bar under
+Definición
+\bar default
+ 
+\begin_inset Formula $\:$
+\end_inset
+
+La derivada parcial de 
+\begin_inset Formula $f$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ se define como 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}(x_{0},y_{0})=\lim_{x\to x_{0}}\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}\qquad\text{(si este límite existe).}
+\]
+
+\end_inset
+
+
+\xout on
+y la derivada parcial de 
+\begin_inset Formula $f$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $y$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+,
+ como 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial y}(x_{0},y_{0})=\lim_{y\to y_{0}}\frac{f(x_{0},y)-f(x_{0},y_{0})}{y-y_{0}}\qquad\text{(si este límite existe).}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Como ya hicimos notar,
+ restringiendo 
+\begin_inset Formula $f$
+\end_inset
+
+ a variar en los puntos 
+\begin_inset Formula $(x,y_{0})$
+\end_inset
+
+ perteneciendo a la recta 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+,
+ la podemos considerar como una función de una variable dada por 
+\begin_inset Formula $g(x)=\frac{\partial f}{\partial x}(x,y_{0})$
+\end_inset
+
+.
+ En consecuencia,
+ calcular 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+ equivale a derivar 
+\begin_inset Formula $g$
+\end_inset
+
+ (como función de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+) y obtener 
+\begin_inset Formula $g\text{´}(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Análogamente la derivada parcial respecto a 
+\begin_inset Formula $y$
+\end_inset
+
+ se define como sigue:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\bar under
+Definición
+\bar default
+ 
+\begin_inset Formula $\:$
+\end_inset
+
+La derivada parcial de 
+\begin_inset Formula $f$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $y$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+,
+ se define como 
+\begin_inset Formula 
+\begin{equation}
+\tag{d2}\frac{\partial f}{\partial y}(x_{0},y_{0})=\lim_{x\to x_{0}}\frac{f(x_{0},y)-f(x_{0},y_{0})}{y-y_{0}} \label{eq:d22}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+si este límite existe
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+También en este caso haciendo variar a 
+\begin_inset Formula $f$
+\end_inset
+
+ en la recta 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ se vuelve una función que sólo depende de 
+\begin_inset Formula $"y"$
+\end_inset
+
+ y definiendo 
+\begin_inset Formula $h(y)=f(x_{0},y)$
+\end_inset
+
+ la derivada parcial (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d22"
+
+\end_inset
+
+) es simplemente 
+\begin_inset Formula $h\text{´}(y_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En resumen:
+ para obtener 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x_{0},y_{0})$
+\end_inset
+
+ consideramos 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+ como constante y simplemente derivamos respecto a 
+\begin_inset Formula $"x"$
+\end_inset
+
+ como función de una variable.
+ Y algo semejante hacemos para obtener 
+\begin_inset Formula $\frac{\partial f}{\partial y}(x_{0},y_{0})$
+\end_inset
+
+ sólo que ahora consideramos 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ como constante y derivamos respecto a 
+\begin_inset Formula $"y"$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como ejemplo,
+ sea 
+\begin_inset Formula $f(x,y)=x^{2}+y^{2}$
+\end_inset
+
+.
+ Considerando 
+\begin_inset Formula $"y"$
+\end_inset
+
+ como constante y derivando respecto a 
+\begin_inset Formula $"x"$
+\end_inset
+
+,
+ obtenemos 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x,y)=2x$
+\end_inset
+
+ en cualquier punto 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+.
+ Ahora,
+ considerando 
+\begin_inset Formula $"x"$
+\end_inset
+
+ como constante,
+ obtenemos 
+\begin_inset Formula $\frac{\partial f}{\partial y}(x,y)=2y$
+\end_inset
+
+ en cualquier punto 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+.
+ Si en particular tomamos un punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ obtenemos 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x_{0},y_{0})=2x_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\frac{\partial f}{\partial y}(x_{0},y_{0})=2y_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Comprobemos estos resultados usando las definiciones dadas.
+ 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f(x,y)=x^{2}+y^{2}$
+\end_inset
+
+.
+ Entonces:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial f}{\partial x}(x_{0},y_{0}) & = & \lim_{x\to x_{0}}\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}=\lim_{x\to x_{0}}\frac{(x^{2}+y_{0}^{2})-(x_{0}^{2}+y_{0}^{2})}{x-x_{0}}\\
+ & = & \lim_{x\to x_{0}}\frac{x^{2}-x_{0}^{2}}{x-x_{0}}
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
