@@ -2909,7 +2909,7 @@ La derivada parcial de
  se define como 
 \begin_inset Formula 
 \begin{equation}
-\tag{d2}\frac{\partial f}{\partial y}(x_{0},y_{0})=\lim_{x\to x_{0}}\frac{f(x_{0},y)-f(x_{0},y_{0})}{y-y_{0}} \label{eq:d22}
+\tag{d2}\frac{\partial f}{\partial y}(x_{0},y_{0})=\lim_{x\to x_{0}}\frac{f(x_{0},y)-f(x_{0},y_{0})}{y-y_{0}}\label{eq:d22}
 \end{equation}
 
 \end_inset
@@ -3076,12 +3076,491 @@ Sea
 \begin_inset Formula 
 \begin{eqnarray*}
 \frac{\partial f}{\partial x}(x_{0},y_{0}) & = & \lim_{x\to x_{0}}\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}=\lim_{x\to x_{0}}\frac{(x^{2}+y_{0}^{2})-(x_{0}^{2}+y_{0}^{2})}{x-x_{0}}\\
- & = & \lim_{x\to x_{0}}\frac{x^{2}-x_{0}^{2}}{x-x_{0}}
+ & = & \lim_{x\to x_{0}}\frac{x^{2}-x_{0}^{2}}{x-x_{0}}=\lim_{x\to x_{0}}(x+x_{0})=2x_{0}.
 \end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Análogamente:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial f}{\partial y}(x_{0},y_{0}) & = & \lim_{y\to y_{0}}\frac{f(x_{0},y)-f(x_{0},y_{0})}{y-y_{0}}=\lim_{y\to y_{0}}\frac{(x_{0}^{2}+y^{2})-(x_{0}^{2}+y_{0}^{2})}{y-y_{0}}\\
+ & = & \lim_{y\to y_{0}}\frac{y^{2}-y_{0}^{2}}{y-y_{0}}=\lim_{y\to y_{0}}(y+y_{0})=2y_{0}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Otros ejemplos:
+ (las derivadas las calculamos en cualquier punto 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Itemize
+\align left
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{1}(x,y) & =x^{3}+3xy\Longrightarrow & \frac{\partial f_{1}}{\partial x}(x,y)=3x^{2}+3y\\
+ &  & \frac{\partial f_{1}}{\partial y}(x,y)=3x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{2}(x,y) & =sen(xy)\Longrightarrow & \frac{\partial f_{2}}{\partial x}(x,y)=ycos(xy)\\
+ &  & \frac{\partial f_{2}}{\partial y}(x,y)=xcos(xy)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{3}(x,y) & =7xy^{3}+3x^{2}y\Longrightarrow & \frac{\partial f_{3}}{\partial x}(x,y)=7y^{3}-6xy\\
+ &  & \frac{\partial f_{3}}{\partial y}(x,y)=21xy{}^{2}-3x^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Ejercicio:
+ verificar formalmente el resultado obtenido para 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ recurriendo a las definiciones dadas (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d1"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d22"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+Teorema
+\uuline default
+ Sea 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\bar{x_{0}}\in int(Dom(f))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ ambas parciales existen y en consecuencia,
+ el plano tangente (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+) está dado por la ecuación
+\begin_inset Formula 
+\[
+p(x,y)=\frac{\partial f}{\partial x}(x_{0},y_{0})(x-x_{0})+\frac{\partial f}{\partial y}(x_{0},y_{0})(y-y_{0})+f(x_{0},y_{0}).......(\uparrow)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+Demostración
+\uuline default
+ (Aquí no recurrimos a la 
+\begin_inset Quotes eld
+\end_inset
+
+demostración geométrica
+\begin_inset Quotes erd
+\end_inset
+
+ dada antes)
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+,
+ entonces existe un plano dado por
+\begin_inset Formula 
+\[
+p(x,y)=a(x-x_{0})+b(y-y_{0})+f(x_{0},y_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+que satisface lo siguiente:
+ 
+\begin_inset Formula 
+\[
+\lim_{(x,y)\to(x_{0},y_{0})}\frac{\left|f(x,y)-p(x,y)\right|}{\left\Vert \bar{x}-\bar{x_{0}}\right\Vert }=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este límite existe (y vale cero) independientemente de como nos aproximemos,
+ en el dominio,
+ al punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Aproximémonos,
+ entonces,
+ por puntos 
+\begin_inset Formula $(x,y_{0})$
+\end_inset
+
+ de la recta 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+;
+ es decir nos aproximamos a 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ por puntos en una dirección paralela al eje 
+\begin_inset Formula $X$
+\end_inset
+
+,
+ entonces,
+ tenemos que
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{(x,y_{0})\to(x_{0},y_{0})}\frac{\left|f(x,y_{0})-p(x,y_{0})\right|}{\left\Vert (x,y_{0})-(x_{0},y_{0})\right\Vert }=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora,
+ 
+\begin_inset Formula $(x,y_{0})\to(x_{0},y_{0})\Longleftrightarrow x\to x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Y 
+\begin_inset Formula $\left\Vert (x,y_{0})-(x_{0},y_{0})\right\Vert =\left|x-x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De modo que,
+ usando la ecuación de 
+\begin_inset Formula $p(x,y)$
+\end_inset
+
+ dada más arriba,
+ resulta que 
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{(x,y)\to(x_{0},y_{0})}\frac{\left|f(x,y_{0})-p(x,y_{0})\right|}{\left\Vert (x,y_{0})-(x_{0},y_{0})\right\Vert } & = & \lim_{x\to x_{0}}\frac{\left|f(x,y_{0})-a(x-x_{0})-f(x_{0},y_{0})\right|}{\left|x-x_{0}\right|}\\
+ & = & \lim_{x\to x_{0}}\left|\frac{f(x,y_{0})-f(x_{0},y_{0})-a(x-x_{0})}{x-x_{0}}\right|\\
+ & = & \lim_{x\to x_{0}}\left|\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}-a\right|=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore\,\lim_{x\to x_{0}}$
+\end_inset
+
+
+\begin_inset Formula $\frac{f(x,y_{0})-f(x_{0},y_{0})}{x-x_{0}}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i.e.
+ 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x_{0},y_{0})=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En forma enteramente análoga,
+ pero ahora aproximándonos a 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ por puntos 
+\begin_inset Formula $(x_{0},y)$
+\end_inset
+
+ de la recta 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ -es decir aproximándonos por una recta vertical paralela al eje 
+\begin_inset Formula $Y$
+\end_inset
+
+ al punto 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+- llegamos a la conclusión de que 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial y}(x_{0},y_{0})=b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+¡ALTO!
+ ¡En este momento te aconsejamos,
+ lector,
+ que trabajes los detalles para llegar a esta conclusión!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ El plano tangente (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+) está dado por la ecuación mencionada en el enunciado.
+\end_layout
+
+\begin_layout Standard
+El teorema anterior demuestra la siguiente implicación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Df(\bar{x_{0}})\,\exists\Longrightarrow\text{las parciales en \ensuremath{x_{0}} existen.}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La pregunta es,
+ desde luego,
+ ¿es válido el recíproco?
+\end_layout
+
+\begin_layout Standard
+La respuesta a esta pregunta es...
+ ¡NO!
+\end_layout
+
+\begin_layout Standard
+Un primer ejemplo es el siguiente:
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+ejemplo
+\uuline default
+ Sea 
+\begin_inset Formula $f(x,y)=\begin{cases}
+\frac{xy^{2}}{x^{2}+y^{4}} & \text{si }(x,y)\neq(0,0)\\
+0 & \text{si }(x,y)=(0,0)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En clase demostramos que ambas parciales existen y valen cero pero ¡no es ni siquiera continua en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+Usando que las funciones derivables en un punto son continuas (hecho poco sorprendente pero que aún no demostramos) en ese punto,
+ concluimos que esta función no es derivable en 
+\begin_inset Formula $(0,0).$
+\end_inset
+
+ (recomendación:
+ revisen sus apuntes)
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+ejercicio
+\bar default
+:
+ Sin usar que las funciones 
 \end_layout
 
 \end_body
