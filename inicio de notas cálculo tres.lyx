@@ -3255,9 +3255,9 @@ reference "eq:3"
 
 ) está dado por la ecuación
 \begin_inset Formula 
-\[
-p(x,y)=\frac{\partial f}{\partial x}(x_{0},y_{0})(x-x_{0})+\frac{\partial f}{\partial y}(x_{0},y_{0})(y-y_{0})+f(x_{0},y_{0}).......(\uparrow)
-\]
+\begin{equation}
+p(x,y)=\frac{\partial f}{\partial x}(x_{0},y_{0})(x-x_{0})+\frac{\partial f}{\partial y}(x_{0},y_{0})(y-y_{0})+f(x_{0},y_{0}).......(\uparrow)\label{eq:flecha arriba}
+\end{equation}
 
 \end_inset
 
@@ -3524,7 +3524,8 @@ Un primer ejemplo es el siguiente:
 \begin_layout Standard
 
 \uuline on
-ejemplo
+ejemplo.
+
 \uuline default
  Sea 
 \begin_inset Formula $f(x,y)=\begin{cases}
@@ -3560,7 +3561,445 @@ Usando que las funciones derivables en un punto son continuas (hecho poco sorpre
 ejercicio
 \bar default
 :
- Sin usar que las funciones 
+ Sin usar que las funciones derivables en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ son continuas en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ demostrar directamente a partir de la definición que esta función no es derivable en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sugerencia:
+ Es muy importante comprender lo siguiente:
+ para demostrar que una función es derivable en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+,
+ tienen que existir las parciales en 
+\begin_inset Formula $\bar{x_{0}}$
+\end_inset
+
+ 
+\bar under
+y además
+\bar default
+,
+ debemos comprobar que el plano dado por 
+\begin_inset Formula $(\uparrow)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:flecha arriba"
+
+\end_inset
+
+ es el plano tangente;
+ es decir,
+ que dicho plano satisface la definición A.
+\end_layout
+
+\begin_layout Standard
+En otras palabras,
+ si las parciales existen,
+ el plano 
+\begin_inset Formula $(\uparrow)$
+\end_inset
+
+ también existe,
+ pero ello no significa que dicho plano ya sea el plano tangente...
+\end_layout
+
+\begin_layout Standard
+Por así decirlo,
+ si las parciales existen,
+ el plano 
+\begin_inset Formula $(\uparrow)$
+\end_inset
+
+ es como el 
+\begin_inset Quotes eld
+\end_inset
+
+candidato
+\begin_inset Quotes erd
+\end_inset
+
+ a ser plano tangente.
+ Pero si queremos demostrar que el plano es tangente hay que usar la definición correspondiente.
+ En este ejemplo el 
+\begin_inset Quotes eld
+\end_inset
+
+candidato
+\begin_inset Quotes erd
+\end_inset
+
+ a ser plano tangente es el plano 
+\begin_inset Formula $\mathcal{P}(x,y)\equiv0$
+\end_inset
+
+ (¿por qué?).
+ Para ver que f 
+\bar under
+no
+\bar default
+ es derivable en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+ tienes que demostrar que el límite de 
+\begin_inset Formula 
+\[
+\frac{\left|f(x,y)-0\right|}{\left\Vert (x,y)-0\right\Vert }
+\]
+
+\end_inset
+
+cuando 
+\begin_inset Formula $(x,y)\to(0,0)$
+\end_inset
+
+ o no existe o no vale cero.
+ ¡Hacerlo!
+\end_layout
+
+\begin_layout Standard
+La verdad es que se pueden dar ejemplos muy sencillos de funciones que tienen derivadas parciales en un punto y no son ni continuas,
+ mucho menos derivables en dicho punto.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+ejemplo.
+
+\bar default
+ Sea 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ dada por 
+\begin_inset Formula 
+\[
+f(x,y)=\begin{cases}
+1 & \text{si }xy=0\\
+0 & \text{si }xy\neq0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(Véase la figura a continuación)
+\end_layout
+
+\begin_layout Standard
+¿Existen las parciales en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+?
+ Sí,
+ y valen cero.
+ (¡Comprobarlo!)
+\end_layout
+
+\begin_layout Standard
+¿Es derivable en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+NO.
+
+\uuline default
+ (Observa que no es continua en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+El 
+\begin_inset Quotes eld
+\end_inset
+
+candidato
+\begin_inset Quotes erd
+\end_inset
+
+ a ser plano tangente es 
+\begin_inset Formula 
+\[
+p(x,y)=\frac{\partial f}{\partial x}(0,0)(x-0)+\frac{\partial f}{\partial y}(0,0)(y-0)+f(0,0)\equiv1\quad\forall(x,y)\in\mathbb{R}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ aproximándonos a 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+ por la recta 
+\begin_inset Formula $y=x$
+\end_inset
+
+,
+ tenemos 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\left|f(x,x)-p(x,y)\right|}{\left\Vert (x,y)-(0,0)\right\Vert }=\frac{1}{\sqrt{2x^{2}}}\xrightarrow[x\to0]{}\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ no es derivable en 
+\begin_inset Formula $(0,0).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Otros ejemplos:
+ (Aquí va una figura)
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+ejemplo:
+
+\uuline default
+ demostrar que 
+\begin_inset Formula $f(x,y)=x^{2}+y^{2}$
+\end_inset
+
+ es derivable en todo 
+\begin_inset Formula $(x_{0},y_{0})\in\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial f}{\partial x}(x_{0},y_{0})=2x_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\frac{\partial f}{\partial y}(x_{0},y_{0})=2y_{0}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\forall(x_{0},y_{0})\in\mathbb{R}^{2}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+el plano tangente debería de ser:
+\begin_inset Formula 
+\[
+p(x,y)=2x_{0}(x-x_{0})+2y_{0}(y-y_{0})+(x_{0}^{2}+y_{0}^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+debemos probar que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{(x,y)\to(x_{0},y_{0})}\frac{\left|f(x,y)-p(x,y)\right|}{\left\Vert (x,y)-(x_{0},y_{0})\right\Vert }=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{clc}
+\lim_{(x,y)\to(x_{0},y_{0})}\frac{\left|f(x,y)-p(x,y)\right|}{\left\Vert (x,y)-(x_{0},y_{0})\right\Vert } & =\frac{\left|(x^{2}+y^{2})-(2x_{0}(x-x_{0})+2y_{0}(y-y_{0})+(x_{0}^{2}+y_{0}^{2}))\right|}{\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}}\\
+ & =\frac{\left|(x^{2}-2x_{0}x+2x_{0}^{2}-x_{0}^{2})+(y^{2}-2y_{0}y+2y_{0}^{2}-y_{0}^{2})\right|}{\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}}\\
+ & =\frac{\left|(x-x_{0})^{2}+(y-y_{0})^{2}\right|}{\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}}\\
+ & =\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}} & \xrightarrow[(x,y)\to(x_{0},y_{0})]{}0
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ejemplo,
+ si 
+\begin_inset Formula $(x_{0},y_{0})=(1,1),$
+\end_inset
+
+entonces 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(x,y)=2(x-1)+2(y-1)+2=2x+2y-2.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cc}
+z=2x+2y-2\\
+2x+2y-z-2 & =0\\
+N=(2,2,-1)
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A manera de conclusión de todo lo anterior podemos establecer el siguiente 
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+Teorema
+\uuline default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $(x_{0},y_{0})\Longleftrightarrow$
+\end_inset
+
+ las derivadas parciales existen en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ y el plano dado por:
+ 
+\begin_inset Formula $p(x,y)=\frac{\partial f}{\partial x}(x_{0},y_{0})(x-x_{0})+\frac{\partial f}{\partial y}(x_{0},y_{0})(y-y_{0})+f(x_{0},y_{0})$
+\end_inset
+
+ satisface que 
+\begin_inset Formula 
+\[
+\lim_{(x,y)\to(x_{0},y_{0})}\frac{\left|f(x,y)-p(x,y)\right|}{\left\Vert (x,y)-(x_{0},y_{0})\right\Vert }=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Te sugiero que te cerciores que entiendes y puedes demostrar este teorema recurriendo a las definiciones pertinentes.
+ 
+\end_layout
+
+\begin_layout Standard
+Y recuerda,
+ si 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable,
+ la derivada está dada por el vector 
+\begin_inset Formula 
+\[
+D_{f}(\bar{x}_{0})=(\frac{\partial f}{\partial x}(\bar{x_{0}}),\frac{\partial f}{\partial y}(\bar{x}_{0})).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por todo lo expuesto aquí,
+ está claro que este vector puede existir aunque 
+\begin_inset Formula $f$
+\end_inset
+
+ no sea derivable en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+.
+ En general,
+ a este vector se le llama el gradiente de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+.
+ Veremos que cuando 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable,
+ el gradiente va a jugar un papel muy importante.
+ 
+\end_layout
+
+\begin_layout Standard
+Fin de la parte 1.
+ Faltan los dibujos.
+ 
 \end_layout
 
 \end_body
